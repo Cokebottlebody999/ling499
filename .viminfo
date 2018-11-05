@@ -18,8 +18,9 @@ $
 
 # Command Line History (newest to oldest):
 :wq
-:$
 :w
+:37
+:$
 :1
 :/salute
 :\salute
@@ -66,7 +67,6 @@ $
 :1219582
 :1179628
 :1162586
-:1159180
 
 # Search String History (newest to oldest):
 ? salute
@@ -215,23 +215,27 @@ $
 	/
 
 # File marks:
-'0  717  0  ~/make1820FIC.csv
-'1  1  3  ~/.gitignore
-'2  1  5  ~/selectNN2.sql
-'3  1  5  ~/selectNN.sql
-'4  103  53  ~/selectNN.sql
-'5  1  0  ~/fixline.sql
-'6  1  0  ~/pos.sql
-'7  1  0  ~/select.sql
-'8  24  0  ~/createBig.sql
-'9  1  0  ~/output.csv
+'0  99  0  ~/selectNN.sql
+'1  44  0  ~/selectTEST.sql
+'2  1  0  ~/fullSelect.sql
+'3  717  0  ~/make1820FIC.csv
+'4  1  3  ~/.gitignore
+'5  1  5  ~/selectNN2.sql
+'6  1  5  ~/selectNN.sql
+'7  103  53  ~/selectNN.sql
+'8  1  0  ~/fixline.sql
+'9  1  0  ~/pos.sql
 
 # Jumplist (newest first):
+-'  99  0  ~/selectNN.sql
+-'  1  0  ~/selectNN.sql
+-'  44  0  ~/selectTEST.sql
+-'  1  0  ~/selectTEST.sql
+-'  1  0  ~/fullSelect.sql
 -'  717  0  ~/make1820FIC.csv
 -'  1  0  ~/make1820FIC.csv
 -'  1  3  ~/.gitignore
 -'  1  5  ~/selectNN2.sql
--'  1  5  ~/selectNN.sql
 -'  103  53  ~/selectNN.sql
 -'  1  0  ~/fixline.sql
 -'  1  0  ~/pos.sql
@@ -321,13 +325,67 @@ $
 -'  160589  34  ~/lexicon.txt
 -'  160588  19  ~/lexicon.txt
 -'  160484  20  ~/lexicon.txt
--'  160436  18  ~/lexicon.txt
--'  160248  18  ~/lexicon.txt
--'  160074  12  ~/lexicon.txt
--'  159939  26  ~/lexicon.txt
--'  159852  15  ~/lexicon.txt
 
 # History of marks within files (newest to oldest):
+
+> ~/selectNN.sql
+	"	99	0
+	^	100	39
+	.	100	38
+	+	1	0
+	+	2	0
+	+	103	51
+	+	9	1516
+	+	9	1
+	+	10	1
+	+	9	1
+	+	11	0
+	+	12	0
+	+	13	0
+	+	14	0
+	+	15	0
+	+	16	0
+	+	17	0
+	+	18	0
+	+	19	0
+	+	20	0
+	+	9	1
+	+	27	0
+	+	46	0
+	+	65	0
+	+	84	0
+	+	103	36
+	+	97	83
+	+	102	2
+	+	98	3
+	+	99	62
+	+	101	1
+	+	99	63
+	+	100	38
+
+> ~/selectTEST.sql
+	"	45	0
+	^	45	1
+	.	45	0
+	+	51	34
+	+	1	0
+	+	10	0
+	+	11	0
+	+	12	0
+	+	50	0
+	+	49	0
+	+	48	1
+	+	47	1
+	+	46	0
+	+	40	1525
+	+	41	0
+	+	42	0
+	+	43	0
+	+	44	1
+	+	45	0
+
+> ~/fullSelect.sql
+	"	1	0
 
 > ~/make1820FIC.csv
 	"	717	0
@@ -364,41 +422,6 @@ $
 	+	64	33
 	+	65	0
 	+	80	35
-
-> ~/selectNN.sql
-	"	1	5
-	^	100	39
-	.	100	38
-	+	1	0
-	+	2	0
-	+	103	51
-	+	9	1516
-	+	9	1
-	+	10	1
-	+	9	1
-	+	11	0
-	+	12	0
-	+	13	0
-	+	14	0
-	+	15	0
-	+	16	0
-	+	17	0
-	+	18	0
-	+	19	0
-	+	20	0
-	+	9	1
-	+	27	0
-	+	46	0
-	+	65	0
-	+	84	0
-	+	103	36
-	+	97	83
-	+	102	2
-	+	98	3
-	+	99	62
-	+	101	1
-	+	99	63
-	+	100	38
 
 > ~/fixline.sql
 	"	1	0
