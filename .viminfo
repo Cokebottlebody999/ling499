@@ -17,6 +17,7 @@
 $ 
 
 # Command Line History (newest to oldest):
+:q
 :wq
 :w
 :37
@@ -66,7 +67,6 @@ $
 :1222732
 :1219582
 :1179628
-:1162586
 
 # Search String History (newest to oldest):
 ? salute
@@ -215,18 +215,26 @@ $
 	/
 
 # File marks:
-'0  99  0  ~/selectNN.sql
-'1  44  0  ~/selectTEST.sql
-'2  1  0  ~/fullSelect.sql
-'3  717  0  ~/make1820FIC.csv
-'4  1  3  ~/.gitignore
-'5  1  5  ~/selectNN2.sql
-'6  1  5  ~/selectNN.sql
-'7  103  53  ~/selectNN.sql
-'8  1  0  ~/fixline.sql
-'9  1  0  ~/pos.sql
+'0  1  0  ~/wordnet/dict/dbfiles/verb.communication
+'1  1  0  ~/wordnet/dict/dbfiles/noun.act
+'2  99  2  ~/wordnet/dict/index.verb
+'3  323  2  ~/wordnet/dict/index.noun
+'4  200  2  ~/wordnet/dict/data.noun
+'5  99  0  ~/selectNN.sql
+'6  44  0  ~/selectTEST.sql
+'7  1  0  ~/fullSelect.sql
+'8  717  0  ~/make1820FIC.csv
+'9  1  3  ~/.gitignore
 
 # Jumplist (newest first):
+-'  1  0  ~/wordnet/dict/dbfiles/verb.communication
+-'  1  0  ~/wordnet/dict/dbfiles/noun.act
+-'  99  2  ~/wordnet/dict/index.verb
+-'  1  2  ~/wordnet/dict/index.verb
+-'  323  2  ~/wordnet/dict/index.noun
+-'  1  2  ~/wordnet/dict/index.noun
+-'  200  2  ~/wordnet/dict/data.noun
+-'  1  2  ~/wordnet/dict/data.noun
 -'  99  0  ~/selectNN.sql
 -'  1  0  ~/selectNN.sql
 -'  44  0  ~/selectTEST.sql
@@ -317,16 +325,23 @@ $
 -'  530680  14  ~/lexicon.txt
 -'  522082  16  ~/lexicon.txt
 -'  1  0  ~/lexicon.txt
--'  160843  24  ~/lexicon.txt
--'  160677  17  ~/lexicon.txt
--'  160659  28  ~/lexicon.txt
--'  160632  22  ~/lexicon.txt
--'  160630  36  ~/lexicon.txt
--'  160589  34  ~/lexicon.txt
--'  160588  19  ~/lexicon.txt
--'  160484  20  ~/lexicon.txt
 
 # History of marks within files (newest to oldest):
+
+> ~/wordnet/dict/dbfiles/verb.communication
+	"	1	0
+
+> ~/wordnet/dict/dbfiles/noun.act
+	"	1	0
+
+> ~/wordnet/dict/index.verb
+	"	99	2
+
+> ~/wordnet/dict/index.noun
+	"	323	2
+
+> ~/wordnet/dict/data.noun
+	"	200	2
 
 > ~/selectNN.sql
 	"	99	0
