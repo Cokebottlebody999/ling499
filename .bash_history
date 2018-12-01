@@ -1,257 +1,3 @@
-psql
-exit
-ls
-exit
-psql
-createuser --interactive
-createdb COHA
-psql -d COHA
-ls
-wget https://s3.us-east-2.amazonaws.com/coha499project/lexicon.txt
-psql -d COHA
-ls
-vim lexicon.txt 
-psql -d COHA
-vim lexicon.txt 
-psql -d COHA
-vim lexicon.txt 
-vim lexicon.txt 
-psql -d COHA
-vim lexicon.txt 
-psql -d COHA
-psql -d COHA
-vim lexicon.txt 
-psql -d COHA
-vim lexicon.txt 
-psql -d COHA
-exit
-ls
-vim lexicon.txt 
-ls
-ls
-ls
-wget 
-wget https://s3.us-east-2.amazonaws.com/coha499project/lexiconUTF8.txt
-file -i lexicon.txt 
-vim lexiconUTF8.txt 
-file -i lexicon.txt 
-file -i lexiconUTF8.txt 
-vim lexiconUTF8.txt 
-ls
-wget https://s3.us-east-2.amazonaws.com/coha499project/lexiconUnicode.txt
-ls
-vim lexiconUnicode.txt 
-vim lexiconUTF8.txt 
-ls
-exit
-ls
-psql
-exit
-ls
-wget 
-wget https://s3.us-east-2.amazonaws.com/coha499project/coha-samples-sources.zip
-unzip coha-samples-sources.zip 
-sudo unzip coha-samples-sources.zip 
-exit
-unzip coha-samples-sources.zip 
-ls
-wget https://s3.us-east-2.amazonaws.com/coha499project/coha-samples-lexicon.zip
-ls
-unzip coha-samples-lexicon.zip 
-ls
-vim coha-samples-lexicon.txt 
-vim coha-samples-lexicon.txt 
-vim coha-samples-lexicon.txt 
-file -i coha-samples-lexicon.txt 
-vim coha-samples-lexicon.txt 
-file -i coha-samples-lexicon.txt 
-vim coha-samples-lexicon.txt 
-file -i coha-samples-lexicon.txt 
-ls
-rm coha-samples-lexicon.txt
-ls
-ls
-vim coha-samples-lexicon-UTF8.txt 
-file -i coha-samples-lexicon-UTF8.txt 
-sed -i '1s/^\xEF\xBB\xBF//' coha-samples-lexicon-UTF8.txt 
-logout
-ls
-wget https://s3.us-east-2.amazonaws.com/coha499project/coha-samples-lexicon-UTF8.txt
-ls
-file -i coha-samples-lexicon-UTF8.txt 
-psql
-logout
-ls
-pdql -d sampleCOHA
-psql
-createdb sampleCOHA
-psql
-psql
-exit
-ls
-psql
-exit
-ls
-ls
-mkdir cohaRawFiles
-ls
-rm coha*
-l
-ls
-rm lex*
-ls
-cd cohaRawFiles/
-ls
-wget https://s3.us-east-2.amazonaws.com/coha499project/COHAlexicon.txt
-sed -i '1s/^\xEF\xBB\xBF//' COHAlexicon.txt 
-ls
-mv COHAlexicon.txt ..
-ls
-cd ..
-ls
-ls
-vim COHAlexicon.txt 
-vim COHAlexicon.txt 
-sed 's/[[:blank:]]*$//' COHAlexicon.txt 
-ls
-sed 's/[[:blank:]]*$//' COHAlexicon.txt > COHAlexiconClean.txt
-ls
-vim COHAlexiconClean.txt 
-sed -i 's/\s*$//' COHAlexicon.txt > COHAlexiconClean2.txt 
-head COHAlexiconClean2.txt 
-cat head COHAlexiconClean2.txt 
-cat COHAlexiconClean2.txt 
-ls
-head COHAlexicon.txt 
-head COHAlexiconClean.txt 
-sed 's/[[:blank:]]*$//' COHAlexicon.txt > COHAlexiconClean.txt
-vim COHAlexiconClean.txt 
-exit
-psql
-exit
-ls
-psql
-ls
-wget https://purdue0-my.sharepoint.com/:f:/g/personal/jsundqui_purdue_edu/Et7yb9G92iBNoh54QMhhMwEBBRiVVWKhAFmRKNgztDcfUg?e=DQnF6C
-ls
-vim Et7yb9G92iBNoh54QMhhMwEBBRiVVWKhAFmRKNgztDcfUg\?e\=DQnF6C 
-rm Et7yb9G92iBNoh54QMhhMwEBBRiVVWKhAFmRKNgztDcfUg\?e\=DQnF6C 
-ls
-cd cohaRawFiles/
-ls
-wget https://s3.us-east-2.amazonaws.com/coha499project/COHA+Raw+files/OneDrive_2018-09-29.zip
-ls
-unzip OneDrive_2018-09-29.zip 
-ls
-cd COHA\ as\ Database\ Files/
-ls
-unzip *.zip .
-unzip *.zip
-ls
-unzip db_1810s_kwp.zip
-ls
-unzip db_*
-unzip db_*_*.zip
-ls
-ls
-mv 1810.txt ..
-ls
-cd ..
-ls
-mv 1810.txt ..
-cd ..
-ls
-head 1810.txt 
-file -i 1810.txt 
-ls
-ls
-cd cohaRawFiles/
-ls
-cd COHA\ as\ Database\ Files/
-ls
-unzip db_1820s_lse.zip 
-unzip db_1830s_sje.zip 
-unzip db_1840s_ieo.zip 
-unzip db_1850s_qoe.zip 
-unzip db_1860s_msl.zip 
-unzip db_1870s_fhs.zip 
-unzip db_1880s_xjs.zip 
-unzip db_1890s_lsp.zip 
-unzip db_1900s_ahs.zip 
-unzip db_1910s_aow.zip 
-unzip db_1920s_bsj.zip 
-unzip db_1930s_bkk.zip 
-unzip db_1940s_jsk.zip 
-unzip db_1950s_shy.zip 
-unzip db_1960s_mns.zip 
-unzip db_1970s_qpj.zip 
-unzip db_1980s_bxy.zip 
-unzip db_1990s_uai.zip 
-unzip db_2000s_isu.zip 
-ls
-mv *txt ..
-ls
-cd ..
-ls
-mv *txt ..
-ls
-cd ..
-ls
-ls
-ls
-ls
-rm 1810.txt
-cd cohaRawFiles/
-ls
-rm OneDrive_2018-09-29.zip 
-ls
-cd ..
-ls
-rm 1820.txt 
-rm 1830.txt
-file -i 1840.txt 
-rm 1840.txt
-rm 1850.txt
-rm 1860.txt
-rm 1870.txt
-rm 1880.txt
-ls
-ls
-rm COHAlexiconClean.txt
-exit
-ls
-rm COHAlexicon.txt 
-rm COHAlexiconClean2.txt 
-aws ec2 describe-volumes --region us-east-1 --query "Volumes[?Attachments[?AttachTime<=`2016-11-01`]].{ID:VolumeId}" --output text
-exit
-ls
-cd cohaRawFiles
-ls
-rm -rf 'COHA as Database Files'
-ls
-cd ..
-ls
-exit
-psql
-ls
-rm 1890.txt
-ls
-file ls -l 1900.txt 
-ls -lh
-exit
-ls
-vim 1910.txt 
-rm 1900.txt
-rm 1920.txt 
-rm 1930.txt 
-rm 1940.txt 
-rm 1950.txt 
-rm 1960.txt 
-rm 1970.txt 
-rm 1980.txt 
-rm 1990.txt 
-ls
-rm 1910.txt 
 rm 2000.txt 
 ls
 rm -rf cohaRawFiles/
@@ -426,3 +172,329 @@ vim make1820.csv
 exit
 pwd
 exit
+ls
+ls
+vim createBig.sql 
+top
+top
+ls
+tail fixlinesoutput.txt 
+head fixlinesoutput.txt 
+ls
+vim fixlinesoutput.txt 
+ls
+ls
+ls
+head make1820FIC.csv 
+vim make1820FIC.csv 
+ls
+ls
+ls
+vim make1820FIC.csv 
+ls
+ls -la
+vim fullSelect.sql 
+vim fullSelect.sql 
+vim fullSelect.sql 
+ls
+vim selectNN.sql 
+ls
+ls
+ls
+cd results/
+ls
+rm make18*
+ls
+cd ..
+ls
+cp make1* ./results/
+ls
+cd results/
+ls
+cd ..
+ls
+git add .
+git commit -m "results"
+git push
+ls
+cat make1930MAG.csv 
+cat make1930NF.csv 
+ls
+ls
+cat make1940FIC.csv 
+cat make1930MAG.csv 
+ls
+ls
+ls
+ls
+ls
+ls
+ls
+ls
+ls
+ls
+ls
+ls
+ls
+cd results/
+ls
+rm make*
+ls
+cd ..
+ls
+cp make* ./results/
+cd results/
+ls
+cd ..
+ls
+ls
+ls
+ls
+ls
+ls
+ls
+top
+ls
+ls
+ls
+ls
+ls
+ls
+ls
+ls
+ls
+ls
+ls
+ls
+ls
+ls
+ls
+cp take* ./results/
+cd ./results/
+ls
+cd ..
+ls
+ls
+cd results/
+ls
+cd ..
+ls
+cp give* ./results/
+ls
+ls
+ls =la
+ls -la
+ls
+pwd
+exit
+ls
+vim fixwordlines.sh 
+vim fixwordlines.sh 
+vim fixline.sql
+ls
+vim fixline.sql
+head fix
+head fixwordlines.sh 
+./fixwordlines.sh 
+./fixwordlines.sh 
+./fixwordlines.sh 
+ls
+vim fixline.sql 
+./fixwordlines.sh 
+ls
+vim ./fixwordlines.sh 
+vim fixline.sql 
+./fixwordlines.sh 
+vim fixline.sql 
+./fixwordlines.sh 
+vim fixline.sql 
+./fixwordlines.sh 
+vim fixline.sql 
+./fixwordlines.sh 
+vim fixline.sql 
+./fixwordlines.sh 
+vim fixline.sql 
+vim ./fixwordlines.sh 
+./fixwordlines.sh 
+vim ./fixwordlines.sh 
+./fixwordlines.sh 
+vim ./fixwordlines.sh 
+./fixwordlines.sh 
+vim ./fixwordlines.sh 
+./fixwordlines.sh 
+vim ./fixwordlines.sh 
+./fixwordlines.sh 
+top
+ls
+vim createBig.sql 
+ls
+vim output.csv 
+vim createBig.sql 
+ls
+vim select.sql 
+vim pos.sql 
+vim fixline.sql 
+cat createBig.sql > selectNN.sql
+ls
+vim selectNN.sql 
+vim selectNN.sql 
+cat selectNN.sql > selectNN2.sql
+ls
+vim selectNN2.sql 
+ls
+git init
+echo "# ling499" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/a-rothwell/ling499.git
+git push -u origin master
+git add .
+ls -la
+vim .gitignore
+git add .
+git blame
+git commit
+git commit -m "Commit"
+git push
+git pull
+ls
+git add .
+git pull
+git commit -m "Commit"
+git push
+git pull
+ls
+vim selectNN.sql 
+vim selectNN.sql 
+git pull
+git fetch origin master
+git reset --hard origin/master
+git pull
+git pull
+rm fullSelect.sql 
+git pull
+vim selectTEST.sql
+;a
+ls
+vim selectTEST.sql
+git pull
+git add .
+git commit -m "all make"
+git push
+git add .
+git add .
+git commit -m "all take"
+git push
+git add .
+git commit -m "all give"
+git push
+git pull
+cat fullSelect2.sql 
+head fullSelect2.sql 
+wget https://s3.us-east-2.amazonaws.com/coha499project/wn3.1.dict.tar.gz
+ls -la
+unzip wn3.1.dict.tar.gz
+unzip
+ls
+unzip wn3.1.dict.tar.gz
+ls
+mkdir wordnet
+ls
+cd wordnet/
+ls
+ls
+wget https://s3.us-east-2.amazonaws.com/coha499project/WNdb-3.0.tar.gz
+ls
+tar -zxvf WNdb-3.0.tar.gz 
+ls
+cd dict/
+ls
+vim data.noun 
+vim index.noun 
+vim index.verb
+cd ..
+ls
+wget https://s3.us-east-2.amazonaws.com/coha499project/wn3.1.dict.tar.gz
+tar -zxvf wn3.1.dict.tar.gz 
+ls
+cd dict/
+ls
+cd dbfiles/
+ls
+vim noun.act 
+vim verb.communication 
+cd ..
+ls
+cd ..
+ls
+cd ..
+ls
+ git add .
+git commit -m "Wordnet"
+git push
+ git add .
+ls
+git commit -m "Queries"
+git push
+ls
+cd ..
+ls -la
+exit
+sl
+ls
+psql
+psql
+psql
+exit
+psql
+psql
+psql
+psql
+psql -U postgres -d coha "SELECT * from corpus limit 1;"
+psql -U postgres -d coha -c "SELECT * from corpus limit 1;"
+psql -U postgres -d coha -i createBig.sql
+ls
+psql -U postgres -d coha -i "createBig.sql"
+ls
+cat createBig.sql | psql -1
+cat createBig.sql | psql -U postgres -d coha -1
+cat createBig.sql | psql -U postgres -d coha -1
+cat createBig.sql | psql -U postgres -d coha -1
+cat createBig.sql | psql -U postgres -d coha -1
+tail output.txt
+htop
+top
+top
+tail output.txt
+tail output.txt
+tail output.txt
+tail output.txt
+tail output.txt
+tail output.txt
+tail output.txt
+tail output.txt
+top
+tail output.txt
+tail output.txt
+tail output.txt
+tail output.txt
+tail output.txt
+tail output.txt
+tail output.txt
+psql
+exit
+ls
+vim select.sql 
+ls
+vim createBig.sql
+vim select.sql 
+ls
+vim createBig.sql 
+vim select.sql 
+vim createBig.sql 
+ls
+ls
+pwd
+ls
+head output.csv 
