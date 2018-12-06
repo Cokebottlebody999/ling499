@@ -1,11 +1,3 @@
-rm 2000.txt 
-ls
-rm -rf cohaRawFiles/
-ls
-df -T
-df -T
-exit
-ls
 psql
 exit
 psql
@@ -498,3 +490,11 @@ ls
 pwd
 ls
 head output.csv 
+tmux
+tmux attach
+tmux attach
+tmux attach
+tmux attach
+tmux attach
+tmux attach
+tmux attach

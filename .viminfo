@@ -196,20 +196,23 @@ $
 	/
 
 # File marks:
-'0  2  21  ~/mostcommonverb.sql
-'1  49  0  ~/fullSelect2.sql
-'2  3  24  ~/mostcommonverb.sql
-'3  1  0  ~/pos.csv
-'4  64  0  ~/fullSelect2.sql
-'5  1  0  ~/pos.sql
-'6  1  0  ~/fullSelect2.sql
-'7  33  50  ~/createBig.sql
-'8  12  0  ~/select.sql
-'9  1  17  ~/createBig.sql
+'0  1  0  ~/mostcommonverb31850.csv
+'1  1  479344  ~/mostcommonverb3.sql
+'2  1  0  ~/mostcommonverb31820.csv
+'3  1  0  ~/mostcommonverb.sql
+'4  2  96  ~/mostcommonverb.sql
+'5  49  0  ~/fullSelect2.sql
+'6  3  24  ~/mostcommonverb.sql
+'7  1  0  ~/pos.csv
+'8  64  0  ~/fullSelect2.sql
+'9  1  0  ~/pos.sql
 
 # Jumplist (newest first):
--'  2  21  ~/mostcommonverb.sql
+-'  1  0  ~/mostcommonverb31850.csv
+-'  1  479344  ~/mostcommonverb3.sql
+-'  1  0  ~/mostcommonverb31820.csv
 -'  1  0  ~/mostcommonverb.sql
+-'  2  96  ~/mostcommonverb.sql
 -'  49  0  ~/fullSelect2.sql
 -'  1  0  ~/fullSelect2.sql
 -'  3  24  ~/mostcommonverb.sql
@@ -303,18 +306,27 @@ $
 -'  159041  26  ~/lexicon.txt
 -'  158743  21  ~/lexicon.txt
 -'  158706  26  ~/lexicon.txt
--'  158705  20  ~/lexicon.txt
--'  158684  22  ~/lexicon.txt
 
 # History of marks within files (newest to oldest):
 
+> ~/mostcommonverb31850.csv
+	"	1	0
+
+> ~/mostcommonverb3.sql
+	"	1	479344
+
+> ~/mostcommonverb31820.csv
+	"	1	0
+
 > ~/mostcommonverb.sql
-	"	2	21
-	^	2	22
-	.	2	21
+	"	1	0
+	^	2	97
+	.	2	96
 	+	2	86
 	+	3	26
 	+	2	21
+	+	3	56
+	+	2	96
 
 > ~/fullSelect2.sql
 	"	49	0
