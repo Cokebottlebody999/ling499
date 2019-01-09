@@ -1,215 +1,3 @@
-psql
-exit
-psql
-exit
-psql
-exit
-wget https://s3.us-east-2.amazonaws.com/coha499project/sources_coha_cleaned_1.csv
-ls
-vim sources_coha_cleaned_1.csv 
-file ls -l sources_coha_cleaned_1.csv 
-file sources_coha_cleaned_1.csv 
-sed -i '1s/^\xEF\xBB\xBF//' sources_coha_cleaned_1.csv 
-wget https://s3.us-east-2.amazonaws.com/coha499project/sources_coha_cleaned_2.txt
-ls
-sed -i '1s/^\xEF\xBB\xBF//' sources_coha_cleaned_2.txt 
-vim sources_coha_cleaned_2.txt 
-wget https://s3.us-east-2.amazonaws.com/coha499project/sources_coha_cleaned_3.txt
-sed -i '1s/^\xEF\xBB\xBF//' sources_coha_cleaned_3.txt 
-vim sources_coha_cleaned_3.txt 
-ls
-rm sources_coha_cleaned_*
-ls
-ls
-psql
-ls
-exit
-ls
-vim select.sql
-vim select.sql
-exit
-ls
-vim select.sql 
-tmux
-ls
-head select.sql 
-ls
-vim make1800TO1850.csv 
-python3 -m http.server
-mail -v
-sendmail -v
-mail
-sudo apt-get install mailutils
-exit
-ls
-exit
-ls
-ls -la
-vim createBig.sql 
-ls
-vim select.sql 
-vim createBig.sql 
-exit
-ls
-tmux
-exit
-ls
-pwd
-exit
-psql
-exit
-ls
-mv make1800TO1850.csv /home/ubuntu
-ls
-vim createBig.sql 
-exit
-psql -U postgres -d coha 'SELECT * from corpus LIMIT 1'
-psql -U postgres -d coha 'SELECT * from corpus LIMIT 1;'
-psql -U postgres -d coha -c 'SELECT * from corpus LIMIT 1;'
-psql -U postgres -d coha -c -a -f createBig.sql 
-exit
-ls
-vim createBig.sql 
-ls
-ls -la
-rm .createBig.sql.swp 
-vim createBig.sql 
-exit
-psql
-exit
-ls
-psql
-exit
-psql -U postgres -d coha -c -a -f createBig.sql 
-psql -U postgres -d coha -c -a -f createBig.sql
-psql -U postgres -d coha -c -a -f createBig.sql
-ls
-psql
-ls
-vim createBig.sql 
-psql -U postgres -d coha -c -a -f createBig.sql
-vim createBig.sql 
-psql -U postgres -d coha -c -a -f createBig.sql
-psql
-exit
-ls
-vim createBig.sql 
-exit
-ls
-psql -U postgres -d coha -c -a -f createBig.sql 
-psql -U postgres -d coha -c -a -f createBig.sql 
-psql -U postgres -d coha -c -a -f createBig.sql 
-psql -U postgres -d coha -c -a -f createBig.sql 
-psql -U postgres -d coha -c -a -f createBig.sql 
-psql -U postgres -d coha -c -a -f createBig.sql 
-psql -U postgres -d coha -c -a -f createBig.sql 
-psql -U postgres -d coha -c -a -f createBig.sql 
-ls
-vim createBig.sql 
-exit
-ls
-head make1820.csv 
-tail make1820.csv 
-tail make1820.csv 
-exit
-vim createBig.sql 
-vim pos.sql
-vim pos.sql
-ls
-exit
-vim createBig.sql 
-ls
-vim fixwordlines.sh
-ls
-chmod +x fixwordlines.sh 
-./fixwordlines.sh 
-vim fixwordlines.sh
-./fixwordlines.sh > output.txt
-vim fixwordlines.sh 
-./fixwordlines.sh > output.txt
-head output.
-head output.txt
-vim fixwordlines.sh 
-./fixwordlines.sh > output.txt
-head output.txt
-vim fixwordlines.sh 
-./fixwordlines.sh > output.txt
-./fixwordlines.sh > output.txt
-vim createBig.sql 
-vim createBig.sql 
-top
-ls
-vim createBig.sql 
-top
-ls
-vim createBig.sql 
-ls
-vim make1820.csv 
-ls
-mv make1820.csv /home/ubuntu/
-sudo mv make1820.csv /home/ubuntu/
-ls
-ls
-pwd
-psql
-ls
-vim createBig.sql 
-vim createBig.sql 
-vim createBig.sql 
-ls
-vim make1820LIMIT5.csv 
-ls -la
-vim createBig.sql 
-vim make1820.csv 
-exit
-pwd
-exit
-ls
-ls
-vim createBig.sql 
-top
-top
-ls
-tail fixlinesoutput.txt 
-head fixlinesoutput.txt 
-ls
-vim fixlinesoutput.txt 
-ls
-ls
-ls
-head make1820FIC.csv 
-vim make1820FIC.csv 
-ls
-ls
-ls
-vim make1820FIC.csv 
-ls
-ls -la
-vim fullSelect.sql 
-vim fullSelect.sql 
-vim fullSelect.sql 
-ls
-vim selectNN.sql 
-ls
-ls
-ls
-cd results/
-ls
-rm make18*
-ls
-cd ..
-ls
-cp make1* ./results/
-ls
-cd results/
-ls
-cd ..
-ls
-git add .
-git commit -m "results"
-git push
-ls
-cat make1930MAG.csv 
 cat make1930NF.csv 
 ls
 ls
@@ -498,3 +286,215 @@ tmux attach
 tmux attach
 tmux attach
 tmux attach
+tmux attach
+ls
+tmux attach
+tmux attach
+ls
+exit
+ls
+cd results/
+ls
+cd ..
+ls
+git pull
+git pull
+ls
+cd results/
+ls
+cd ..
+ls
+rm bear*.csv
+ls
+rm create*.csv
+rm give*.csv
+rm grant*.csv
+rm make*.csv
+rm take*.csv
+ls
+cd results/
+ls
+cd ..
+ls
+vim fullSelect2.sql 
+vim fullSelect2.sql 
+vim mostcommonverb.sql
+vim fullSelect2.sql 
+ls
+vim pos.sql 
+vim pos.sql 
+vim mostcommonverb.sql
+ls
+vim fullSelect2.sql 
+vim mostcommonverb.sql
+ls
+vim pos.csv 
+vim mostcommonverb.sql
+vim fullSelect2.sql 
+vim mostcommonverb.sql
+ls
+python
+python -m SimpleHTTPServer 8000
+git pull
+ls
+git add .
+git commit -m "pos"
+git commit
+git push
+vim mostcommonverb.sql
+git pull
+rm mostcommonverb.sql 
+git pull
+git pull
+ls
+ls
+vim mostcommonverb31820.csv 
+ls
+cat mostcommonverb31820.csv 
+ls
+ls
+ls
+ls
+ls
+ls
+vim mostcommonverb.sql
+ls
+ls
+vim mostcommonverb31820.csv 
+ls
+cat mostcommonverb31820.csv 
+cat mostcommonverb31830.csv 
+vim mostcommonverb3.sql
+ls
+ls
+ls
+cd results/
+ls
+cd ..
+ls
+cat mostcommonverb31830.csv 
+cat mostcommonverb31820.csv 
+cat mostcommonverb31840.csv 
+;s
+ls
+vim mostcommonverb31850.csv 
+cat mostcommonverb31820.csv 
+ls
+ls
+git add .
+git commit -m "mostcommonresults"
+git push
+git pull
+pwd
+ls
+cat top500verbslemma.csv 
+ls
+vim example partition.sql
+vim example_partition.sql
+ls
+vim fixline.sql 
+vim example_partition.sql
+ls
+exit
+ls
+vim createBig.sql 
+vim createBig.sql 
+vim fixwordlines.sh 
+./fixwordlines.sh 
+ls
+head coha_backup_120618.sql 
+ls
+tail coha_backup_120618.sql 
+tail coha_backup_120618.sql 
+tail coha_backup_120618.sql 
+ls
+file coharm ex
+rm example
+ls
+ls -la coha_backup_120618.sql 
+ls -lh coha_backup_120618.sql 
+ls -lh *
+tail coha_backup_120618.sql 
+ls
+rm coha_backup_120618.sql 
+exit
+ls
+tmux attach
+ls
+vim createBig.sql 
+vim fixline.sql 
+ls
+vim fullSelect2.sql 
+ls
+ls
+psql
+psql
+aws configure
+ls
+exit
+ls
+head postgres_backup12172018.sql 
+tail postgres_backup12172018.sql 
+ls
+ls -la 
+ls -lh
+ls -lh
+ls -lh
+ls -lh
+ls -lh
+ls -lh
+ls -lh
+ls -lh
+ls
+ls -lh
+mv postgres_backup12172018.sql postgres_compressed_backup12172018.sql
+ls
+cd ~ubuntu/
+ls
+cd ~
+ls
+mv postgres_compressed_backup12172018.sql ~ubuntu/
+sudo mv postgres_compressed_backup12172018.sql ~ubuntu/
+exit
+ls
+gzip
+ls
+pg_dumpall | gzip > postgres_backup12172018.sql
+exit
+ls
+eixt
+exit
+ls
+vim example_partition.sql 
+ls -lh
+df
+exit
+psql
+exit
+ls
+psql
+exit
+psql
+vacuumdb -f coha
+du -sh
+psql
+df -h
+ls
+ls -la
+ls -h
+ls -lh
+psql
+df
+df -h
+psql
+psql
+ls
+cd ~
+ls
+exit
+ls
+ls
+df -h
+exit
+psql
+exit
