@@ -1,21 +1,21 @@
-SELECT count(*), lemma from (
-	SELECT c.w2 FROM p1820 as c, lexicon as l
+SELECT lemma, count(*) from (
+	SELECT c.w2 FROM p2000 as c, lexicon as l
 	where l.lemma like 'bring'
 	and c.w1 = l.wid
 	UNION ALL
-	SELECT c.w3 FROM p1820 as c, lexicon as l
+	SELECT c.w3 FROM p2000 as c, lexicon as l
 	where l.lemma like 'bring'
 	and c.w1 = l.wid
 	UNION ALL
-	SELECT c.w4 FROM p1820 as c, lexicon as l
+	SELECT c.w4 FROM p2000 as c, lexicon as l
 	where l.lemma like 'bring'
 	and c.w1 = l.wid
 	UNION ALL
-	SELECT c.w5 FROM p1820 as c, lexicon as l
+	SELECT c.w5 FROM p2000 as c, lexicon as l
 	where l.lemma like 'bring'
 	and c.w1 = l.wid
 	UNION ALL
-	SELECT c.w6 FROM p1820 as c, lexicon as l
+	SELECT c.w6 FROM p2000 as c, lexicon as l
 	where l.lemma like 'bring'
 	and c.w1 = l.wid
 ) a, lexicon b where 

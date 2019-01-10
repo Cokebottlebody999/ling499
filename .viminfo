@@ -83,10 +83,11 @@ $
 
 # Registers:
 ""0	LINE	0
-	(
-	b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn'
-	or b.pos like '%nn1%' or b.pos like '%nn2%'
-	) 
+		SELECT c.w2 FROM p1820 as c, lexicon as l
+		where l.lemma 'make'
+		and c.w1 = l.wid
+		and l.pos = '%vv%'
+		UNION ALL
 "1	LINE	0
 		raise notice '%', p;
 "2	LINE	0
@@ -125,26 +126,30 @@ $
 	/
 
 # File marks:
-'0  1  0  ~/fullSelect2.sql
-'1  30  0  ~/selectNN2.sql
-'2  1  0  ~/selectNN2.sql
-'3  1  0  ~/mostcommonverb31830.csv
-'4  1  0  ~/mostcommonverb31820.csv
-'5  1  478073  ~/mostcommonverb2.sql
-'6  1  0  ~/mostcommonverb.sql
-'7  1  0  ~/example_partition.sql
-'8  34  7  ~/example_partition.sql
-'9  88  42  ~/fullSelect2.sql
+'0  27  0  ~/queryPartitions.sql
+'1  1  21  ~/test_part_collocates.sql
+'2  25  56  ~/test_part_collocates.sql
+'3  1  0  ~/selectNN2.sql
+'4  1  0  ~/mostcommonverb31830.csv
+'5  1  0  ~/mostcommonverb31820.csv
+'6  1  478073  ~/mostcommonverb2.sql
+'7  1  0  ~/mostcommonverb.sql
+'8  1  0  ~/example_partition.sql
+'9  1  0  ~/fullSelect2.sql
 
 # Jumplist (newest first):
--'  1  0  ~/fullSelect2.sql
--'  30  0  ~/selectNN2.sql
+-'  27  0  ~/queryPartitions.sql
+-'  1  0  ~/queryPartitions.sql
+-'  1  21  ~/test_part_collocates.sql
+-'  25  56  ~/test_part_collocates.sql
+-'  26  1  ~/test_part_collocates.sql
 -'  1  0  ~/selectNN2.sql
 -'  1  0  ~/mostcommonverb31830.csv
 -'  1  0  ~/mostcommonverb31820.csv
 -'  1  478073  ~/mostcommonverb2.sql
 -'  1  0  ~/mostcommonverb.sql
 -'  1  0  ~/example_partition.sql
+-'  1  0  ~/fullSelect2.sql
 -'  34  7  ~/example_partition.sql
 -'  31  33  ~/example_partition.sql
 -'  33  1  ~/example_partition.sql
@@ -232,42 +237,77 @@ $
 -'  160630  36  ~/lexicon.txt
 -'  160589  34  ~/lexicon.txt
 -'  160588  19  ~/lexicon.txt
--'  160484  20  ~/lexicon.txt
--'  160436  18  ~/lexicon.txt
 
 # History of marks within files (newest to oldest):
 
-> ~/fullSelect2.sql
-	"	1	0
+> ~/queryPartitions.sql
+	"	27	0
+	^	3	22
+	.	3	21
+	+	3	21
 
 > ~/test_part_collocates.sql
-	"	34	56
-	^	34	57
-	.	34	56
+	"	1	21
+	^	1	22
+	.	1	21
 	+	1	29
 	+	2	56
 	+	3	21
-	+	5	3
+	+	4	20
 	+	2	42
-	+	5	19
-	+	30	0
-	+	6	10
-	+	8	0
-	+	13	1
+	+	4	36
+	+	21	0
+	+	5	10
+	+	6	0
+	+	9	11
+	+	10	0
+	+	13	11
 	+	14	0
-	+	19	1
-	+	20	0
-	+	8	11
+	+	6	11
+	+	10	11
 	+	14	11
-	+	20	11
-	+	25	0
+	+	17	10
+	+	18	0
+	+	18	11
+	+	21	21
+	+	22	0
 	+	26	0
-	+	26	11
-	+	30	21
-	+	31	0
-	+	35	0
-	+	32	105
-	+	34	56
+	+	23	105
+	+	25	56
+	+	3	19
+	+	7	19
+	+	11	19
+	+	15	19
+	+	19	19
+	+	1	21
+	+	6	0
+	+	10	0
+	+	14	0
+	+	18	0
+	+	3	25
+	+	7	25
+	+	11	25
+	+	15	25
+	+	19	25
+	+	21	0
+	+	17	0
+	+	13	0
+	+	9	0
+	+	5	0
+	+	3	25
+	+	7	25
+	+	11	25
+	+	15	25
+	+	19	25
+	+	2	22
+	+	6	22
+	+	10	22
+	+	14	22
+	+	18	22
+	+	1	21
+
+> ~/fullSelect2.sql
+	"	1	0
 
 > ~/selectNN2.sql
 	"	30	0
