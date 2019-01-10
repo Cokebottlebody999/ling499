@@ -126,20 +126,20 @@ $
 	/
 
 # File marks:
-'0  27  0  ~/queryPartitions.sql
-'1  1  21  ~/test_part_collocates.sql
-'2  25  56  ~/test_part_collocates.sql
-'3  1  0  ~/selectNN2.sql
-'4  1  0  ~/mostcommonverb31830.csv
-'5  1  0  ~/mostcommonverb31820.csv
-'6  1  478073  ~/mostcommonverb2.sql
-'7  1  0  ~/mostcommonverb.sql
-'8  1  0  ~/example_partition.sql
-'9  1  0  ~/fullSelect2.sql
+'0  1  0  ~/queryPartitions.sql
+'1  27  0  ~/queryPartitions.sql
+'2  1  21  ~/test_part_collocates.sql
+'3  25  56  ~/test_part_collocates.sql
+'4  1  0  ~/selectNN2.sql
+'5  1  0  ~/mostcommonverb31830.csv
+'6  1  0  ~/mostcommonverb31820.csv
+'7  1  478073  ~/mostcommonverb2.sql
+'8  1  0  ~/mostcommonverb.sql
+'9  1  0  ~/example_partition.sql
 
 # Jumplist (newest first):
--'  27  0  ~/queryPartitions.sql
 -'  1  0  ~/queryPartitions.sql
+-'  27  0  ~/queryPartitions.sql
 -'  1  21  ~/test_part_collocates.sql
 -'  25  56  ~/test_part_collocates.sql
 -'  26  1  ~/test_part_collocates.sql
@@ -235,13 +235,11 @@ $
 -'  160659  28  ~/lexicon.txt
 -'  160632  22  ~/lexicon.txt
 -'  160630  36  ~/lexicon.txt
--'  160589  34  ~/lexicon.txt
--'  160588  19  ~/lexicon.txt
 
 # History of marks within files (newest to oldest):
 
 > ~/queryPartitions.sql
-	"	27	0
+	"	1	0
 	^	3	22
 	.	3	21
 	+	3	21
