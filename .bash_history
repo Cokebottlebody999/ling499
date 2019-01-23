@@ -1,87 +1,3 @@
-cat make1930NF.csv 
-ls
-ls
-cat make1940FIC.csv 
-cat make1930MAG.csv 
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-cd results/
-ls
-rm make*
-ls
-cd ..
-ls
-cp make* ./results/
-cd results/
-ls
-cd ..
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-top
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-cp take* ./results/
-cd ./results/
-ls
-cd ..
-ls
-ls
-cd results/
-ls
-cd ..
-ls
-cp give* ./results/
-ls
-ls
-ls =la
-ls -la
-ls
-pwd
-exit
-ls
-vim fixwordlines.sh 
-vim fixwordlines.sh 
-vim fixline.sql
-ls
-vim fixline.sql
-head fix
-head fixwordlines.sh 
-./fixwordlines.sh 
-./fixwordlines.sh 
-./fixwordlines.sh 
-ls
-vim fixline.sql 
-./fixwordlines.sh 
-ls
 vim ./fixwordlines.sh 
 vim fixline.sql 
 ./fixwordlines.sh 
@@ -495,6 +411,90 @@ exit
 ls
 ls
 df -h
+exit
+psql
+exit
+ls
+vim selectNN2.sql 
+vim fullSelect2.sql 
+vim fullSelect2.sql 
+ls
+cd results/
+ls
+cd ..
+ls
+git add .
+git commit -m "partition query"
+git push
+ls
+cd results/
+ls
+cd ..
+ls
+git pull
+git pull
+git pull
+git pull
+git pull
+git pull
+ls
+ls
+ls
+ls
+ls
+mv bring*.csv ./results/
+ls
+mv hold*.csv ./results/
+mv keep*.csv ./results/
+mv lose*.csv ./results/
+ls
+git add .
+git commit -m "4 more results"
+git push
+ls
+ls
+cd ~
+ls
+ls
+ls
+ls
+ls
+ls
+ls
+head 1820mostcommonverb.csv 
+head 1830mostcommonverb.csv 
+head 2000mostcommonverb.csv 
+df
+df -h
+s
+ls
+git add .
+git commit -m "update"
+git push
+git pull
+git push
+exit
+ls
+vim fullSelect2.sql 
+ls
+ls
+vim example_partition.sql 
+ls
+ls
+vim mostcommonverb.sql 
+vim mostcommonverb2.sql 
+ls
+head mostcommonverb31820.csv 
+vim mostcommonverb31820.csv 
+vim mostcommonverb31830.csv 
+ls
+vim selectNN2.sql 
+vim test_part_collocates.sql
+vim test_part_collocates.sql
+vim queryPartitions.sql 
+rm queryPartitions.sql 
+vim queryPartitions.sql 
+vim mostcommonpartitionselect.sql
 exit
 psql
 exit
