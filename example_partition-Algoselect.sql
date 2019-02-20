@@ -36,68 +36,68 @@ BEGIN
   END;
   $func$ LANGUAGE PLPGSQL;
   FOR i IN 0 .. 19 LOOP
-	p := 'p' || (1820 + (i * 10));
+	p := 'p' || (1820 + (i * 10)) || 'Algo';
 	raise notice '%', p;
 	EXECUTE 'DROP TABLE IF EXISTS ' || p;
 	EXECUTE 'CREATE TABLE ' || p || ' (like wordlines including all)';
   END LOOP;
   FOR row_data in SELECT * from WORDLINES LOOP
 	CASE WHEN row_data.source = ANY (array1820) THEN
-		p := 'p1820';
+		p := 'p1820Algo';
 		PERFORM INSERTROWDATA(row_data, p);
 	WHEN row_data.source = ANY (array1830) THEN
-		p := 'p1830';
+		p := 'p1830Algo';
 		PERFORM INSERTROWDATA(row_data, p);
 	WHEN row_data.source = ANY (array1840) THEN
-		p := 'p1840';
+		p := 'p1840Algo';
 		PERFORM INSERTROWDATA(row_data, p);
 	WHEN row_data.source = ANY (array1850) THEN
-		p := 'p1850';
+		p := 'p1850Algo';
 		PERFORM INSERTROWDATA(row_data, p);
 	WHEN row_data.source = ANY (array1860) THEN
-		p := 'p1860';
+		p := 'p1860Algo';
 		PERFORM INSERTROWDATA(row_data, p);
 	WHEN row_data.source = ANY (array1870) THEN
-		p := 'p1870';
+		p := 'p1870Algo';
 		PERFORM INSERTROWDATA(row_data, p);
 	WHEN row_data.source = ANY (array1880) THEN
-		p := 'p1880';
+		p := 'p1880Algo';
 		PERFORM INSERTROWDATA(row_data, p);
 	WHEN row_data.source = ANY (array1890) THEN
-		p := 'p1890';
+		p := 'p1890Algo';
 		PERFORM INSERTROWDATA(row_data, p);
 	WHEN row_data.source = ANY (array1900) THEN
-		p := 'p1900';
+		p := 'p1900Algo';
 		PERFORM INSERTROWDATA(row_data, p);
 	WHEN row_data.source = ANY (array1910) THEN
-		p := 'p1910';
+		p := 'p1910Algo';
 		PERFORM INSERTROWDATA(row_data, p);
 	WHEN row_data.source = ANY (array1920) THEN
-		p := 'p1920';
+		p := 'p1920Algo';
 		PERFORM INSERTROWDATA(row_data, p);
 	WHEN row_data.source = ANY (array1930) THEN
-		p := 'p1930';
+		p := 'p1930Algo';
 		PERFORM INSERTROWDATA(row_data, p);
 	WHEN row_data.source = ANY (array1940) THEN
-		p := 'p1940';
+		p := 'p1940Algo';
 		PERFORM INSERTROWDATA(row_data, p);
 	WHEN row_data.source = ANY (array1950) THEN
-		p := 'p1950';
+		p := 'p1950Algo';
 		PERFORM INSERTROWDATA(row_data, p);
 	WHEN row_data.source = ANY (array1960) THEN
-		p := 'p1960';
+		p := 'p1960Algo';
 		PERFORM INSERTROWDATA(row_data, p);
 	WHEN row_data.source = ANY (array1970) THEN
-		p := 'p1970';
+		p := 'p1970Algo';
 		PERFORM INSERTROWDATA(row_data, p);
 	WHEN row_data.source = ANY (array1980) THEN
-		p := 'p1980';
+		p := 'p1980Algo';
 		PERFORM INSERTROWDATA(row_data, p);
 	WHEN row_data.source = ANY (array1990) THEN
-		p := 'p1990';
+		p := 'p1990Algo';
 		PERFORM INSERTROWDATA(row_data, p);
 	WHEN row_data.source = ANY (array2000) THEN
-		p := 'p2000';
+		p := 'p2000Algo';
 		PERFORM INSERTROWDATA(row_data, p);
 	ELSE counter := counter + 1;
 	END CASE;

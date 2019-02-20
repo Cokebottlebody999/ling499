@@ -1,35 +1,3 @@
-vim ./fixwordlines.sh 
-vim fixline.sql 
-./fixwordlines.sh 
-vim fixline.sql 
-./fixwordlines.sh 
-vim fixline.sql 
-./fixwordlines.sh 
-vim fixline.sql 
-./fixwordlines.sh 
-vim fixline.sql 
-./fixwordlines.sh 
-vim fixline.sql 
-vim ./fixwordlines.sh 
-./fixwordlines.sh 
-vim ./fixwordlines.sh 
-./fixwordlines.sh 
-vim ./fixwordlines.sh 
-./fixwordlines.sh 
-vim ./fixwordlines.sh 
-./fixwordlines.sh 
-vim ./fixwordlines.sh 
-./fixwordlines.sh 
-top
-ls
-vim createBig.sql 
-ls
-vim output.csv 
-vim createBig.sql 
-ls
-vim select.sql 
-vim pos.sql 
-vim fixline.sql 
 cat createBig.sql > selectNN.sql
 ls
 vim selectNN.sql 
@@ -497,4 +465,36 @@ vim queryPartitions.sql
 vim mostcommonpartitionselect.sql
 exit
 psql
+exit
+ls
+git pull
+ls
+psql
+ls
+head maintain2000.csv 
+ls
+mv demand* ./results/
+ls
+mv maintain* ./results/
+ls
+cd results/
+ls
+cd ..
+git add .
+git commit -m "results"
+git push
+exit
+ls
+ls -la
+git pull
+psql
+vim example_partition-Algoselect.sql 
+vim example_partition-Algoselect.sql 
+psql
+exit
+ls
+psql
+exit
+ls
+vim example_partition-Algoselect.sql 
 exit
