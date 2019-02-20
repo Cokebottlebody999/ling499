@@ -1,23 +1,23 @@
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1820 as c, lexicon as l
+SELECT c.w2 FROM p1820algo as c, lexicon as l
 where l.lemma like 'bear'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1820 as c, lexicon as l
+SELECT c.w3 FROM p1820algo as c, lexicon as l
 where l.lemma like 'bear'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1820 as c, lexicon as l
+SELECT c.w4 FROM p1820algo as c, lexicon as l
 where l.lemma like 'bear'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1820 as c, lexicon as l
+SELECT c.w5 FROM p1820algo as c, lexicon as l
 where l.lemma like 'bear'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1820 as c, lexicon as l
+SELECT c.w6 FROM p1820algo as c, lexicon as l
 where l.lemma like 'bear'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -27,23 +27,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1830 as c, lexicon as l
+SELECT c.w2 FROM p1830algo as c, lexicon as l
 where l.lemma like 'bear'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1830 as c, lexicon as l
+SELECT c.w3 FROM p1830algo as c, lexicon as l
 where l.lemma like 'bear'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1830 as c, lexicon as l
+SELECT c.w4 FROM p1830algo as c, lexicon as l
 where l.lemma like 'bear'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1830 as c, lexicon as l
+SELECT c.w5 FROM p1830algo as c, lexicon as l
 where l.lemma like 'bear'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1830 as c, lexicon as l
+SELECT c.w6 FROM p1830algo as c, lexicon as l
 where l.lemma like 'bear'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -53,23 +53,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1840 as c, lexicon as l
+SELECT c.w2 FROM p1840algo as c, lexicon as l
 where l.lemma like 'bear'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1840 as c, lexicon as l
+SELECT c.w3 FROM p1840algo as c, lexicon as l
 where l.lemma like 'bear'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1840 as c, lexicon as l
+SELECT c.w4 FROM p1840algo as c, lexicon as l
 where l.lemma like 'bear'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1840 as c, lexicon as l
+SELECT c.w5 FROM p1840algo as c, lexicon as l
 where l.lemma like 'bear'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1840 as c, lexicon as l
+SELECT c.w6 FROM p1840algo as c, lexicon as l
 where l.lemma like 'bear'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -79,23 +79,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1850 as c, lexicon as l
+SELECT c.w2 FROM p1850algo as c, lexicon as l
 where l.lemma like 'bear'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1850 as c, lexicon as l
+SELECT c.w3 FROM p1850algo as c, lexicon as l
 where l.lemma like 'bear'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1850 as c, lexicon as l
+SELECT c.w4 FROM p1850algo as c, lexicon as l
 where l.lemma like 'bear'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1850 as c, lexicon as l
+SELECT c.w5 FROM p1850algo as c, lexicon as l
 where l.lemma like 'bear'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1850 as c, lexicon as l
+SELECT c.w6 FROM p1850algo as c, lexicon as l
 where l.lemma like 'bear'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -105,23 +105,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1860 as c, lexicon as l
+SELECT c.w2 FROM p1860algo as c, lexicon as l
 where l.lemma like 'bear'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1860 as c, lexicon as l
+SELECT c.w3 FROM p1860algo as c, lexicon as l
 where l.lemma like 'bear'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1860 as c, lexicon as l
+SELECT c.w4 FROM p1860algo as c, lexicon as l
 where l.lemma like 'bear'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1860 as c, lexicon as l
+SELECT c.w5 FROM p1860algo as c, lexicon as l
 where l.lemma like 'bear'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1860 as c, lexicon as l
+SELECT c.w6 FROM p1860algo as c, lexicon as l
 where l.lemma like 'bear'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -131,23 +131,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1870 as c, lexicon as l
+SELECT c.w2 FROM p1870algo as c, lexicon as l
 where l.lemma like 'bear'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1870 as c, lexicon as l
+SELECT c.w3 FROM p1870algo as c, lexicon as l
 where l.lemma like 'bear'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1870 as c, lexicon as l
+SELECT c.w4 FROM p1870algo as c, lexicon as l
 where l.lemma like 'bear'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1870 as c, lexicon as l
+SELECT c.w5 FROM p1870algo as c, lexicon as l
 where l.lemma like 'bear'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1870 as c, lexicon as l
+SELECT c.w6 FROM p1870algo as c, lexicon as l
 where l.lemma like 'bear'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -157,23 +157,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1880 as c, lexicon as l
+SELECT c.w2 FROM p1880algo as c, lexicon as l
 where l.lemma like 'bear'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1880 as c, lexicon as l
+SELECT c.w3 FROM p1880algo as c, lexicon as l
 where l.lemma like 'bear'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1880 as c, lexicon as l
+SELECT c.w4 FROM p1880algo as c, lexicon as l
 where l.lemma like 'bear'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1880 as c, lexicon as l
+SELECT c.w5 FROM p1880algo as c, lexicon as l
 where l.lemma like 'bear'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1880 as c, lexicon as l
+SELECT c.w6 FROM p1880algo as c, lexicon as l
 where l.lemma like 'bear'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -183,23 +183,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1890 as c, lexicon as l
+SELECT c.w2 FROM p1890algo as c, lexicon as l
 where l.lemma like 'bear'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1890 as c, lexicon as l
+SELECT c.w3 FROM p1890algo as c, lexicon as l
 where l.lemma like 'bear'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1890 as c, lexicon as l
+SELECT c.w4 FROM p1890algo as c, lexicon as l
 where l.lemma like 'bear'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1890 as c, lexicon as l
+SELECT c.w5 FROM p1890algo as c, lexicon as l
 where l.lemma like 'bear'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1890 as c, lexicon as l
+SELECT c.w6 FROM p1890algo as c, lexicon as l
 where l.lemma like 'bear'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -209,23 +209,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1900 as c, lexicon as l
+SELECT c.w2 FROM p1900algo as c, lexicon as l
 where l.lemma like 'bear'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1900 as c, lexicon as l
+SELECT c.w3 FROM p1900algo as c, lexicon as l
 where l.lemma like 'bear'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1900 as c, lexicon as l
+SELECT c.w4 FROM p1900algo as c, lexicon as l
 where l.lemma like 'bear'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1900 as c, lexicon as l
+SELECT c.w5 FROM p1900algo as c, lexicon as l
 where l.lemma like 'bear'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1900 as c, lexicon as l
+SELECT c.w6 FROM p1900algo as c, lexicon as l
 where l.lemma like 'bear'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -235,23 +235,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1910 as c, lexicon as l
+SELECT c.w2 FROM p1910algo as c, lexicon as l
 where l.lemma like 'bear'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1910 as c, lexicon as l
+SELECT c.w3 FROM p1910algo as c, lexicon as l
 where l.lemma like 'bear'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1910 as c, lexicon as l
+SELECT c.w4 FROM p1910algo as c, lexicon as l
 where l.lemma like 'bear'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1910 as c, lexicon as l
+SELECT c.w5 FROM p1910algo as c, lexicon as l
 where l.lemma like 'bear'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1910 as c, lexicon as l
+SELECT c.w6 FROM p1910algo as c, lexicon as l
 where l.lemma like 'bear'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -261,23 +261,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1920 as c, lexicon as l
+SELECT c.w2 FROM p1920algo as c, lexicon as l
 where l.lemma like 'bear'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1920 as c, lexicon as l
+SELECT c.w3 FROM p1920algo as c, lexicon as l
 where l.lemma like 'bear'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1920 as c, lexicon as l
+SELECT c.w4 FROM p1920algo as c, lexicon as l
 where l.lemma like 'bear'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1920 as c, lexicon as l
+SELECT c.w5 FROM p1920algo as c, lexicon as l
 where l.lemma like 'bear'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1920 as c, lexicon as l
+SELECT c.w6 FROM p1920algo as c, lexicon as l
 where l.lemma like 'bear'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -287,23 +287,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1930 as c, lexicon as l
+SELECT c.w2 FROM p1930algo as c, lexicon as l
 where l.lemma like 'bear'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1930 as c, lexicon as l
+SELECT c.w3 FROM p1930algo as c, lexicon as l
 where l.lemma like 'bear'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1930 as c, lexicon as l
+SELECT c.w4 FROM p1930algo as c, lexicon as l
 where l.lemma like 'bear'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1930 as c, lexicon as l
+SELECT c.w5 FROM p1930algo as c, lexicon as l
 where l.lemma like 'bear'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1930 as c, lexicon as l
+SELECT c.w6 FROM p1930algo as c, lexicon as l
 where l.lemma like 'bear'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -313,23 +313,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1940 as c, lexicon as l
+SELECT c.w2 FROM p1940algo as c, lexicon as l
 where l.lemma like 'bear'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1940 as c, lexicon as l
+SELECT c.w3 FROM p1940algo as c, lexicon as l
 where l.lemma like 'bear'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1940 as c, lexicon as l
+SELECT c.w4 FROM p1940algo as c, lexicon as l
 where l.lemma like 'bear'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1940 as c, lexicon as l
+SELECT c.w5 FROM p1940algo as c, lexicon as l
 where l.lemma like 'bear'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1940 as c, lexicon as l
+SELECT c.w6 FROM p1940algo as c, lexicon as l
 where l.lemma like 'bear'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -339,23 +339,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1950 as c, lexicon as l
+SELECT c.w2 FROM p1950algo as c, lexicon as l
 where l.lemma like 'bear'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1950 as c, lexicon as l
+SELECT c.w3 FROM p1950algo as c, lexicon as l
 where l.lemma like 'bear'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1950 as c, lexicon as l
+SELECT c.w4 FROM p1950algo as c, lexicon as l
 where l.lemma like 'bear'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1950 as c, lexicon as l
+SELECT c.w5 FROM p1950algo as c, lexicon as l
 where l.lemma like 'bear'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1950 as c, lexicon as l
+SELECT c.w6 FROM p1950algo as c, lexicon as l
 where l.lemma like 'bear'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -365,23 +365,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1960 as c, lexicon as l
+SELECT c.w2 FROM p1960algo as c, lexicon as l
 where l.lemma like 'bear'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1960 as c, lexicon as l
+SELECT c.w3 FROM p1960algo as c, lexicon as l
 where l.lemma like 'bear'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1960 as c, lexicon as l
+SELECT c.w4 FROM p1960algo as c, lexicon as l
 where l.lemma like 'bear'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1960 as c, lexicon as l
+SELECT c.w5 FROM p1960algo as c, lexicon as l
 where l.lemma like 'bear'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1960 as c, lexicon as l
+SELECT c.w6 FROM p1960algo as c, lexicon as l
 where l.lemma like 'bear'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -391,23 +391,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1970 as c, lexicon as l
+SELECT c.w2 FROM p1970algo as c, lexicon as l
 where l.lemma like 'bear'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1970 as c, lexicon as l
+SELECT c.w3 FROM p1970algo as c, lexicon as l
 where l.lemma like 'bear'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1970 as c, lexicon as l
+SELECT c.w4 FROM p1970algo as c, lexicon as l
 where l.lemma like 'bear'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1970 as c, lexicon as l
+SELECT c.w5 FROM p1970algo as c, lexicon as l
 where l.lemma like 'bear'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1970 as c, lexicon as l
+SELECT c.w6 FROM p1970algo as c, lexicon as l
 where l.lemma like 'bear'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -417,23 +417,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1980 as c, lexicon as l
+SELECT c.w2 FROM p1980algo as c, lexicon as l
 where l.lemma like 'bear'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1980 as c, lexicon as l
+SELECT c.w3 FROM p1980algo as c, lexicon as l
 where l.lemma like 'bear'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1980 as c, lexicon as l
+SELECT c.w4 FROM p1980algo as c, lexicon as l
 where l.lemma like 'bear'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1980 as c, lexicon as l
+SELECT c.w5 FROM p1980algo as c, lexicon as l
 where l.lemma like 'bear'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1980 as c, lexicon as l
+SELECT c.w6 FROM p1980algo as c, lexicon as l
 where l.lemma like 'bear'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -443,23 +443,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1990 as c, lexicon as l
+SELECT c.w2 FROM p1990algo as c, lexicon as l
 where l.lemma like 'bear'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1990 as c, lexicon as l
+SELECT c.w3 FROM p1990algo as c, lexicon as l
 where l.lemma like 'bear'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1990 as c, lexicon as l
+SELECT c.w4 FROM p1990algo as c, lexicon as l
 where l.lemma like 'bear'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1990 as c, lexicon as l
+SELECT c.w5 FROM p1990algo as c, lexicon as l
 where l.lemma like 'bear'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1990 as c, lexicon as l
+SELECT c.w6 FROM p1990algo as c, lexicon as l
 where l.lemma like 'bear'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -469,23 +469,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p2000 as c, lexicon as l
+SELECT c.w2 FROM p2000algo as c, lexicon as l
 where l.lemma like 'bear'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p2000 as c, lexicon as l
+SELECT c.w3 FROM p2000algo as c, lexicon as l
 where l.lemma like 'bear'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p2000 as c, lexicon as l
+SELECT c.w4 FROM p2000algo as c, lexicon as l
 where l.lemma like 'bear'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p2000 as c, lexicon as l
+SELECT c.w5 FROM p2000algo as c, lexicon as l
 where l.lemma like 'bear'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p2000 as c, lexicon as l
+SELECT c.w6 FROM p2000algo as c, lexicon as l
 where l.lemma like 'bear'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -495,23 +495,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1820 as c, lexicon as l
+SELECT c.w2 FROM p1820algo as c, lexicon as l
 where l.lemma like 'bring'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1820 as c, lexicon as l
+SELECT c.w3 FROM p1820algo as c, lexicon as l
 where l.lemma like 'bring'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1820 as c, lexicon as l
+SELECT c.w4 FROM p1820algo as c, lexicon as l
 where l.lemma like 'bring'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1820 as c, lexicon as l
+SELECT c.w5 FROM p1820algo as c, lexicon as l
 where l.lemma like 'bring'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1820 as c, lexicon as l
+SELECT c.w6 FROM p1820algo as c, lexicon as l
 where l.lemma like 'bring'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -521,23 +521,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1830 as c, lexicon as l
+SELECT c.w2 FROM p1830algo as c, lexicon as l
 where l.lemma like 'bring'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1830 as c, lexicon as l
+SELECT c.w3 FROM p1830algo as c, lexicon as l
 where l.lemma like 'bring'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1830 as c, lexicon as l
+SELECT c.w4 FROM p1830algo as c, lexicon as l
 where l.lemma like 'bring'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1830 as c, lexicon as l
+SELECT c.w5 FROM p1830algo as c, lexicon as l
 where l.lemma like 'bring'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1830 as c, lexicon as l
+SELECT c.w6 FROM p1830algo as c, lexicon as l
 where l.lemma like 'bring'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -547,23 +547,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1840 as c, lexicon as l
+SELECT c.w2 FROM p1840algo as c, lexicon as l
 where l.lemma like 'bring'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1840 as c, lexicon as l
+SELECT c.w3 FROM p1840algo as c, lexicon as l
 where l.lemma like 'bring'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1840 as c, lexicon as l
+SELECT c.w4 FROM p1840algo as c, lexicon as l
 where l.lemma like 'bring'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1840 as c, lexicon as l
+SELECT c.w5 FROM p1840algo as c, lexicon as l
 where l.lemma like 'bring'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1840 as c, lexicon as l
+SELECT c.w6 FROM p1840algo as c, lexicon as l
 where l.lemma like 'bring'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -573,23 +573,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1850 as c, lexicon as l
+SELECT c.w2 FROM p1850algo as c, lexicon as l
 where l.lemma like 'bring'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1850 as c, lexicon as l
+SELECT c.w3 FROM p1850algo as c, lexicon as l
 where l.lemma like 'bring'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1850 as c, lexicon as l
+SELECT c.w4 FROM p1850algo as c, lexicon as l
 where l.lemma like 'bring'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1850 as c, lexicon as l
+SELECT c.w5 FROM p1850algo as c, lexicon as l
 where l.lemma like 'bring'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1850 as c, lexicon as l
+SELECT c.w6 FROM p1850algo as c, lexicon as l
 where l.lemma like 'bring'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -599,23 +599,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1860 as c, lexicon as l
+SELECT c.w2 FROM p1860algo as c, lexicon as l
 where l.lemma like 'bring'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1860 as c, lexicon as l
+SELECT c.w3 FROM p1860algo as c, lexicon as l
 where l.lemma like 'bring'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1860 as c, lexicon as l
+SELECT c.w4 FROM p1860algo as c, lexicon as l
 where l.lemma like 'bring'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1860 as c, lexicon as l
+SELECT c.w5 FROM p1860algo as c, lexicon as l
 where l.lemma like 'bring'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1860 as c, lexicon as l
+SELECT c.w6 FROM p1860algo as c, lexicon as l
 where l.lemma like 'bring'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -625,23 +625,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1870 as c, lexicon as l
+SELECT c.w2 FROM p1870algo as c, lexicon as l
 where l.lemma like 'bring'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1870 as c, lexicon as l
+SELECT c.w3 FROM p1870algo as c, lexicon as l
 where l.lemma like 'bring'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1870 as c, lexicon as l
+SELECT c.w4 FROM p1870algo as c, lexicon as l
 where l.lemma like 'bring'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1870 as c, lexicon as l
+SELECT c.w5 FROM p1870algo as c, lexicon as l
 where l.lemma like 'bring'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1870 as c, lexicon as l
+SELECT c.w6 FROM p1870algo as c, lexicon as l
 where l.lemma like 'bring'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -651,23 +651,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1880 as c, lexicon as l
+SELECT c.w2 FROM p1880algo as c, lexicon as l
 where l.lemma like 'bring'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1880 as c, lexicon as l
+SELECT c.w3 FROM p1880algo as c, lexicon as l
 where l.lemma like 'bring'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1880 as c, lexicon as l
+SELECT c.w4 FROM p1880algo as c, lexicon as l
 where l.lemma like 'bring'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1880 as c, lexicon as l
+SELECT c.w5 FROM p1880algo as c, lexicon as l
 where l.lemma like 'bring'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1880 as c, lexicon as l
+SELECT c.w6 FROM p1880algo as c, lexicon as l
 where l.lemma like 'bring'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -677,23 +677,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1890 as c, lexicon as l
+SELECT c.w2 FROM p1890algo as c, lexicon as l
 where l.lemma like 'bring'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1890 as c, lexicon as l
+SELECT c.w3 FROM p1890algo as c, lexicon as l
 where l.lemma like 'bring'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1890 as c, lexicon as l
+SELECT c.w4 FROM p1890algo as c, lexicon as l
 where l.lemma like 'bring'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1890 as c, lexicon as l
+SELECT c.w5 FROM p1890algo as c, lexicon as l
 where l.lemma like 'bring'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1890 as c, lexicon as l
+SELECT c.w6 FROM p1890algo as c, lexicon as l
 where l.lemma like 'bring'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -703,23 +703,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1900 as c, lexicon as l
+SELECT c.w2 FROM p1900algo as c, lexicon as l
 where l.lemma like 'bring'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1900 as c, lexicon as l
+SELECT c.w3 FROM p1900algo as c, lexicon as l
 where l.lemma like 'bring'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1900 as c, lexicon as l
+SELECT c.w4 FROM p1900algo as c, lexicon as l
 where l.lemma like 'bring'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1900 as c, lexicon as l
+SELECT c.w5 FROM p1900algo as c, lexicon as l
 where l.lemma like 'bring'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1900 as c, lexicon as l
+SELECT c.w6 FROM p1900algo as c, lexicon as l
 where l.lemma like 'bring'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -729,23 +729,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1910 as c, lexicon as l
+SELECT c.w2 FROM p1910algo as c, lexicon as l
 where l.lemma like 'bring'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1910 as c, lexicon as l
+SELECT c.w3 FROM p1910algo as c, lexicon as l
 where l.lemma like 'bring'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1910 as c, lexicon as l
+SELECT c.w4 FROM p1910algo as c, lexicon as l
 where l.lemma like 'bring'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1910 as c, lexicon as l
+SELECT c.w5 FROM p1910algo as c, lexicon as l
 where l.lemma like 'bring'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1910 as c, lexicon as l
+SELECT c.w6 FROM p1910algo as c, lexicon as l
 where l.lemma like 'bring'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -755,23 +755,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1920 as c, lexicon as l
+SELECT c.w2 FROM p1920algo as c, lexicon as l
 where l.lemma like 'bring'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1920 as c, lexicon as l
+SELECT c.w3 FROM p1920algo as c, lexicon as l
 where l.lemma like 'bring'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1920 as c, lexicon as l
+SELECT c.w4 FROM p1920algo as c, lexicon as l
 where l.lemma like 'bring'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1920 as c, lexicon as l
+SELECT c.w5 FROM p1920algo as c, lexicon as l
 where l.lemma like 'bring'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1920 as c, lexicon as l
+SELECT c.w6 FROM p1920algo as c, lexicon as l
 where l.lemma like 'bring'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -781,23 +781,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1930 as c, lexicon as l
+SELECT c.w2 FROM p1930algo as c, lexicon as l
 where l.lemma like 'bring'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1930 as c, lexicon as l
+SELECT c.w3 FROM p1930algo as c, lexicon as l
 where l.lemma like 'bring'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1930 as c, lexicon as l
+SELECT c.w4 FROM p1930algo as c, lexicon as l
 where l.lemma like 'bring'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1930 as c, lexicon as l
+SELECT c.w5 FROM p1930algo as c, lexicon as l
 where l.lemma like 'bring'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1930 as c, lexicon as l
+SELECT c.w6 FROM p1930algo as c, lexicon as l
 where l.lemma like 'bring'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -807,23 +807,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1940 as c, lexicon as l
+SELECT c.w2 FROM p1940algo as c, lexicon as l
 where l.lemma like 'bring'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1940 as c, lexicon as l
+SELECT c.w3 FROM p1940algo as c, lexicon as l
 where l.lemma like 'bring'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1940 as c, lexicon as l
+SELECT c.w4 FROM p1940algo as c, lexicon as l
 where l.lemma like 'bring'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1940 as c, lexicon as l
+SELECT c.w5 FROM p1940algo as c, lexicon as l
 where l.lemma like 'bring'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1940 as c, lexicon as l
+SELECT c.w6 FROM p1940algo as c, lexicon as l
 where l.lemma like 'bring'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -833,23 +833,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1950 as c, lexicon as l
+SELECT c.w2 FROM p1950algo as c, lexicon as l
 where l.lemma like 'bring'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1950 as c, lexicon as l
+SELECT c.w3 FROM p1950algo as c, lexicon as l
 where l.lemma like 'bring'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1950 as c, lexicon as l
+SELECT c.w4 FROM p1950algo as c, lexicon as l
 where l.lemma like 'bring'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1950 as c, lexicon as l
+SELECT c.w5 FROM p1950algo as c, lexicon as l
 where l.lemma like 'bring'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1950 as c, lexicon as l
+SELECT c.w6 FROM p1950algo as c, lexicon as l
 where l.lemma like 'bring'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -859,23 +859,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1960 as c, lexicon as l
+SELECT c.w2 FROM p1960algo as c, lexicon as l
 where l.lemma like 'bring'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1960 as c, lexicon as l
+SELECT c.w3 FROM p1960algo as c, lexicon as l
 where l.lemma like 'bring'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1960 as c, lexicon as l
+SELECT c.w4 FROM p1960algo as c, lexicon as l
 where l.lemma like 'bring'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1960 as c, lexicon as l
+SELECT c.w5 FROM p1960algo as c, lexicon as l
 where l.lemma like 'bring'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1960 as c, lexicon as l
+SELECT c.w6 FROM p1960algo as c, lexicon as l
 where l.lemma like 'bring'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -885,23 +885,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1970 as c, lexicon as l
+SELECT c.w2 FROM p1970algo as c, lexicon as l
 where l.lemma like 'bring'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1970 as c, lexicon as l
+SELECT c.w3 FROM p1970algo as c, lexicon as l
 where l.lemma like 'bring'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1970 as c, lexicon as l
+SELECT c.w4 FROM p1970algo as c, lexicon as l
 where l.lemma like 'bring'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1970 as c, lexicon as l
+SELECT c.w5 FROM p1970algo as c, lexicon as l
 where l.lemma like 'bring'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1970 as c, lexicon as l
+SELECT c.w6 FROM p1970algo as c, lexicon as l
 where l.lemma like 'bring'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -911,23 +911,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1980 as c, lexicon as l
+SELECT c.w2 FROM p1980algo as c, lexicon as l
 where l.lemma like 'bring'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1980 as c, lexicon as l
+SELECT c.w3 FROM p1980algo as c, lexicon as l
 where l.lemma like 'bring'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1980 as c, lexicon as l
+SELECT c.w4 FROM p1980algo as c, lexicon as l
 where l.lemma like 'bring'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1980 as c, lexicon as l
+SELECT c.w5 FROM p1980algo as c, lexicon as l
 where l.lemma like 'bring'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1980 as c, lexicon as l
+SELECT c.w6 FROM p1980algo as c, lexicon as l
 where l.lemma like 'bring'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -937,23 +937,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1990 as c, lexicon as l
+SELECT c.w2 FROM p1990algo as c, lexicon as l
 where l.lemma like 'bring'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1990 as c, lexicon as l
+SELECT c.w3 FROM p1990algo as c, lexicon as l
 where l.lemma like 'bring'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1990 as c, lexicon as l
+SELECT c.w4 FROM p1990algo as c, lexicon as l
 where l.lemma like 'bring'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1990 as c, lexicon as l
+SELECT c.w5 FROM p1990algo as c, lexicon as l
 where l.lemma like 'bring'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1990 as c, lexicon as l
+SELECT c.w6 FROM p1990algo as c, lexicon as l
 where l.lemma like 'bring'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -963,23 +963,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p2000 as c, lexicon as l
+SELECT c.w2 FROM p2000algo as c, lexicon as l
 where l.lemma like 'bring'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p2000 as c, lexicon as l
+SELECT c.w3 FROM p2000algo as c, lexicon as l
 where l.lemma like 'bring'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p2000 as c, lexicon as l
+SELECT c.w4 FROM p2000algo as c, lexicon as l
 where l.lemma like 'bring'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p2000 as c, lexicon as l
+SELECT c.w5 FROM p2000algo as c, lexicon as l
 where l.lemma like 'bring'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p2000 as c, lexicon as l
+SELECT c.w6 FROM p2000algo as c, lexicon as l
 where l.lemma like 'bring'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -989,23 +989,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1820 as c, lexicon as l
+SELECT c.w2 FROM p1820algo as c, lexicon as l
 where l.lemma like 'create'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1820 as c, lexicon as l
+SELECT c.w3 FROM p1820algo as c, lexicon as l
 where l.lemma like 'create'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1820 as c, lexicon as l
+SELECT c.w4 FROM p1820algo as c, lexicon as l
 where l.lemma like 'create'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1820 as c, lexicon as l
+SELECT c.w5 FROM p1820algo as c, lexicon as l
 where l.lemma like 'create'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1820 as c, lexicon as l
+SELECT c.w6 FROM p1820algo as c, lexicon as l
 where l.lemma like 'create'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -1015,23 +1015,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1830 as c, lexicon as l
+SELECT c.w2 FROM p1830algo as c, lexicon as l
 where l.lemma like 'create'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1830 as c, lexicon as l
+SELECT c.w3 FROM p1830algo as c, lexicon as l
 where l.lemma like 'create'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1830 as c, lexicon as l
+SELECT c.w4 FROM p1830algo as c, lexicon as l
 where l.lemma like 'create'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1830 as c, lexicon as l
+SELECT c.w5 FROM p1830algo as c, lexicon as l
 where l.lemma like 'create'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1830 as c, lexicon as l
+SELECT c.w6 FROM p1830algo as c, lexicon as l
 where l.lemma like 'create'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -1041,23 +1041,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1840 as c, lexicon as l
+SELECT c.w2 FROM p1840algo as c, lexicon as l
 where l.lemma like 'create'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1840 as c, lexicon as l
+SELECT c.w3 FROM p1840algo as c, lexicon as l
 where l.lemma like 'create'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1840 as c, lexicon as l
+SELECT c.w4 FROM p1840algo as c, lexicon as l
 where l.lemma like 'create'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1840 as c, lexicon as l
+SELECT c.w5 FROM p1840algo as c, lexicon as l
 where l.lemma like 'create'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1840 as c, lexicon as l
+SELECT c.w6 FROM p1840algo as c, lexicon as l
 where l.lemma like 'create'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -1067,23 +1067,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1850 as c, lexicon as l
+SELECT c.w2 FROM p1850algo as c, lexicon as l
 where l.lemma like 'create'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1850 as c, lexicon as l
+SELECT c.w3 FROM p1850algo as c, lexicon as l
 where l.lemma like 'create'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1850 as c, lexicon as l
+SELECT c.w4 FROM p1850algo as c, lexicon as l
 where l.lemma like 'create'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1850 as c, lexicon as l
+SELECT c.w5 FROM p1850algo as c, lexicon as l
 where l.lemma like 'create'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1850 as c, lexicon as l
+SELECT c.w6 FROM p1850algo as c, lexicon as l
 where l.lemma like 'create'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -1093,23 +1093,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1860 as c, lexicon as l
+SELECT c.w2 FROM p1860algo as c, lexicon as l
 where l.lemma like 'create'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1860 as c, lexicon as l
+SELECT c.w3 FROM p1860algo as c, lexicon as l
 where l.lemma like 'create'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1860 as c, lexicon as l
+SELECT c.w4 FROM p1860algo as c, lexicon as l
 where l.lemma like 'create'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1860 as c, lexicon as l
+SELECT c.w5 FROM p1860algo as c, lexicon as l
 where l.lemma like 'create'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1860 as c, lexicon as l
+SELECT c.w6 FROM p1860algo as c, lexicon as l
 where l.lemma like 'create'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -1119,23 +1119,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1870 as c, lexicon as l
+SELECT c.w2 FROM p1870algo as c, lexicon as l
 where l.lemma like 'create'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1870 as c, lexicon as l
+SELECT c.w3 FROM p1870algo as c, lexicon as l
 where l.lemma like 'create'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1870 as c, lexicon as l
+SELECT c.w4 FROM p1870algo as c, lexicon as l
 where l.lemma like 'create'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1870 as c, lexicon as l
+SELECT c.w5 FROM p1870algo as c, lexicon as l
 where l.lemma like 'create'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1870 as c, lexicon as l
+SELECT c.w6 FROM p1870algo as c, lexicon as l
 where l.lemma like 'create'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -1145,23 +1145,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1880 as c, lexicon as l
+SELECT c.w2 FROM p1880algo as c, lexicon as l
 where l.lemma like 'create'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1880 as c, lexicon as l
+SELECT c.w3 FROM p1880algo as c, lexicon as l
 where l.lemma like 'create'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1880 as c, lexicon as l
+SELECT c.w4 FROM p1880algo as c, lexicon as l
 where l.lemma like 'create'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1880 as c, lexicon as l
+SELECT c.w5 FROM p1880algo as c, lexicon as l
 where l.lemma like 'create'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1880 as c, lexicon as l
+SELECT c.w6 FROM p1880algo as c, lexicon as l
 where l.lemma like 'create'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -1171,23 +1171,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1890 as c, lexicon as l
+SELECT c.w2 FROM p1890algo as c, lexicon as l
 where l.lemma like 'create'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1890 as c, lexicon as l
+SELECT c.w3 FROM p1890algo as c, lexicon as l
 where l.lemma like 'create'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1890 as c, lexicon as l
+SELECT c.w4 FROM p1890algo as c, lexicon as l
 where l.lemma like 'create'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1890 as c, lexicon as l
+SELECT c.w5 FROM p1890algo as c, lexicon as l
 where l.lemma like 'create'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1890 as c, lexicon as l
+SELECT c.w6 FROM p1890algo as c, lexicon as l
 where l.lemma like 'create'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -1197,23 +1197,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1900 as c, lexicon as l
+SELECT c.w2 FROM p1900algo as c, lexicon as l
 where l.lemma like 'create'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1900 as c, lexicon as l
+SELECT c.w3 FROM p1900algo as c, lexicon as l
 where l.lemma like 'create'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1900 as c, lexicon as l
+SELECT c.w4 FROM p1900algo as c, lexicon as l
 where l.lemma like 'create'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1900 as c, lexicon as l
+SELECT c.w5 FROM p1900algo as c, lexicon as l
 where l.lemma like 'create'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1900 as c, lexicon as l
+SELECT c.w6 FROM p1900algo as c, lexicon as l
 where l.lemma like 'create'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -1223,23 +1223,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1910 as c, lexicon as l
+SELECT c.w2 FROM p1910algo as c, lexicon as l
 where l.lemma like 'create'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1910 as c, lexicon as l
+SELECT c.w3 FROM p1910algo as c, lexicon as l
 where l.lemma like 'create'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1910 as c, lexicon as l
+SELECT c.w4 FROM p1910algo as c, lexicon as l
 where l.lemma like 'create'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1910 as c, lexicon as l
+SELECT c.w5 FROM p1910algo as c, lexicon as l
 where l.lemma like 'create'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1910 as c, lexicon as l
+SELECT c.w6 FROM p1910algo as c, lexicon as l
 where l.lemma like 'create'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -1249,23 +1249,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1920 as c, lexicon as l
+SELECT c.w2 FROM p1920algo as c, lexicon as l
 where l.lemma like 'create'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1920 as c, lexicon as l
+SELECT c.w3 FROM p1920algo as c, lexicon as l
 where l.lemma like 'create'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1920 as c, lexicon as l
+SELECT c.w4 FROM p1920algo as c, lexicon as l
 where l.lemma like 'create'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1920 as c, lexicon as l
+SELECT c.w5 FROM p1920algo as c, lexicon as l
 where l.lemma like 'create'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1920 as c, lexicon as l
+SELECT c.w6 FROM p1920algo as c, lexicon as l
 where l.lemma like 'create'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -1275,23 +1275,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1930 as c, lexicon as l
+SELECT c.w2 FROM p1930algo as c, lexicon as l
 where l.lemma like 'create'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1930 as c, lexicon as l
+SELECT c.w3 FROM p1930algo as c, lexicon as l
 where l.lemma like 'create'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1930 as c, lexicon as l
+SELECT c.w4 FROM p1930algo as c, lexicon as l
 where l.lemma like 'create'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1930 as c, lexicon as l
+SELECT c.w5 FROM p1930algo as c, lexicon as l
 where l.lemma like 'create'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1930 as c, lexicon as l
+SELECT c.w6 FROM p1930algo as c, lexicon as l
 where l.lemma like 'create'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -1301,23 +1301,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1940 as c, lexicon as l
+SELECT c.w2 FROM p1940algo as c, lexicon as l
 where l.lemma like 'create'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1940 as c, lexicon as l
+SELECT c.w3 FROM p1940algo as c, lexicon as l
 where l.lemma like 'create'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1940 as c, lexicon as l
+SELECT c.w4 FROM p1940algo as c, lexicon as l
 where l.lemma like 'create'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1940 as c, lexicon as l
+SELECT c.w5 FROM p1940algo as c, lexicon as l
 where l.lemma like 'create'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1940 as c, lexicon as l
+SELECT c.w6 FROM p1940algo as c, lexicon as l
 where l.lemma like 'create'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -1327,23 +1327,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1950 as c, lexicon as l
+SELECT c.w2 FROM p1950algo as c, lexicon as l
 where l.lemma like 'create'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1950 as c, lexicon as l
+SELECT c.w3 FROM p1950algo as c, lexicon as l
 where l.lemma like 'create'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1950 as c, lexicon as l
+SELECT c.w4 FROM p1950algo as c, lexicon as l
 where l.lemma like 'create'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1950 as c, lexicon as l
+SELECT c.w5 FROM p1950algo as c, lexicon as l
 where l.lemma like 'create'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1950 as c, lexicon as l
+SELECT c.w6 FROM p1950algo as c, lexicon as l
 where l.lemma like 'create'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -1353,23 +1353,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1960 as c, lexicon as l
+SELECT c.w2 FROM p1960algo as c, lexicon as l
 where l.lemma like 'create'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1960 as c, lexicon as l
+SELECT c.w3 FROM p1960algo as c, lexicon as l
 where l.lemma like 'create'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1960 as c, lexicon as l
+SELECT c.w4 FROM p1960algo as c, lexicon as l
 where l.lemma like 'create'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1960 as c, lexicon as l
+SELECT c.w5 FROM p1960algo as c, lexicon as l
 where l.lemma like 'create'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1960 as c, lexicon as l
+SELECT c.w6 FROM p1960algo as c, lexicon as l
 where l.lemma like 'create'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -1379,23 +1379,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1970 as c, lexicon as l
+SELECT c.w2 FROM p1970algo as c, lexicon as l
 where l.lemma like 'create'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1970 as c, lexicon as l
+SELECT c.w3 FROM p1970algo as c, lexicon as l
 where l.lemma like 'create'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1970 as c, lexicon as l
+SELECT c.w4 FROM p1970algo as c, lexicon as l
 where l.lemma like 'create'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1970 as c, lexicon as l
+SELECT c.w5 FROM p1970algo as c, lexicon as l
 where l.lemma like 'create'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1970 as c, lexicon as l
+SELECT c.w6 FROM p1970algo as c, lexicon as l
 where l.lemma like 'create'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -1405,23 +1405,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1980 as c, lexicon as l
+SELECT c.w2 FROM p1980algo as c, lexicon as l
 where l.lemma like 'create'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1980 as c, lexicon as l
+SELECT c.w3 FROM p1980algo as c, lexicon as l
 where l.lemma like 'create'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1980 as c, lexicon as l
+SELECT c.w4 FROM p1980algo as c, lexicon as l
 where l.lemma like 'create'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1980 as c, lexicon as l
+SELECT c.w5 FROM p1980algo as c, lexicon as l
 where l.lemma like 'create'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1980 as c, lexicon as l
+SELECT c.w6 FROM p1980algo as c, lexicon as l
 where l.lemma like 'create'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -1431,23 +1431,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1990 as c, lexicon as l
+SELECT c.w2 FROM p1990algo as c, lexicon as l
 where l.lemma like 'create'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1990 as c, lexicon as l
+SELECT c.w3 FROM p1990algo as c, lexicon as l
 where l.lemma like 'create'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1990 as c, lexicon as l
+SELECT c.w4 FROM p1990algo as c, lexicon as l
 where l.lemma like 'create'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1990 as c, lexicon as l
+SELECT c.w5 FROM p1990algo as c, lexicon as l
 where l.lemma like 'create'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1990 as c, lexicon as l
+SELECT c.w6 FROM p1990algo as c, lexicon as l
 where l.lemma like 'create'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -1457,23 +1457,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p2000 as c, lexicon as l
+SELECT c.w2 FROM p2000algo as c, lexicon as l
 where l.lemma like 'create'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p2000 as c, lexicon as l
+SELECT c.w3 FROM p2000algo as c, lexicon as l
 where l.lemma like 'create'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p2000 as c, lexicon as l
+SELECT c.w4 FROM p2000algo as c, lexicon as l
 where l.lemma like 'create'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p2000 as c, lexicon as l
+SELECT c.w5 FROM p2000algo as c, lexicon as l
 where l.lemma like 'create'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p2000 as c, lexicon as l
+SELECT c.w6 FROM p2000algo as c, lexicon as l
 where l.lemma like 'create'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -1483,23 +1483,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1820 as c, lexicon as l
+SELECT c.w2 FROM p1820algo as c, lexicon as l
 where l.lemma like 'give'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1820 as c, lexicon as l
+SELECT c.w3 FROM p1820algo as c, lexicon as l
 where l.lemma like 'give'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1820 as c, lexicon as l
+SELECT c.w4 FROM p1820algo as c, lexicon as l
 where l.lemma like 'give'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1820 as c, lexicon as l
+SELECT c.w5 FROM p1820algo as c, lexicon as l
 where l.lemma like 'give'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1820 as c, lexicon as l
+SELECT c.w6 FROM p1820algo as c, lexicon as l
 where l.lemma like 'give'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -1509,23 +1509,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1830 as c, lexicon as l
+SELECT c.w2 FROM p1830algo as c, lexicon as l
 where l.lemma like 'give'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1830 as c, lexicon as l
+SELECT c.w3 FROM p1830algo as c, lexicon as l
 where l.lemma like 'give'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1830 as c, lexicon as l
+SELECT c.w4 FROM p1830algo as c, lexicon as l
 where l.lemma like 'give'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1830 as c, lexicon as l
+SELECT c.w5 FROM p1830algo as c, lexicon as l
 where l.lemma like 'give'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1830 as c, lexicon as l
+SELECT c.w6 FROM p1830algo as c, lexicon as l
 where l.lemma like 'give'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -1535,23 +1535,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1840 as c, lexicon as l
+SELECT c.w2 FROM p1840algo as c, lexicon as l
 where l.lemma like 'give'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1840 as c, lexicon as l
+SELECT c.w3 FROM p1840algo as c, lexicon as l
 where l.lemma like 'give'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1840 as c, lexicon as l
+SELECT c.w4 FROM p1840algo as c, lexicon as l
 where l.lemma like 'give'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1840 as c, lexicon as l
+SELECT c.w5 FROM p1840algo as c, lexicon as l
 where l.lemma like 'give'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1840 as c, lexicon as l
+SELECT c.w6 FROM p1840algo as c, lexicon as l
 where l.lemma like 'give'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -1561,23 +1561,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1850 as c, lexicon as l
+SELECT c.w2 FROM p1850algo as c, lexicon as l
 where l.lemma like 'give'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1850 as c, lexicon as l
+SELECT c.w3 FROM p1850algo as c, lexicon as l
 where l.lemma like 'give'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1850 as c, lexicon as l
+SELECT c.w4 FROM p1850algo as c, lexicon as l
 where l.lemma like 'give'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1850 as c, lexicon as l
+SELECT c.w5 FROM p1850algo as c, lexicon as l
 where l.lemma like 'give'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1850 as c, lexicon as l
+SELECT c.w6 FROM p1850algo as c, lexicon as l
 where l.lemma like 'give'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -1587,23 +1587,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1860 as c, lexicon as l
+SELECT c.w2 FROM p1860algo as c, lexicon as l
 where l.lemma like 'give'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1860 as c, lexicon as l
+SELECT c.w3 FROM p1860algo as c, lexicon as l
 where l.lemma like 'give'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1860 as c, lexicon as l
+SELECT c.w4 FROM p1860algo as c, lexicon as l
 where l.lemma like 'give'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1860 as c, lexicon as l
+SELECT c.w5 FROM p1860algo as c, lexicon as l
 where l.lemma like 'give'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1860 as c, lexicon as l
+SELECT c.w6 FROM p1860algo as c, lexicon as l
 where l.lemma like 'give'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -1613,23 +1613,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1870 as c, lexicon as l
+SELECT c.w2 FROM p1870algo as c, lexicon as l
 where l.lemma like 'give'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1870 as c, lexicon as l
+SELECT c.w3 FROM p1870algo as c, lexicon as l
 where l.lemma like 'give'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1870 as c, lexicon as l
+SELECT c.w4 FROM p1870algo as c, lexicon as l
 where l.lemma like 'give'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1870 as c, lexicon as l
+SELECT c.w5 FROM p1870algo as c, lexicon as l
 where l.lemma like 'give'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1870 as c, lexicon as l
+SELECT c.w6 FROM p1870algo as c, lexicon as l
 where l.lemma like 'give'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -1639,23 +1639,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1880 as c, lexicon as l
+SELECT c.w2 FROM p1880algo as c, lexicon as l
 where l.lemma like 'give'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1880 as c, lexicon as l
+SELECT c.w3 FROM p1880algo as c, lexicon as l
 where l.lemma like 'give'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1880 as c, lexicon as l
+SELECT c.w4 FROM p1880algo as c, lexicon as l
 where l.lemma like 'give'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1880 as c, lexicon as l
+SELECT c.w5 FROM p1880algo as c, lexicon as l
 where l.lemma like 'give'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1880 as c, lexicon as l
+SELECT c.w6 FROM p1880algo as c, lexicon as l
 where l.lemma like 'give'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -1665,23 +1665,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1890 as c, lexicon as l
+SELECT c.w2 FROM p1890algo as c, lexicon as l
 where l.lemma like 'give'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1890 as c, lexicon as l
+SELECT c.w3 FROM p1890algo as c, lexicon as l
 where l.lemma like 'give'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1890 as c, lexicon as l
+SELECT c.w4 FROM p1890algo as c, lexicon as l
 where l.lemma like 'give'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1890 as c, lexicon as l
+SELECT c.w5 FROM p1890algo as c, lexicon as l
 where l.lemma like 'give'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1890 as c, lexicon as l
+SELECT c.w6 FROM p1890algo as c, lexicon as l
 where l.lemma like 'give'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -1691,23 +1691,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1900 as c, lexicon as l
+SELECT c.w2 FROM p1900algo as c, lexicon as l
 where l.lemma like 'give'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1900 as c, lexicon as l
+SELECT c.w3 FROM p1900algo as c, lexicon as l
 where l.lemma like 'give'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1900 as c, lexicon as l
+SELECT c.w4 FROM p1900algo as c, lexicon as l
 where l.lemma like 'give'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1900 as c, lexicon as l
+SELECT c.w5 FROM p1900algo as c, lexicon as l
 where l.lemma like 'give'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1900 as c, lexicon as l
+SELECT c.w6 FROM p1900algo as c, lexicon as l
 where l.lemma like 'give'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -1717,23 +1717,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1910 as c, lexicon as l
+SELECT c.w2 FROM p1910algo as c, lexicon as l
 where l.lemma like 'give'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1910 as c, lexicon as l
+SELECT c.w3 FROM p1910algo as c, lexicon as l
 where l.lemma like 'give'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1910 as c, lexicon as l
+SELECT c.w4 FROM p1910algo as c, lexicon as l
 where l.lemma like 'give'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1910 as c, lexicon as l
+SELECT c.w5 FROM p1910algo as c, lexicon as l
 where l.lemma like 'give'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1910 as c, lexicon as l
+SELECT c.w6 FROM p1910algo as c, lexicon as l
 where l.lemma like 'give'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -1743,23 +1743,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1920 as c, lexicon as l
+SELECT c.w2 FROM p1920algo as c, lexicon as l
 where l.lemma like 'give'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1920 as c, lexicon as l
+SELECT c.w3 FROM p1920algo as c, lexicon as l
 where l.lemma like 'give'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1920 as c, lexicon as l
+SELECT c.w4 FROM p1920algo as c, lexicon as l
 where l.lemma like 'give'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1920 as c, lexicon as l
+SELECT c.w5 FROM p1920algo as c, lexicon as l
 where l.lemma like 'give'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1920 as c, lexicon as l
+SELECT c.w6 FROM p1920algo as c, lexicon as l
 where l.lemma like 'give'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -1769,23 +1769,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1930 as c, lexicon as l
+SELECT c.w2 FROM p1930algo as c, lexicon as l
 where l.lemma like 'give'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1930 as c, lexicon as l
+SELECT c.w3 FROM p1930algo as c, lexicon as l
 where l.lemma like 'give'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1930 as c, lexicon as l
+SELECT c.w4 FROM p1930algo as c, lexicon as l
 where l.lemma like 'give'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1930 as c, lexicon as l
+SELECT c.w5 FROM p1930algo as c, lexicon as l
 where l.lemma like 'give'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1930 as c, lexicon as l
+SELECT c.w6 FROM p1930algo as c, lexicon as l
 where l.lemma like 'give'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -1795,23 +1795,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1940 as c, lexicon as l
+SELECT c.w2 FROM p1940algo as c, lexicon as l
 where l.lemma like 'give'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1940 as c, lexicon as l
+SELECT c.w3 FROM p1940algo as c, lexicon as l
 where l.lemma like 'give'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1940 as c, lexicon as l
+SELECT c.w4 FROM p1940algo as c, lexicon as l
 where l.lemma like 'give'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1940 as c, lexicon as l
+SELECT c.w5 FROM p1940algo as c, lexicon as l
 where l.lemma like 'give'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1940 as c, lexicon as l
+SELECT c.w6 FROM p1940algo as c, lexicon as l
 where l.lemma like 'give'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -1821,23 +1821,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1950 as c, lexicon as l
+SELECT c.w2 FROM p1950algo as c, lexicon as l
 where l.lemma like 'give'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1950 as c, lexicon as l
+SELECT c.w3 FROM p1950algo as c, lexicon as l
 where l.lemma like 'give'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1950 as c, lexicon as l
+SELECT c.w4 FROM p1950algo as c, lexicon as l
 where l.lemma like 'give'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1950 as c, lexicon as l
+SELECT c.w5 FROM p1950algo as c, lexicon as l
 where l.lemma like 'give'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1950 as c, lexicon as l
+SELECT c.w6 FROM p1950algo as c, lexicon as l
 where l.lemma like 'give'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -1847,23 +1847,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1960 as c, lexicon as l
+SELECT c.w2 FROM p1960algo as c, lexicon as l
 where l.lemma like 'give'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1960 as c, lexicon as l
+SELECT c.w3 FROM p1960algo as c, lexicon as l
 where l.lemma like 'give'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1960 as c, lexicon as l
+SELECT c.w4 FROM p1960algo as c, lexicon as l
 where l.lemma like 'give'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1960 as c, lexicon as l
+SELECT c.w5 FROM p1960algo as c, lexicon as l
 where l.lemma like 'give'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1960 as c, lexicon as l
+SELECT c.w6 FROM p1960algo as c, lexicon as l
 where l.lemma like 'give'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -1873,23 +1873,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1970 as c, lexicon as l
+SELECT c.w2 FROM p1970algo as c, lexicon as l
 where l.lemma like 'give'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1970 as c, lexicon as l
+SELECT c.w3 FROM p1970algo as c, lexicon as l
 where l.lemma like 'give'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1970 as c, lexicon as l
+SELECT c.w4 FROM p1970algo as c, lexicon as l
 where l.lemma like 'give'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1970 as c, lexicon as l
+SELECT c.w5 FROM p1970algo as c, lexicon as l
 where l.lemma like 'give'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1970 as c, lexicon as l
+SELECT c.w6 FROM p1970algo as c, lexicon as l
 where l.lemma like 'give'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -1899,23 +1899,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1980 as c, lexicon as l
+SELECT c.w2 FROM p1980algo as c, lexicon as l
 where l.lemma like 'give'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1980 as c, lexicon as l
+SELECT c.w3 FROM p1980algo as c, lexicon as l
 where l.lemma like 'give'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1980 as c, lexicon as l
+SELECT c.w4 FROM p1980algo as c, lexicon as l
 where l.lemma like 'give'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1980 as c, lexicon as l
+SELECT c.w5 FROM p1980algo as c, lexicon as l
 where l.lemma like 'give'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1980 as c, lexicon as l
+SELECT c.w6 FROM p1980algo as c, lexicon as l
 where l.lemma like 'give'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -1925,23 +1925,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1990 as c, lexicon as l
+SELECT c.w2 FROM p1990algo as c, lexicon as l
 where l.lemma like 'give'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1990 as c, lexicon as l
+SELECT c.w3 FROM p1990algo as c, lexicon as l
 where l.lemma like 'give'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1990 as c, lexicon as l
+SELECT c.w4 FROM p1990algo as c, lexicon as l
 where l.lemma like 'give'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1990 as c, lexicon as l
+SELECT c.w5 FROM p1990algo as c, lexicon as l
 where l.lemma like 'give'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1990 as c, lexicon as l
+SELECT c.w6 FROM p1990algo as c, lexicon as l
 where l.lemma like 'give'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -1951,23 +1951,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p2000 as c, lexicon as l
+SELECT c.w2 FROM p2000algo as c, lexicon as l
 where l.lemma like 'give'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p2000 as c, lexicon as l
+SELECT c.w3 FROM p2000algo as c, lexicon as l
 where l.lemma like 'give'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p2000 as c, lexicon as l
+SELECT c.w4 FROM p2000algo as c, lexicon as l
 where l.lemma like 'give'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p2000 as c, lexicon as l
+SELECT c.w5 FROM p2000algo as c, lexicon as l
 where l.lemma like 'give'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p2000 as c, lexicon as l
+SELECT c.w6 FROM p2000algo as c, lexicon as l
 where l.lemma like 'give'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -1977,23 +1977,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1820 as c, lexicon as l
+SELECT c.w2 FROM p1820algo as c, lexicon as l
 where l.lemma like 'grant'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1820 as c, lexicon as l
+SELECT c.w3 FROM p1820algo as c, lexicon as l
 where l.lemma like 'grant'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1820 as c, lexicon as l
+SELECT c.w4 FROM p1820algo as c, lexicon as l
 where l.lemma like 'grant'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1820 as c, lexicon as l
+SELECT c.w5 FROM p1820algo as c, lexicon as l
 where l.lemma like 'grant'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1820 as c, lexicon as l
+SELECT c.w6 FROM p1820algo as c, lexicon as l
 where l.lemma like 'grant'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -2003,23 +2003,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1830 as c, lexicon as l
+SELECT c.w2 FROM p1830algo as c, lexicon as l
 where l.lemma like 'grant'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1830 as c, lexicon as l
+SELECT c.w3 FROM p1830algo as c, lexicon as l
 where l.lemma like 'grant'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1830 as c, lexicon as l
+SELECT c.w4 FROM p1830algo as c, lexicon as l
 where l.lemma like 'grant'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1830 as c, lexicon as l
+SELECT c.w5 FROM p1830algo as c, lexicon as l
 where l.lemma like 'grant'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1830 as c, lexicon as l
+SELECT c.w6 FROM p1830algo as c, lexicon as l
 where l.lemma like 'grant'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -2029,23 +2029,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1840 as c, lexicon as l
+SELECT c.w2 FROM p1840algo as c, lexicon as l
 where l.lemma like 'grant'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1840 as c, lexicon as l
+SELECT c.w3 FROM p1840algo as c, lexicon as l
 where l.lemma like 'grant'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1840 as c, lexicon as l
+SELECT c.w4 FROM p1840algo as c, lexicon as l
 where l.lemma like 'grant'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1840 as c, lexicon as l
+SELECT c.w5 FROM p1840algo as c, lexicon as l
 where l.lemma like 'grant'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1840 as c, lexicon as l
+SELECT c.w6 FROM p1840algo as c, lexicon as l
 where l.lemma like 'grant'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -2055,23 +2055,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1850 as c, lexicon as l
+SELECT c.w2 FROM p1850algo as c, lexicon as l
 where l.lemma like 'grant'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1850 as c, lexicon as l
+SELECT c.w3 FROM p1850algo as c, lexicon as l
 where l.lemma like 'grant'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1850 as c, lexicon as l
+SELECT c.w4 FROM p1850algo as c, lexicon as l
 where l.lemma like 'grant'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1850 as c, lexicon as l
+SELECT c.w5 FROM p1850algo as c, lexicon as l
 where l.lemma like 'grant'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1850 as c, lexicon as l
+SELECT c.w6 FROM p1850algo as c, lexicon as l
 where l.lemma like 'grant'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -2081,23 +2081,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1860 as c, lexicon as l
+SELECT c.w2 FROM p1860algo as c, lexicon as l
 where l.lemma like 'grant'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1860 as c, lexicon as l
+SELECT c.w3 FROM p1860algo as c, lexicon as l
 where l.lemma like 'grant'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1860 as c, lexicon as l
+SELECT c.w4 FROM p1860algo as c, lexicon as l
 where l.lemma like 'grant'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1860 as c, lexicon as l
+SELECT c.w5 FROM p1860algo as c, lexicon as l
 where l.lemma like 'grant'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1860 as c, lexicon as l
+SELECT c.w6 FROM p1860algo as c, lexicon as l
 where l.lemma like 'grant'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -2107,23 +2107,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1870 as c, lexicon as l
+SELECT c.w2 FROM p1870algo as c, lexicon as l
 where l.lemma like 'grant'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1870 as c, lexicon as l
+SELECT c.w3 FROM p1870algo as c, lexicon as l
 where l.lemma like 'grant'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1870 as c, lexicon as l
+SELECT c.w4 FROM p1870algo as c, lexicon as l
 where l.lemma like 'grant'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1870 as c, lexicon as l
+SELECT c.w5 FROM p1870algo as c, lexicon as l
 where l.lemma like 'grant'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1870 as c, lexicon as l
+SELECT c.w6 FROM p1870algo as c, lexicon as l
 where l.lemma like 'grant'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -2133,23 +2133,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1880 as c, lexicon as l
+SELECT c.w2 FROM p1880algo as c, lexicon as l
 where l.lemma like 'grant'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1880 as c, lexicon as l
+SELECT c.w3 FROM p1880algo as c, lexicon as l
 where l.lemma like 'grant'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1880 as c, lexicon as l
+SELECT c.w4 FROM p1880algo as c, lexicon as l
 where l.lemma like 'grant'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1880 as c, lexicon as l
+SELECT c.w5 FROM p1880algo as c, lexicon as l
 where l.lemma like 'grant'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1880 as c, lexicon as l
+SELECT c.w6 FROM p1880algo as c, lexicon as l
 where l.lemma like 'grant'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -2159,23 +2159,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1890 as c, lexicon as l
+SELECT c.w2 FROM p1890algo as c, lexicon as l
 where l.lemma like 'grant'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1890 as c, lexicon as l
+SELECT c.w3 FROM p1890algo as c, lexicon as l
 where l.lemma like 'grant'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1890 as c, lexicon as l
+SELECT c.w4 FROM p1890algo as c, lexicon as l
 where l.lemma like 'grant'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1890 as c, lexicon as l
+SELECT c.w5 FROM p1890algo as c, lexicon as l
 where l.lemma like 'grant'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1890 as c, lexicon as l
+SELECT c.w6 FROM p1890algo as c, lexicon as l
 where l.lemma like 'grant'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -2185,23 +2185,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1900 as c, lexicon as l
+SELECT c.w2 FROM p1900algo as c, lexicon as l
 where l.lemma like 'grant'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1900 as c, lexicon as l
+SELECT c.w3 FROM p1900algo as c, lexicon as l
 where l.lemma like 'grant'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1900 as c, lexicon as l
+SELECT c.w4 FROM p1900algo as c, lexicon as l
 where l.lemma like 'grant'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1900 as c, lexicon as l
+SELECT c.w5 FROM p1900algo as c, lexicon as l
 where l.lemma like 'grant'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1900 as c, lexicon as l
+SELECT c.w6 FROM p1900algo as c, lexicon as l
 where l.lemma like 'grant'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -2211,23 +2211,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1910 as c, lexicon as l
+SELECT c.w2 FROM p1910algo as c, lexicon as l
 where l.lemma like 'grant'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1910 as c, lexicon as l
+SELECT c.w3 FROM p1910algo as c, lexicon as l
 where l.lemma like 'grant'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1910 as c, lexicon as l
+SELECT c.w4 FROM p1910algo as c, lexicon as l
 where l.lemma like 'grant'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1910 as c, lexicon as l
+SELECT c.w5 FROM p1910algo as c, lexicon as l
 where l.lemma like 'grant'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1910 as c, lexicon as l
+SELECT c.w6 FROM p1910algo as c, lexicon as l
 where l.lemma like 'grant'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -2237,23 +2237,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1920 as c, lexicon as l
+SELECT c.w2 FROM p1920algo as c, lexicon as l
 where l.lemma like 'grant'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1920 as c, lexicon as l
+SELECT c.w3 FROM p1920algo as c, lexicon as l
 where l.lemma like 'grant'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1920 as c, lexicon as l
+SELECT c.w4 FROM p1920algo as c, lexicon as l
 where l.lemma like 'grant'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1920 as c, lexicon as l
+SELECT c.w5 FROM p1920algo as c, lexicon as l
 where l.lemma like 'grant'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1920 as c, lexicon as l
+SELECT c.w6 FROM p1920algo as c, lexicon as l
 where l.lemma like 'grant'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -2263,23 +2263,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1930 as c, lexicon as l
+SELECT c.w2 FROM p1930algo as c, lexicon as l
 where l.lemma like 'grant'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1930 as c, lexicon as l
+SELECT c.w3 FROM p1930algo as c, lexicon as l
 where l.lemma like 'grant'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1930 as c, lexicon as l
+SELECT c.w4 FROM p1930algo as c, lexicon as l
 where l.lemma like 'grant'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1930 as c, lexicon as l
+SELECT c.w5 FROM p1930algo as c, lexicon as l
 where l.lemma like 'grant'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1930 as c, lexicon as l
+SELECT c.w6 FROM p1930algo as c, lexicon as l
 where l.lemma like 'grant'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -2289,23 +2289,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1940 as c, lexicon as l
+SELECT c.w2 FROM p1940algo as c, lexicon as l
 where l.lemma like 'grant'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1940 as c, lexicon as l
+SELECT c.w3 FROM p1940algo as c, lexicon as l
 where l.lemma like 'grant'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1940 as c, lexicon as l
+SELECT c.w4 FROM p1940algo as c, lexicon as l
 where l.lemma like 'grant'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1940 as c, lexicon as l
+SELECT c.w5 FROM p1940algo as c, lexicon as l
 where l.lemma like 'grant'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1940 as c, lexicon as l
+SELECT c.w6 FROM p1940algo as c, lexicon as l
 where l.lemma like 'grant'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -2315,23 +2315,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1950 as c, lexicon as l
+SELECT c.w2 FROM p1950algo as c, lexicon as l
 where l.lemma like 'grant'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1950 as c, lexicon as l
+SELECT c.w3 FROM p1950algo as c, lexicon as l
 where l.lemma like 'grant'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1950 as c, lexicon as l
+SELECT c.w4 FROM p1950algo as c, lexicon as l
 where l.lemma like 'grant'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1950 as c, lexicon as l
+SELECT c.w5 FROM p1950algo as c, lexicon as l
 where l.lemma like 'grant'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1950 as c, lexicon as l
+SELECT c.w6 FROM p1950algo as c, lexicon as l
 where l.lemma like 'grant'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -2341,23 +2341,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1960 as c, lexicon as l
+SELECT c.w2 FROM p1960algo as c, lexicon as l
 where l.lemma like 'grant'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1960 as c, lexicon as l
+SELECT c.w3 FROM p1960algo as c, lexicon as l
 where l.lemma like 'grant'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1960 as c, lexicon as l
+SELECT c.w4 FROM p1960algo as c, lexicon as l
 where l.lemma like 'grant'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1960 as c, lexicon as l
+SELECT c.w5 FROM p1960algo as c, lexicon as l
 where l.lemma like 'grant'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1960 as c, lexicon as l
+SELECT c.w6 FROM p1960algo as c, lexicon as l
 where l.lemma like 'grant'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -2367,23 +2367,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1970 as c, lexicon as l
+SELECT c.w2 FROM p1970algo as c, lexicon as l
 where l.lemma like 'grant'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1970 as c, lexicon as l
+SELECT c.w3 FROM p1970algo as c, lexicon as l
 where l.lemma like 'grant'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1970 as c, lexicon as l
+SELECT c.w4 FROM p1970algo as c, lexicon as l
 where l.lemma like 'grant'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1970 as c, lexicon as l
+SELECT c.w5 FROM p1970algo as c, lexicon as l
 where l.lemma like 'grant'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1970 as c, lexicon as l
+SELECT c.w6 FROM p1970algo as c, lexicon as l
 where l.lemma like 'grant'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -2393,23 +2393,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1980 as c, lexicon as l
+SELECT c.w2 FROM p1980algo as c, lexicon as l
 where l.lemma like 'grant'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1980 as c, lexicon as l
+SELECT c.w3 FROM p1980algo as c, lexicon as l
 where l.lemma like 'grant'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1980 as c, lexicon as l
+SELECT c.w4 FROM p1980algo as c, lexicon as l
 where l.lemma like 'grant'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1980 as c, lexicon as l
+SELECT c.w5 FROM p1980algo as c, lexicon as l
 where l.lemma like 'grant'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1980 as c, lexicon as l
+SELECT c.w6 FROM p1980algo as c, lexicon as l
 where l.lemma like 'grant'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -2419,23 +2419,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1990 as c, lexicon as l
+SELECT c.w2 FROM p1990algo as c, lexicon as l
 where l.lemma like 'grant'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1990 as c, lexicon as l
+SELECT c.w3 FROM p1990algo as c, lexicon as l
 where l.lemma like 'grant'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1990 as c, lexicon as l
+SELECT c.w4 FROM p1990algo as c, lexicon as l
 where l.lemma like 'grant'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1990 as c, lexicon as l
+SELECT c.w5 FROM p1990algo as c, lexicon as l
 where l.lemma like 'grant'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1990 as c, lexicon as l
+SELECT c.w6 FROM p1990algo as c, lexicon as l
 where l.lemma like 'grant'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -2445,23 +2445,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p2000 as c, lexicon as l
+SELECT c.w2 FROM p2000algo as c, lexicon as l
 where l.lemma like 'grant'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p2000 as c, lexicon as l
+SELECT c.w3 FROM p2000algo as c, lexicon as l
 where l.lemma like 'grant'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p2000 as c, lexicon as l
+SELECT c.w4 FROM p2000algo as c, lexicon as l
 where l.lemma like 'grant'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p2000 as c, lexicon as l
+SELECT c.w5 FROM p2000algo as c, lexicon as l
 where l.lemma like 'grant'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p2000 as c, lexicon as l
+SELECT c.w6 FROM p2000algo as c, lexicon as l
 where l.lemma like 'grant'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -2471,23 +2471,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1820 as c, lexicon as l
+SELECT c.w2 FROM p1820algo as c, lexicon as l
 where l.lemma like 'hold'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1820 as c, lexicon as l
+SELECT c.w3 FROM p1820algo as c, lexicon as l
 where l.lemma like 'hold'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1820 as c, lexicon as l
+SELECT c.w4 FROM p1820algo as c, lexicon as l
 where l.lemma like 'hold'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1820 as c, lexicon as l
+SELECT c.w5 FROM p1820algo as c, lexicon as l
 where l.lemma like 'hold'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1820 as c, lexicon as l
+SELECT c.w6 FROM p1820algo as c, lexicon as l
 where l.lemma like 'hold'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -2497,23 +2497,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1830 as c, lexicon as l
+SELECT c.w2 FROM p1830algo as c, lexicon as l
 where l.lemma like 'hold'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1830 as c, lexicon as l
+SELECT c.w3 FROM p1830algo as c, lexicon as l
 where l.lemma like 'hold'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1830 as c, lexicon as l
+SELECT c.w4 FROM p1830algo as c, lexicon as l
 where l.lemma like 'hold'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1830 as c, lexicon as l
+SELECT c.w5 FROM p1830algo as c, lexicon as l
 where l.lemma like 'hold'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1830 as c, lexicon as l
+SELECT c.w6 FROM p1830algo as c, lexicon as l
 where l.lemma like 'hold'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -2523,23 +2523,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1840 as c, lexicon as l
+SELECT c.w2 FROM p1840algo as c, lexicon as l
 where l.lemma like 'hold'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1840 as c, lexicon as l
+SELECT c.w3 FROM p1840algo as c, lexicon as l
 where l.lemma like 'hold'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1840 as c, lexicon as l
+SELECT c.w4 FROM p1840algo as c, lexicon as l
 where l.lemma like 'hold'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1840 as c, lexicon as l
+SELECT c.w5 FROM p1840algo as c, lexicon as l
 where l.lemma like 'hold'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1840 as c, lexicon as l
+SELECT c.w6 FROM p1840algo as c, lexicon as l
 where l.lemma like 'hold'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -2549,23 +2549,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1850 as c, lexicon as l
+SELECT c.w2 FROM p1850algo as c, lexicon as l
 where l.lemma like 'hold'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1850 as c, lexicon as l
+SELECT c.w3 FROM p1850algo as c, lexicon as l
 where l.lemma like 'hold'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1850 as c, lexicon as l
+SELECT c.w4 FROM p1850algo as c, lexicon as l
 where l.lemma like 'hold'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1850 as c, lexicon as l
+SELECT c.w5 FROM p1850algo as c, lexicon as l
 where l.lemma like 'hold'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1850 as c, lexicon as l
+SELECT c.w6 FROM p1850algo as c, lexicon as l
 where l.lemma like 'hold'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -2575,23 +2575,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1860 as c, lexicon as l
+SELECT c.w2 FROM p1860algo as c, lexicon as l
 where l.lemma like 'hold'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1860 as c, lexicon as l
+SELECT c.w3 FROM p1860algo as c, lexicon as l
 where l.lemma like 'hold'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1860 as c, lexicon as l
+SELECT c.w4 FROM p1860algo as c, lexicon as l
 where l.lemma like 'hold'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1860 as c, lexicon as l
+SELECT c.w5 FROM p1860algo as c, lexicon as l
 where l.lemma like 'hold'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1860 as c, lexicon as l
+SELECT c.w6 FROM p1860algo as c, lexicon as l
 where l.lemma like 'hold'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -2601,23 +2601,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1870 as c, lexicon as l
+SELECT c.w2 FROM p1870algo as c, lexicon as l
 where l.lemma like 'hold'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1870 as c, lexicon as l
+SELECT c.w3 FROM p1870algo as c, lexicon as l
 where l.lemma like 'hold'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1870 as c, lexicon as l
+SELECT c.w4 FROM p1870algo as c, lexicon as l
 where l.lemma like 'hold'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1870 as c, lexicon as l
+SELECT c.w5 FROM p1870algo as c, lexicon as l
 where l.lemma like 'hold'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1870 as c, lexicon as l
+SELECT c.w6 FROM p1870algo as c, lexicon as l
 where l.lemma like 'hold'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -2627,23 +2627,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1880 as c, lexicon as l
+SELECT c.w2 FROM p1880algo as c, lexicon as l
 where l.lemma like 'hold'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1880 as c, lexicon as l
+SELECT c.w3 FROM p1880algo as c, lexicon as l
 where l.lemma like 'hold'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1880 as c, lexicon as l
+SELECT c.w4 FROM p1880algo as c, lexicon as l
 where l.lemma like 'hold'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1880 as c, lexicon as l
+SELECT c.w5 FROM p1880algo as c, lexicon as l
 where l.lemma like 'hold'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1880 as c, lexicon as l
+SELECT c.w6 FROM p1880algo as c, lexicon as l
 where l.lemma like 'hold'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -2653,23 +2653,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1890 as c, lexicon as l
+SELECT c.w2 FROM p1890algo as c, lexicon as l
 where l.lemma like 'hold'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1890 as c, lexicon as l
+SELECT c.w3 FROM p1890algo as c, lexicon as l
 where l.lemma like 'hold'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1890 as c, lexicon as l
+SELECT c.w4 FROM p1890algo as c, lexicon as l
 where l.lemma like 'hold'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1890 as c, lexicon as l
+SELECT c.w5 FROM p1890algo as c, lexicon as l
 where l.lemma like 'hold'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1890 as c, lexicon as l
+SELECT c.w6 FROM p1890algo as c, lexicon as l
 where l.lemma like 'hold'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -2679,23 +2679,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1900 as c, lexicon as l
+SELECT c.w2 FROM p1900algo as c, lexicon as l
 where l.lemma like 'hold'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1900 as c, lexicon as l
+SELECT c.w3 FROM p1900algo as c, lexicon as l
 where l.lemma like 'hold'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1900 as c, lexicon as l
+SELECT c.w4 FROM p1900algo as c, lexicon as l
 where l.lemma like 'hold'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1900 as c, lexicon as l
+SELECT c.w5 FROM p1900algo as c, lexicon as l
 where l.lemma like 'hold'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1900 as c, lexicon as l
+SELECT c.w6 FROM p1900algo as c, lexicon as l
 where l.lemma like 'hold'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -2705,23 +2705,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1910 as c, lexicon as l
+SELECT c.w2 FROM p1910algo as c, lexicon as l
 where l.lemma like 'hold'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1910 as c, lexicon as l
+SELECT c.w3 FROM p1910algo as c, lexicon as l
 where l.lemma like 'hold'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1910 as c, lexicon as l
+SELECT c.w4 FROM p1910algo as c, lexicon as l
 where l.lemma like 'hold'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1910 as c, lexicon as l
+SELECT c.w5 FROM p1910algo as c, lexicon as l
 where l.lemma like 'hold'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1910 as c, lexicon as l
+SELECT c.w6 FROM p1910algo as c, lexicon as l
 where l.lemma like 'hold'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -2731,23 +2731,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1920 as c, lexicon as l
+SELECT c.w2 FROM p1920algo as c, lexicon as l
 where l.lemma like 'hold'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1920 as c, lexicon as l
+SELECT c.w3 FROM p1920algo as c, lexicon as l
 where l.lemma like 'hold'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1920 as c, lexicon as l
+SELECT c.w4 FROM p1920algo as c, lexicon as l
 where l.lemma like 'hold'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1920 as c, lexicon as l
+SELECT c.w5 FROM p1920algo as c, lexicon as l
 where l.lemma like 'hold'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1920 as c, lexicon as l
+SELECT c.w6 FROM p1920algo as c, lexicon as l
 where l.lemma like 'hold'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -2757,23 +2757,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1930 as c, lexicon as l
+SELECT c.w2 FROM p1930algo as c, lexicon as l
 where l.lemma like 'hold'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1930 as c, lexicon as l
+SELECT c.w3 FROM p1930algo as c, lexicon as l
 where l.lemma like 'hold'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1930 as c, lexicon as l
+SELECT c.w4 FROM p1930algo as c, lexicon as l
 where l.lemma like 'hold'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1930 as c, lexicon as l
+SELECT c.w5 FROM p1930algo as c, lexicon as l
 where l.lemma like 'hold'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1930 as c, lexicon as l
+SELECT c.w6 FROM p1930algo as c, lexicon as l
 where l.lemma like 'hold'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -2783,23 +2783,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1940 as c, lexicon as l
+SELECT c.w2 FROM p1940algo as c, lexicon as l
 where l.lemma like 'hold'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1940 as c, lexicon as l
+SELECT c.w3 FROM p1940algo as c, lexicon as l
 where l.lemma like 'hold'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1940 as c, lexicon as l
+SELECT c.w4 FROM p1940algo as c, lexicon as l
 where l.lemma like 'hold'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1940 as c, lexicon as l
+SELECT c.w5 FROM p1940algo as c, lexicon as l
 where l.lemma like 'hold'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1940 as c, lexicon as l
+SELECT c.w6 FROM p1940algo as c, lexicon as l
 where l.lemma like 'hold'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -2809,23 +2809,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1950 as c, lexicon as l
+SELECT c.w2 FROM p1950algo as c, lexicon as l
 where l.lemma like 'hold'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1950 as c, lexicon as l
+SELECT c.w3 FROM p1950algo as c, lexicon as l
 where l.lemma like 'hold'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1950 as c, lexicon as l
+SELECT c.w4 FROM p1950algo as c, lexicon as l
 where l.lemma like 'hold'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1950 as c, lexicon as l
+SELECT c.w5 FROM p1950algo as c, lexicon as l
 where l.lemma like 'hold'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1950 as c, lexicon as l
+SELECT c.w6 FROM p1950algo as c, lexicon as l
 where l.lemma like 'hold'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -2835,23 +2835,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1960 as c, lexicon as l
+SELECT c.w2 FROM p1960algo as c, lexicon as l
 where l.lemma like 'hold'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1960 as c, lexicon as l
+SELECT c.w3 FROM p1960algo as c, lexicon as l
 where l.lemma like 'hold'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1960 as c, lexicon as l
+SELECT c.w4 FROM p1960algo as c, lexicon as l
 where l.lemma like 'hold'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1960 as c, lexicon as l
+SELECT c.w5 FROM p1960algo as c, lexicon as l
 where l.lemma like 'hold'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1960 as c, lexicon as l
+SELECT c.w6 FROM p1960algo as c, lexicon as l
 where l.lemma like 'hold'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -2861,23 +2861,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1970 as c, lexicon as l
+SELECT c.w2 FROM p1970algo as c, lexicon as l
 where l.lemma like 'hold'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1970 as c, lexicon as l
+SELECT c.w3 FROM p1970algo as c, lexicon as l
 where l.lemma like 'hold'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1970 as c, lexicon as l
+SELECT c.w4 FROM p1970algo as c, lexicon as l
 where l.lemma like 'hold'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1970 as c, lexicon as l
+SELECT c.w5 FROM p1970algo as c, lexicon as l
 where l.lemma like 'hold'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1970 as c, lexicon as l
+SELECT c.w6 FROM p1970algo as c, lexicon as l
 where l.lemma like 'hold'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -2887,23 +2887,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1980 as c, lexicon as l
+SELECT c.w2 FROM p1980algo as c, lexicon as l
 where l.lemma like 'hold'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1980 as c, lexicon as l
+SELECT c.w3 FROM p1980algo as c, lexicon as l
 where l.lemma like 'hold'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1980 as c, lexicon as l
+SELECT c.w4 FROM p1980algo as c, lexicon as l
 where l.lemma like 'hold'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1980 as c, lexicon as l
+SELECT c.w5 FROM p1980algo as c, lexicon as l
 where l.lemma like 'hold'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1980 as c, lexicon as l
+SELECT c.w6 FROM p1980algo as c, lexicon as l
 where l.lemma like 'hold'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -2913,23 +2913,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1990 as c, lexicon as l
+SELECT c.w2 FROM p1990algo as c, lexicon as l
 where l.lemma like 'hold'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1990 as c, lexicon as l
+SELECT c.w3 FROM p1990algo as c, lexicon as l
 where l.lemma like 'hold'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1990 as c, lexicon as l
+SELECT c.w4 FROM p1990algo as c, lexicon as l
 where l.lemma like 'hold'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1990 as c, lexicon as l
+SELECT c.w5 FROM p1990algo as c, lexicon as l
 where l.lemma like 'hold'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1990 as c, lexicon as l
+SELECT c.w6 FROM p1990algo as c, lexicon as l
 where l.lemma like 'hold'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -2939,23 +2939,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p2000 as c, lexicon as l
+SELECT c.w2 FROM p2000algo as c, lexicon as l
 where l.lemma like 'hold'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p2000 as c, lexicon as l
+SELECT c.w3 FROM p2000algo as c, lexicon as l
 where l.lemma like 'hold'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p2000 as c, lexicon as l
+SELECT c.w4 FROM p2000algo as c, lexicon as l
 where l.lemma like 'hold'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p2000 as c, lexicon as l
+SELECT c.w5 FROM p2000algo as c, lexicon as l
 where l.lemma like 'hold'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p2000 as c, lexicon as l
+SELECT c.w6 FROM p2000algo as c, lexicon as l
 where l.lemma like 'hold'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -2965,23 +2965,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1820 as c, lexicon as l
+SELECT c.w2 FROM p1820algo as c, lexicon as l
 where l.lemma like 'keep'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1820 as c, lexicon as l
+SELECT c.w3 FROM p1820algo as c, lexicon as l
 where l.lemma like 'keep'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1820 as c, lexicon as l
+SELECT c.w4 FROM p1820algo as c, lexicon as l
 where l.lemma like 'keep'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1820 as c, lexicon as l
+SELECT c.w5 FROM p1820algo as c, lexicon as l
 where l.lemma like 'keep'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1820 as c, lexicon as l
+SELECT c.w6 FROM p1820algo as c, lexicon as l
 where l.lemma like 'keep'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -2991,23 +2991,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1830 as c, lexicon as l
+SELECT c.w2 FROM p1830algo as c, lexicon as l
 where l.lemma like 'keep'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1830 as c, lexicon as l
+SELECT c.w3 FROM p1830algo as c, lexicon as l
 where l.lemma like 'keep'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1830 as c, lexicon as l
+SELECT c.w4 FROM p1830algo as c, lexicon as l
 where l.lemma like 'keep'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1830 as c, lexicon as l
+SELECT c.w5 FROM p1830algo as c, lexicon as l
 where l.lemma like 'keep'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1830 as c, lexicon as l
+SELECT c.w6 FROM p1830algo as c, lexicon as l
 where l.lemma like 'keep'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -3017,23 +3017,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1840 as c, lexicon as l
+SELECT c.w2 FROM p1840algo as c, lexicon as l
 where l.lemma like 'keep'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1840 as c, lexicon as l
+SELECT c.w3 FROM p1840algo as c, lexicon as l
 where l.lemma like 'keep'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1840 as c, lexicon as l
+SELECT c.w4 FROM p1840algo as c, lexicon as l
 where l.lemma like 'keep'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1840 as c, lexicon as l
+SELECT c.w5 FROM p1840algo as c, lexicon as l
 where l.lemma like 'keep'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1840 as c, lexicon as l
+SELECT c.w6 FROM p1840algo as c, lexicon as l
 where l.lemma like 'keep'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -3043,23 +3043,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1850 as c, lexicon as l
+SELECT c.w2 FROM p1850algo as c, lexicon as l
 where l.lemma like 'keep'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1850 as c, lexicon as l
+SELECT c.w3 FROM p1850algo as c, lexicon as l
 where l.lemma like 'keep'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1850 as c, lexicon as l
+SELECT c.w4 FROM p1850algo as c, lexicon as l
 where l.lemma like 'keep'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1850 as c, lexicon as l
+SELECT c.w5 FROM p1850algo as c, lexicon as l
 where l.lemma like 'keep'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1850 as c, lexicon as l
+SELECT c.w6 FROM p1850algo as c, lexicon as l
 where l.lemma like 'keep'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -3069,23 +3069,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1860 as c, lexicon as l
+SELECT c.w2 FROM p1860algo as c, lexicon as l
 where l.lemma like 'keep'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1860 as c, lexicon as l
+SELECT c.w3 FROM p1860algo as c, lexicon as l
 where l.lemma like 'keep'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1860 as c, lexicon as l
+SELECT c.w4 FROM p1860algo as c, lexicon as l
 where l.lemma like 'keep'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1860 as c, lexicon as l
+SELECT c.w5 FROM p1860algo as c, lexicon as l
 where l.lemma like 'keep'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1860 as c, lexicon as l
+SELECT c.w6 FROM p1860algo as c, lexicon as l
 where l.lemma like 'keep'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -3095,23 +3095,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1870 as c, lexicon as l
+SELECT c.w2 FROM p1870algo as c, lexicon as l
 where l.lemma like 'keep'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1870 as c, lexicon as l
+SELECT c.w3 FROM p1870algo as c, lexicon as l
 where l.lemma like 'keep'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1870 as c, lexicon as l
+SELECT c.w4 FROM p1870algo as c, lexicon as l
 where l.lemma like 'keep'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1870 as c, lexicon as l
+SELECT c.w5 FROM p1870algo as c, lexicon as l
 where l.lemma like 'keep'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1870 as c, lexicon as l
+SELECT c.w6 FROM p1870algo as c, lexicon as l
 where l.lemma like 'keep'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -3121,23 +3121,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1880 as c, lexicon as l
+SELECT c.w2 FROM p1880algo as c, lexicon as l
 where l.lemma like 'keep'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1880 as c, lexicon as l
+SELECT c.w3 FROM p1880algo as c, lexicon as l
 where l.lemma like 'keep'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1880 as c, lexicon as l
+SELECT c.w4 FROM p1880algo as c, lexicon as l
 where l.lemma like 'keep'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1880 as c, lexicon as l
+SELECT c.w5 FROM p1880algo as c, lexicon as l
 where l.lemma like 'keep'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1880 as c, lexicon as l
+SELECT c.w6 FROM p1880algo as c, lexicon as l
 where l.lemma like 'keep'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -3147,23 +3147,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1890 as c, lexicon as l
+SELECT c.w2 FROM p1890algo as c, lexicon as l
 where l.lemma like 'keep'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1890 as c, lexicon as l
+SELECT c.w3 FROM p1890algo as c, lexicon as l
 where l.lemma like 'keep'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1890 as c, lexicon as l
+SELECT c.w4 FROM p1890algo as c, lexicon as l
 where l.lemma like 'keep'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1890 as c, lexicon as l
+SELECT c.w5 FROM p1890algo as c, lexicon as l
 where l.lemma like 'keep'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1890 as c, lexicon as l
+SELECT c.w6 FROM p1890algo as c, lexicon as l
 where l.lemma like 'keep'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -3173,23 +3173,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1900 as c, lexicon as l
+SELECT c.w2 FROM p1900algo as c, lexicon as l
 where l.lemma like 'keep'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1900 as c, lexicon as l
+SELECT c.w3 FROM p1900algo as c, lexicon as l
 where l.lemma like 'keep'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1900 as c, lexicon as l
+SELECT c.w4 FROM p1900algo as c, lexicon as l
 where l.lemma like 'keep'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1900 as c, lexicon as l
+SELECT c.w5 FROM p1900algo as c, lexicon as l
 where l.lemma like 'keep'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1900 as c, lexicon as l
+SELECT c.w6 FROM p1900algo as c, lexicon as l
 where l.lemma like 'keep'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -3199,23 +3199,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1910 as c, lexicon as l
+SELECT c.w2 FROM p1910algo as c, lexicon as l
 where l.lemma like 'keep'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1910 as c, lexicon as l
+SELECT c.w3 FROM p1910algo as c, lexicon as l
 where l.lemma like 'keep'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1910 as c, lexicon as l
+SELECT c.w4 FROM p1910algo as c, lexicon as l
 where l.lemma like 'keep'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1910 as c, lexicon as l
+SELECT c.w5 FROM p1910algo as c, lexicon as l
 where l.lemma like 'keep'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1910 as c, lexicon as l
+SELECT c.w6 FROM p1910algo as c, lexicon as l
 where l.lemma like 'keep'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -3225,23 +3225,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1920 as c, lexicon as l
+SELECT c.w2 FROM p1920algo as c, lexicon as l
 where l.lemma like 'keep'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1920 as c, lexicon as l
+SELECT c.w3 FROM p1920algo as c, lexicon as l
 where l.lemma like 'keep'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1920 as c, lexicon as l
+SELECT c.w4 FROM p1920algo as c, lexicon as l
 where l.lemma like 'keep'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1920 as c, lexicon as l
+SELECT c.w5 FROM p1920algo as c, lexicon as l
 where l.lemma like 'keep'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1920 as c, lexicon as l
+SELECT c.w6 FROM p1920algo as c, lexicon as l
 where l.lemma like 'keep'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -3251,23 +3251,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1930 as c, lexicon as l
+SELECT c.w2 FROM p1930algo as c, lexicon as l
 where l.lemma like 'keep'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1930 as c, lexicon as l
+SELECT c.w3 FROM p1930algo as c, lexicon as l
 where l.lemma like 'keep'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1930 as c, lexicon as l
+SELECT c.w4 FROM p1930algo as c, lexicon as l
 where l.lemma like 'keep'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1930 as c, lexicon as l
+SELECT c.w5 FROM p1930algo as c, lexicon as l
 where l.lemma like 'keep'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1930 as c, lexicon as l
+SELECT c.w6 FROM p1930algo as c, lexicon as l
 where l.lemma like 'keep'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -3277,23 +3277,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1940 as c, lexicon as l
+SELECT c.w2 FROM p1940algo as c, lexicon as l
 where l.lemma like 'keep'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1940 as c, lexicon as l
+SELECT c.w3 FROM p1940algo as c, lexicon as l
 where l.lemma like 'keep'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1940 as c, lexicon as l
+SELECT c.w4 FROM p1940algo as c, lexicon as l
 where l.lemma like 'keep'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1940 as c, lexicon as l
+SELECT c.w5 FROM p1940algo as c, lexicon as l
 where l.lemma like 'keep'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1940 as c, lexicon as l
+SELECT c.w6 FROM p1940algo as c, lexicon as l
 where l.lemma like 'keep'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -3303,23 +3303,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1950 as c, lexicon as l
+SELECT c.w2 FROM p1950algo as c, lexicon as l
 where l.lemma like 'keep'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1950 as c, lexicon as l
+SELECT c.w3 FROM p1950algo as c, lexicon as l
 where l.lemma like 'keep'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1950 as c, lexicon as l
+SELECT c.w4 FROM p1950algo as c, lexicon as l
 where l.lemma like 'keep'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1950 as c, lexicon as l
+SELECT c.w5 FROM p1950algo as c, lexicon as l
 where l.lemma like 'keep'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1950 as c, lexicon as l
+SELECT c.w6 FROM p1950algo as c, lexicon as l
 where l.lemma like 'keep'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -3329,23 +3329,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1960 as c, lexicon as l
+SELECT c.w2 FROM p1960algo as c, lexicon as l
 where l.lemma like 'keep'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1960 as c, lexicon as l
+SELECT c.w3 FROM p1960algo as c, lexicon as l
 where l.lemma like 'keep'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1960 as c, lexicon as l
+SELECT c.w4 FROM p1960algo as c, lexicon as l
 where l.lemma like 'keep'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1960 as c, lexicon as l
+SELECT c.w5 FROM p1960algo as c, lexicon as l
 where l.lemma like 'keep'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1960 as c, lexicon as l
+SELECT c.w6 FROM p1960algo as c, lexicon as l
 where l.lemma like 'keep'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -3355,23 +3355,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1970 as c, lexicon as l
+SELECT c.w2 FROM p1970algo as c, lexicon as l
 where l.lemma like 'keep'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1970 as c, lexicon as l
+SELECT c.w3 FROM p1970algo as c, lexicon as l
 where l.lemma like 'keep'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1970 as c, lexicon as l
+SELECT c.w4 FROM p1970algo as c, lexicon as l
 where l.lemma like 'keep'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1970 as c, lexicon as l
+SELECT c.w5 FROM p1970algo as c, lexicon as l
 where l.lemma like 'keep'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1970 as c, lexicon as l
+SELECT c.w6 FROM p1970algo as c, lexicon as l
 where l.lemma like 'keep'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -3381,23 +3381,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1980 as c, lexicon as l
+SELECT c.w2 FROM p1980algo as c, lexicon as l
 where l.lemma like 'keep'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1980 as c, lexicon as l
+SELECT c.w3 FROM p1980algo as c, lexicon as l
 where l.lemma like 'keep'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1980 as c, lexicon as l
+SELECT c.w4 FROM p1980algo as c, lexicon as l
 where l.lemma like 'keep'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1980 as c, lexicon as l
+SELECT c.w5 FROM p1980algo as c, lexicon as l
 where l.lemma like 'keep'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1980 as c, lexicon as l
+SELECT c.w6 FROM p1980algo as c, lexicon as l
 where l.lemma like 'keep'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -3407,23 +3407,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1990 as c, lexicon as l
+SELECT c.w2 FROM p1990algo as c, lexicon as l
 where l.lemma like 'keep'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1990 as c, lexicon as l
+SELECT c.w3 FROM p1990algo as c, lexicon as l
 where l.lemma like 'keep'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1990 as c, lexicon as l
+SELECT c.w4 FROM p1990algo as c, lexicon as l
 where l.lemma like 'keep'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1990 as c, lexicon as l
+SELECT c.w5 FROM p1990algo as c, lexicon as l
 where l.lemma like 'keep'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1990 as c, lexicon as l
+SELECT c.w6 FROM p1990algo as c, lexicon as l
 where l.lemma like 'keep'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -3433,23 +3433,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p2000 as c, lexicon as l
+SELECT c.w2 FROM p2000algo as c, lexicon as l
 where l.lemma like 'keep'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p2000 as c, lexicon as l
+SELECT c.w3 FROM p2000algo as c, lexicon as l
 where l.lemma like 'keep'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p2000 as c, lexicon as l
+SELECT c.w4 FROM p2000algo as c, lexicon as l
 where l.lemma like 'keep'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p2000 as c, lexicon as l
+SELECT c.w5 FROM p2000algo as c, lexicon as l
 where l.lemma like 'keep'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p2000 as c, lexicon as l
+SELECT c.w6 FROM p2000algo as c, lexicon as l
 where l.lemma like 'keep'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -3459,23 +3459,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1820 as c, lexicon as l
+SELECT c.w2 FROM p1820algo as c, lexicon as l
 where l.lemma like 'lose'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1820 as c, lexicon as l
+SELECT c.w3 FROM p1820algo as c, lexicon as l
 where l.lemma like 'lose'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1820 as c, lexicon as l
+SELECT c.w4 FROM p1820algo as c, lexicon as l
 where l.lemma like 'lose'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1820 as c, lexicon as l
+SELECT c.w5 FROM p1820algo as c, lexicon as l
 where l.lemma like 'lose'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1820 as c, lexicon as l
+SELECT c.w6 FROM p1820algo as c, lexicon as l
 where l.lemma like 'lose'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -3485,23 +3485,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1830 as c, lexicon as l
+SELECT c.w2 FROM p1830algo as c, lexicon as l
 where l.lemma like 'lose'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1830 as c, lexicon as l
+SELECT c.w3 FROM p1830algo as c, lexicon as l
 where l.lemma like 'lose'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1830 as c, lexicon as l
+SELECT c.w4 FROM p1830algo as c, lexicon as l
 where l.lemma like 'lose'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1830 as c, lexicon as l
+SELECT c.w5 FROM p1830algo as c, lexicon as l
 where l.lemma like 'lose'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1830 as c, lexicon as l
+SELECT c.w6 FROM p1830algo as c, lexicon as l
 where l.lemma like 'lose'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -3511,23 +3511,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1840 as c, lexicon as l
+SELECT c.w2 FROM p1840algo as c, lexicon as l
 where l.lemma like 'lose'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1840 as c, lexicon as l
+SELECT c.w3 FROM p1840algo as c, lexicon as l
 where l.lemma like 'lose'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1840 as c, lexicon as l
+SELECT c.w4 FROM p1840algo as c, lexicon as l
 where l.lemma like 'lose'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1840 as c, lexicon as l
+SELECT c.w5 FROM p1840algo as c, lexicon as l
 where l.lemma like 'lose'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1840 as c, lexicon as l
+SELECT c.w6 FROM p1840algo as c, lexicon as l
 where l.lemma like 'lose'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -3537,23 +3537,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1850 as c, lexicon as l
+SELECT c.w2 FROM p1850algo as c, lexicon as l
 where l.lemma like 'lose'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1850 as c, lexicon as l
+SELECT c.w3 FROM p1850algo as c, lexicon as l
 where l.lemma like 'lose'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1850 as c, lexicon as l
+SELECT c.w4 FROM p1850algo as c, lexicon as l
 where l.lemma like 'lose'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1850 as c, lexicon as l
+SELECT c.w5 FROM p1850algo as c, lexicon as l
 where l.lemma like 'lose'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1850 as c, lexicon as l
+SELECT c.w6 FROM p1850algo as c, lexicon as l
 where l.lemma like 'lose'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -3563,23 +3563,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1860 as c, lexicon as l
+SELECT c.w2 FROM p1860algo as c, lexicon as l
 where l.lemma like 'lose'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1860 as c, lexicon as l
+SELECT c.w3 FROM p1860algo as c, lexicon as l
 where l.lemma like 'lose'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1860 as c, lexicon as l
+SELECT c.w4 FROM p1860algo as c, lexicon as l
 where l.lemma like 'lose'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1860 as c, lexicon as l
+SELECT c.w5 FROM p1860algo as c, lexicon as l
 where l.lemma like 'lose'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1860 as c, lexicon as l
+SELECT c.w6 FROM p1860algo as c, lexicon as l
 where l.lemma like 'lose'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -3589,23 +3589,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1870 as c, lexicon as l
+SELECT c.w2 FROM p1870algo as c, lexicon as l
 where l.lemma like 'lose'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1870 as c, lexicon as l
+SELECT c.w3 FROM p1870algo as c, lexicon as l
 where l.lemma like 'lose'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1870 as c, lexicon as l
+SELECT c.w4 FROM p1870algo as c, lexicon as l
 where l.lemma like 'lose'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1870 as c, lexicon as l
+SELECT c.w5 FROM p1870algo as c, lexicon as l
 where l.lemma like 'lose'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1870 as c, lexicon as l
+SELECT c.w6 FROM p1870algo as c, lexicon as l
 where l.lemma like 'lose'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -3615,23 +3615,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1880 as c, lexicon as l
+SELECT c.w2 FROM p1880algo as c, lexicon as l
 where l.lemma like 'lose'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1880 as c, lexicon as l
+SELECT c.w3 FROM p1880algo as c, lexicon as l
 where l.lemma like 'lose'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1880 as c, lexicon as l
+SELECT c.w4 FROM p1880algo as c, lexicon as l
 where l.lemma like 'lose'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1880 as c, lexicon as l
+SELECT c.w5 FROM p1880algo as c, lexicon as l
 where l.lemma like 'lose'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1880 as c, lexicon as l
+SELECT c.w6 FROM p1880algo as c, lexicon as l
 where l.lemma like 'lose'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -3641,23 +3641,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1890 as c, lexicon as l
+SELECT c.w2 FROM p1890algo as c, lexicon as l
 where l.lemma like 'lose'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1890 as c, lexicon as l
+SELECT c.w3 FROM p1890algo as c, lexicon as l
 where l.lemma like 'lose'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1890 as c, lexicon as l
+SELECT c.w4 FROM p1890algo as c, lexicon as l
 where l.lemma like 'lose'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1890 as c, lexicon as l
+SELECT c.w5 FROM p1890algo as c, lexicon as l
 where l.lemma like 'lose'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1890 as c, lexicon as l
+SELECT c.w6 FROM p1890algo as c, lexicon as l
 where l.lemma like 'lose'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -3667,23 +3667,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1900 as c, lexicon as l
+SELECT c.w2 FROM p1900algo as c, lexicon as l
 where l.lemma like 'lose'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1900 as c, lexicon as l
+SELECT c.w3 FROM p1900algo as c, lexicon as l
 where l.lemma like 'lose'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1900 as c, lexicon as l
+SELECT c.w4 FROM p1900algo as c, lexicon as l
 where l.lemma like 'lose'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1900 as c, lexicon as l
+SELECT c.w5 FROM p1900algo as c, lexicon as l
 where l.lemma like 'lose'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1900 as c, lexicon as l
+SELECT c.w6 FROM p1900algo as c, lexicon as l
 where l.lemma like 'lose'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -3693,23 +3693,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1910 as c, lexicon as l
+SELECT c.w2 FROM p1910algo as c, lexicon as l
 where l.lemma like 'lose'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1910 as c, lexicon as l
+SELECT c.w3 FROM p1910algo as c, lexicon as l
 where l.lemma like 'lose'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1910 as c, lexicon as l
+SELECT c.w4 FROM p1910algo as c, lexicon as l
 where l.lemma like 'lose'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1910 as c, lexicon as l
+SELECT c.w5 FROM p1910algo as c, lexicon as l
 where l.lemma like 'lose'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1910 as c, lexicon as l
+SELECT c.w6 FROM p1910algo as c, lexicon as l
 where l.lemma like 'lose'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -3719,23 +3719,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1920 as c, lexicon as l
+SELECT c.w2 FROM p1920algo as c, lexicon as l
 where l.lemma like 'lose'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1920 as c, lexicon as l
+SELECT c.w3 FROM p1920algo as c, lexicon as l
 where l.lemma like 'lose'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1920 as c, lexicon as l
+SELECT c.w4 FROM p1920algo as c, lexicon as l
 where l.lemma like 'lose'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1920 as c, lexicon as l
+SELECT c.w5 FROM p1920algo as c, lexicon as l
 where l.lemma like 'lose'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1920 as c, lexicon as l
+SELECT c.w6 FROM p1920algo as c, lexicon as l
 where l.lemma like 'lose'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -3745,23 +3745,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1930 as c, lexicon as l
+SELECT c.w2 FROM p1930algo as c, lexicon as l
 where l.lemma like 'lose'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1930 as c, lexicon as l
+SELECT c.w3 FROM p1930algo as c, lexicon as l
 where l.lemma like 'lose'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1930 as c, lexicon as l
+SELECT c.w4 FROM p1930algo as c, lexicon as l
 where l.lemma like 'lose'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1930 as c, lexicon as l
+SELECT c.w5 FROM p1930algo as c, lexicon as l
 where l.lemma like 'lose'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1930 as c, lexicon as l
+SELECT c.w6 FROM p1930algo as c, lexicon as l
 where l.lemma like 'lose'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -3771,23 +3771,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1940 as c, lexicon as l
+SELECT c.w2 FROM p1940algo as c, lexicon as l
 where l.lemma like 'lose'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1940 as c, lexicon as l
+SELECT c.w3 FROM p1940algo as c, lexicon as l
 where l.lemma like 'lose'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1940 as c, lexicon as l
+SELECT c.w4 FROM p1940algo as c, lexicon as l
 where l.lemma like 'lose'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1940 as c, lexicon as l
+SELECT c.w5 FROM p1940algo as c, lexicon as l
 where l.lemma like 'lose'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1940 as c, lexicon as l
+SELECT c.w6 FROM p1940algo as c, lexicon as l
 where l.lemma like 'lose'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -3797,23 +3797,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1950 as c, lexicon as l
+SELECT c.w2 FROM p1950algo as c, lexicon as l
 where l.lemma like 'lose'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1950 as c, lexicon as l
+SELECT c.w3 FROM p1950algo as c, lexicon as l
 where l.lemma like 'lose'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1950 as c, lexicon as l
+SELECT c.w4 FROM p1950algo as c, lexicon as l
 where l.lemma like 'lose'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1950 as c, lexicon as l
+SELECT c.w5 FROM p1950algo as c, lexicon as l
 where l.lemma like 'lose'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1950 as c, lexicon as l
+SELECT c.w6 FROM p1950algo as c, lexicon as l
 where l.lemma like 'lose'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -3823,23 +3823,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1960 as c, lexicon as l
+SELECT c.w2 FROM p1960algo as c, lexicon as l
 where l.lemma like 'lose'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1960 as c, lexicon as l
+SELECT c.w3 FROM p1960algo as c, lexicon as l
 where l.lemma like 'lose'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1960 as c, lexicon as l
+SELECT c.w4 FROM p1960algo as c, lexicon as l
 where l.lemma like 'lose'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1960 as c, lexicon as l
+SELECT c.w5 FROM p1960algo as c, lexicon as l
 where l.lemma like 'lose'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1960 as c, lexicon as l
+SELECT c.w6 FROM p1960algo as c, lexicon as l
 where l.lemma like 'lose'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -3849,23 +3849,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1970 as c, lexicon as l
+SELECT c.w2 FROM p1970algo as c, lexicon as l
 where l.lemma like 'lose'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1970 as c, lexicon as l
+SELECT c.w3 FROM p1970algo as c, lexicon as l
 where l.lemma like 'lose'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1970 as c, lexicon as l
+SELECT c.w4 FROM p1970algo as c, lexicon as l
 where l.lemma like 'lose'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1970 as c, lexicon as l
+SELECT c.w5 FROM p1970algo as c, lexicon as l
 where l.lemma like 'lose'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1970 as c, lexicon as l
+SELECT c.w6 FROM p1970algo as c, lexicon as l
 where l.lemma like 'lose'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -3875,23 +3875,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1980 as c, lexicon as l
+SELECT c.w2 FROM p1980algo as c, lexicon as l
 where l.lemma like 'lose'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1980 as c, lexicon as l
+SELECT c.w3 FROM p1980algo as c, lexicon as l
 where l.lemma like 'lose'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1980 as c, lexicon as l
+SELECT c.w4 FROM p1980algo as c, lexicon as l
 where l.lemma like 'lose'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1980 as c, lexicon as l
+SELECT c.w5 FROM p1980algo as c, lexicon as l
 where l.lemma like 'lose'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1980 as c, lexicon as l
+SELECT c.w6 FROM p1980algo as c, lexicon as l
 where l.lemma like 'lose'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -3901,23 +3901,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1990 as c, lexicon as l
+SELECT c.w2 FROM p1990algo as c, lexicon as l
 where l.lemma like 'lose'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1990 as c, lexicon as l
+SELECT c.w3 FROM p1990algo as c, lexicon as l
 where l.lemma like 'lose'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1990 as c, lexicon as l
+SELECT c.w4 FROM p1990algo as c, lexicon as l
 where l.lemma like 'lose'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1990 as c, lexicon as l
+SELECT c.w5 FROM p1990algo as c, lexicon as l
 where l.lemma like 'lose'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1990 as c, lexicon as l
+SELECT c.w6 FROM p1990algo as c, lexicon as l
 where l.lemma like 'lose'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -3927,23 +3927,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p2000 as c, lexicon as l
+SELECT c.w2 FROM p2000algo as c, lexicon as l
 where l.lemma like 'lose'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p2000 as c, lexicon as l
+SELECT c.w3 FROM p2000algo as c, lexicon as l
 where l.lemma like 'lose'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p2000 as c, lexicon as l
+SELECT c.w4 FROM p2000algo as c, lexicon as l
 where l.lemma like 'lose'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p2000 as c, lexicon as l
+SELECT c.w5 FROM p2000algo as c, lexicon as l
 where l.lemma like 'lose'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p2000 as c, lexicon as l
+SELECT c.w6 FROM p2000algo as c, lexicon as l
 where l.lemma like 'lose'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -3953,23 +3953,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1820 as c, lexicon as l
+SELECT c.w2 FROM p1820algo as c, lexicon as l
 where l.lemma like 'make'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1820 as c, lexicon as l
+SELECT c.w3 FROM p1820algo as c, lexicon as l
 where l.lemma like 'make'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1820 as c, lexicon as l
+SELECT c.w4 FROM p1820algo as c, lexicon as l
 where l.lemma like 'make'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1820 as c, lexicon as l
+SELECT c.w5 FROM p1820algo as c, lexicon as l
 where l.lemma like 'make'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1820 as c, lexicon as l
+SELECT c.w6 FROM p1820algo as c, lexicon as l
 where l.lemma like 'make'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -3979,23 +3979,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1830 as c, lexicon as l
+SELECT c.w2 FROM p1830algo as c, lexicon as l
 where l.lemma like 'make'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1830 as c, lexicon as l
+SELECT c.w3 FROM p1830algo as c, lexicon as l
 where l.lemma like 'make'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1830 as c, lexicon as l
+SELECT c.w4 FROM p1830algo as c, lexicon as l
 where l.lemma like 'make'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1830 as c, lexicon as l
+SELECT c.w5 FROM p1830algo as c, lexicon as l
 where l.lemma like 'make'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1830 as c, lexicon as l
+SELECT c.w6 FROM p1830algo as c, lexicon as l
 where l.lemma like 'make'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -4005,23 +4005,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1840 as c, lexicon as l
+SELECT c.w2 FROM p1840algo as c, lexicon as l
 where l.lemma like 'make'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1840 as c, lexicon as l
+SELECT c.w3 FROM p1840algo as c, lexicon as l
 where l.lemma like 'make'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1840 as c, lexicon as l
+SELECT c.w4 FROM p1840algo as c, lexicon as l
 where l.lemma like 'make'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1840 as c, lexicon as l
+SELECT c.w5 FROM p1840algo as c, lexicon as l
 where l.lemma like 'make'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1840 as c, lexicon as l
+SELECT c.w6 FROM p1840algo as c, lexicon as l
 where l.lemma like 'make'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -4031,23 +4031,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1850 as c, lexicon as l
+SELECT c.w2 FROM p1850algo as c, lexicon as l
 where l.lemma like 'make'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1850 as c, lexicon as l
+SELECT c.w3 FROM p1850algo as c, lexicon as l
 where l.lemma like 'make'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1850 as c, lexicon as l
+SELECT c.w4 FROM p1850algo as c, lexicon as l
 where l.lemma like 'make'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1850 as c, lexicon as l
+SELECT c.w5 FROM p1850algo as c, lexicon as l
 where l.lemma like 'make'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1850 as c, lexicon as l
+SELECT c.w6 FROM p1850algo as c, lexicon as l
 where l.lemma like 'make'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -4057,23 +4057,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1860 as c, lexicon as l
+SELECT c.w2 FROM p1860algo as c, lexicon as l
 where l.lemma like 'make'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1860 as c, lexicon as l
+SELECT c.w3 FROM p1860algo as c, lexicon as l
 where l.lemma like 'make'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1860 as c, lexicon as l
+SELECT c.w4 FROM p1860algo as c, lexicon as l
 where l.lemma like 'make'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1860 as c, lexicon as l
+SELECT c.w5 FROM p1860algo as c, lexicon as l
 where l.lemma like 'make'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1860 as c, lexicon as l
+SELECT c.w6 FROM p1860algo as c, lexicon as l
 where l.lemma like 'make'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -4083,23 +4083,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1870 as c, lexicon as l
+SELECT c.w2 FROM p1870algo as c, lexicon as l
 where l.lemma like 'make'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1870 as c, lexicon as l
+SELECT c.w3 FROM p1870algo as c, lexicon as l
 where l.lemma like 'make'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1870 as c, lexicon as l
+SELECT c.w4 FROM p1870algo as c, lexicon as l
 where l.lemma like 'make'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1870 as c, lexicon as l
+SELECT c.w5 FROM p1870algo as c, lexicon as l
 where l.lemma like 'make'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1870 as c, lexicon as l
+SELECT c.w6 FROM p1870algo as c, lexicon as l
 where l.lemma like 'make'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -4109,23 +4109,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1880 as c, lexicon as l
+SELECT c.w2 FROM p1880algo as c, lexicon as l
 where l.lemma like 'make'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1880 as c, lexicon as l
+SELECT c.w3 FROM p1880algo as c, lexicon as l
 where l.lemma like 'make'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1880 as c, lexicon as l
+SELECT c.w4 FROM p1880algo as c, lexicon as l
 where l.lemma like 'make'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1880 as c, lexicon as l
+SELECT c.w5 FROM p1880algo as c, lexicon as l
 where l.lemma like 'make'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1880 as c, lexicon as l
+SELECT c.w6 FROM p1880algo as c, lexicon as l
 where l.lemma like 'make'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -4135,23 +4135,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1890 as c, lexicon as l
+SELECT c.w2 FROM p1890algo as c, lexicon as l
 where l.lemma like 'make'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1890 as c, lexicon as l
+SELECT c.w3 FROM p1890algo as c, lexicon as l
 where l.lemma like 'make'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1890 as c, lexicon as l
+SELECT c.w4 FROM p1890algo as c, lexicon as l
 where l.lemma like 'make'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1890 as c, lexicon as l
+SELECT c.w5 FROM p1890algo as c, lexicon as l
 where l.lemma like 'make'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1890 as c, lexicon as l
+SELECT c.w6 FROM p1890algo as c, lexicon as l
 where l.lemma like 'make'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -4161,23 +4161,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1900 as c, lexicon as l
+SELECT c.w2 FROM p1900algo as c, lexicon as l
 where l.lemma like 'make'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1900 as c, lexicon as l
+SELECT c.w3 FROM p1900algo as c, lexicon as l
 where l.lemma like 'make'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1900 as c, lexicon as l
+SELECT c.w4 FROM p1900algo as c, lexicon as l
 where l.lemma like 'make'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1900 as c, lexicon as l
+SELECT c.w5 FROM p1900algo as c, lexicon as l
 where l.lemma like 'make'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1900 as c, lexicon as l
+SELECT c.w6 FROM p1900algo as c, lexicon as l
 where l.lemma like 'make'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -4187,23 +4187,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1910 as c, lexicon as l
+SELECT c.w2 FROM p1910algo as c, lexicon as l
 where l.lemma like 'make'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1910 as c, lexicon as l
+SELECT c.w3 FROM p1910algo as c, lexicon as l
 where l.lemma like 'make'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1910 as c, lexicon as l
+SELECT c.w4 FROM p1910algo as c, lexicon as l
 where l.lemma like 'make'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1910 as c, lexicon as l
+SELECT c.w5 FROM p1910algo as c, lexicon as l
 where l.lemma like 'make'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1910 as c, lexicon as l
+SELECT c.w6 FROM p1910algo as c, lexicon as l
 where l.lemma like 'make'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -4213,23 +4213,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1920 as c, lexicon as l
+SELECT c.w2 FROM p1920algo as c, lexicon as l
 where l.lemma like 'make'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1920 as c, lexicon as l
+SELECT c.w3 FROM p1920algo as c, lexicon as l
 where l.lemma like 'make'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1920 as c, lexicon as l
+SELECT c.w4 FROM p1920algo as c, lexicon as l
 where l.lemma like 'make'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1920 as c, lexicon as l
+SELECT c.w5 FROM p1920algo as c, lexicon as l
 where l.lemma like 'make'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1920 as c, lexicon as l
+SELECT c.w6 FROM p1920algo as c, lexicon as l
 where l.lemma like 'make'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -4239,23 +4239,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1930 as c, lexicon as l
+SELECT c.w2 FROM p1930algo as c, lexicon as l
 where l.lemma like 'make'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1930 as c, lexicon as l
+SELECT c.w3 FROM p1930algo as c, lexicon as l
 where l.lemma like 'make'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1930 as c, lexicon as l
+SELECT c.w4 FROM p1930algo as c, lexicon as l
 where l.lemma like 'make'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1930 as c, lexicon as l
+SELECT c.w5 FROM p1930algo as c, lexicon as l
 where l.lemma like 'make'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1930 as c, lexicon as l
+SELECT c.w6 FROM p1930algo as c, lexicon as l
 where l.lemma like 'make'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -4265,23 +4265,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1940 as c, lexicon as l
+SELECT c.w2 FROM p1940algo as c, lexicon as l
 where l.lemma like 'make'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1940 as c, lexicon as l
+SELECT c.w3 FROM p1940algo as c, lexicon as l
 where l.lemma like 'make'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1940 as c, lexicon as l
+SELECT c.w4 FROM p1940algo as c, lexicon as l
 where l.lemma like 'make'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1940 as c, lexicon as l
+SELECT c.w5 FROM p1940algo as c, lexicon as l
 where l.lemma like 'make'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1940 as c, lexicon as l
+SELECT c.w6 FROM p1940algo as c, lexicon as l
 where l.lemma like 'make'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -4291,23 +4291,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1950 as c, lexicon as l
+SELECT c.w2 FROM p1950algo as c, lexicon as l
 where l.lemma like 'make'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1950 as c, lexicon as l
+SELECT c.w3 FROM p1950algo as c, lexicon as l
 where l.lemma like 'make'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1950 as c, lexicon as l
+SELECT c.w4 FROM p1950algo as c, lexicon as l
 where l.lemma like 'make'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1950 as c, lexicon as l
+SELECT c.w5 FROM p1950algo as c, lexicon as l
 where l.lemma like 'make'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1950 as c, lexicon as l
+SELECT c.w6 FROM p1950algo as c, lexicon as l
 where l.lemma like 'make'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -4317,23 +4317,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1960 as c, lexicon as l
+SELECT c.w2 FROM p1960algo as c, lexicon as l
 where l.lemma like 'make'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1960 as c, lexicon as l
+SELECT c.w3 FROM p1960algo as c, lexicon as l
 where l.lemma like 'make'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1960 as c, lexicon as l
+SELECT c.w4 FROM p1960algo as c, lexicon as l
 where l.lemma like 'make'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1960 as c, lexicon as l
+SELECT c.w5 FROM p1960algo as c, lexicon as l
 where l.lemma like 'make'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1960 as c, lexicon as l
+SELECT c.w6 FROM p1960algo as c, lexicon as l
 where l.lemma like 'make'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -4343,23 +4343,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1970 as c, lexicon as l
+SELECT c.w2 FROM p1970algo as c, lexicon as l
 where l.lemma like 'make'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1970 as c, lexicon as l
+SELECT c.w3 FROM p1970algo as c, lexicon as l
 where l.lemma like 'make'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1970 as c, lexicon as l
+SELECT c.w4 FROM p1970algo as c, lexicon as l
 where l.lemma like 'make'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1970 as c, lexicon as l
+SELECT c.w5 FROM p1970algo as c, lexicon as l
 where l.lemma like 'make'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1970 as c, lexicon as l
+SELECT c.w6 FROM p1970algo as c, lexicon as l
 where l.lemma like 'make'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -4369,23 +4369,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1980 as c, lexicon as l
+SELECT c.w2 FROM p1980algo as c, lexicon as l
 where l.lemma like 'make'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1980 as c, lexicon as l
+SELECT c.w3 FROM p1980algo as c, lexicon as l
 where l.lemma like 'make'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1980 as c, lexicon as l
+SELECT c.w4 FROM p1980algo as c, lexicon as l
 where l.lemma like 'make'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1980 as c, lexicon as l
+SELECT c.w5 FROM p1980algo as c, lexicon as l
 where l.lemma like 'make'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1980 as c, lexicon as l
+SELECT c.w6 FROM p1980algo as c, lexicon as l
 where l.lemma like 'make'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -4395,23 +4395,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1990 as c, lexicon as l
+SELECT c.w2 FROM p1990algo as c, lexicon as l
 where l.lemma like 'make'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1990 as c, lexicon as l
+SELECT c.w3 FROM p1990algo as c, lexicon as l
 where l.lemma like 'make'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1990 as c, lexicon as l
+SELECT c.w4 FROM p1990algo as c, lexicon as l
 where l.lemma like 'make'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1990 as c, lexicon as l
+SELECT c.w5 FROM p1990algo as c, lexicon as l
 where l.lemma like 'make'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1990 as c, lexicon as l
+SELECT c.w6 FROM p1990algo as c, lexicon as l
 where l.lemma like 'make'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -4421,23 +4421,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p2000 as c, lexicon as l
+SELECT c.w2 FROM p2000algo as c, lexicon as l
 where l.lemma like 'make'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p2000 as c, lexicon as l
+SELECT c.w3 FROM p2000algo as c, lexicon as l
 where l.lemma like 'make'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p2000 as c, lexicon as l
+SELECT c.w4 FROM p2000algo as c, lexicon as l
 where l.lemma like 'make'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p2000 as c, lexicon as l
+SELECT c.w5 FROM p2000algo as c, lexicon as l
 where l.lemma like 'make'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p2000 as c, lexicon as l
+SELECT c.w6 FROM p2000algo as c, lexicon as l
 where l.lemma like 'make'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -4447,23 +4447,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1820 as c, lexicon as l
+SELECT c.w2 FROM p1820algo as c, lexicon as l
 where l.lemma like 'take'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1820 as c, lexicon as l
+SELECT c.w3 FROM p1820algo as c, lexicon as l
 where l.lemma like 'take'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1820 as c, lexicon as l
+SELECT c.w4 FROM p1820algo as c, lexicon as l
 where l.lemma like 'take'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1820 as c, lexicon as l
+SELECT c.w5 FROM p1820algo as c, lexicon as l
 where l.lemma like 'take'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1820 as c, lexicon as l
+SELECT c.w6 FROM p1820algo as c, lexicon as l
 where l.lemma like 'take'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -4473,23 +4473,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1830 as c, lexicon as l
+SELECT c.w2 FROM p1830algo as c, lexicon as l
 where l.lemma like 'take'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1830 as c, lexicon as l
+SELECT c.w3 FROM p1830algo as c, lexicon as l
 where l.lemma like 'take'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1830 as c, lexicon as l
+SELECT c.w4 FROM p1830algo as c, lexicon as l
 where l.lemma like 'take'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1830 as c, lexicon as l
+SELECT c.w5 FROM p1830algo as c, lexicon as l
 where l.lemma like 'take'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1830 as c, lexicon as l
+SELECT c.w6 FROM p1830algo as c, lexicon as l
 where l.lemma like 'take'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -4499,23 +4499,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1840 as c, lexicon as l
+SELECT c.w2 FROM p1840algo as c, lexicon as l
 where l.lemma like 'take'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1840 as c, lexicon as l
+SELECT c.w3 FROM p1840algo as c, lexicon as l
 where l.lemma like 'take'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1840 as c, lexicon as l
+SELECT c.w4 FROM p1840algo as c, lexicon as l
 where l.lemma like 'take'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1840 as c, lexicon as l
+SELECT c.w5 FROM p1840algo as c, lexicon as l
 where l.lemma like 'take'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1840 as c, lexicon as l
+SELECT c.w6 FROM p1840algo as c, lexicon as l
 where l.lemma like 'take'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -4525,23 +4525,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1850 as c, lexicon as l
+SELECT c.w2 FROM p1850algo as c, lexicon as l
 where l.lemma like 'take'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1850 as c, lexicon as l
+SELECT c.w3 FROM p1850algo as c, lexicon as l
 where l.lemma like 'take'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1850 as c, lexicon as l
+SELECT c.w4 FROM p1850algo as c, lexicon as l
 where l.lemma like 'take'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1850 as c, lexicon as l
+SELECT c.w5 FROM p1850algo as c, lexicon as l
 where l.lemma like 'take'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1850 as c, lexicon as l
+SELECT c.w6 FROM p1850algo as c, lexicon as l
 where l.lemma like 'take'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -4551,23 +4551,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1860 as c, lexicon as l
+SELECT c.w2 FROM p1860algo as c, lexicon as l
 where l.lemma like 'take'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1860 as c, lexicon as l
+SELECT c.w3 FROM p1860algo as c, lexicon as l
 where l.lemma like 'take'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1860 as c, lexicon as l
+SELECT c.w4 FROM p1860algo as c, lexicon as l
 where l.lemma like 'take'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1860 as c, lexicon as l
+SELECT c.w5 FROM p1860algo as c, lexicon as l
 where l.lemma like 'take'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1860 as c, lexicon as l
+SELECT c.w6 FROM p1860algo as c, lexicon as l
 where l.lemma like 'take'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -4577,23 +4577,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1870 as c, lexicon as l
+SELECT c.w2 FROM p1870algo as c, lexicon as l
 where l.lemma like 'take'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1870 as c, lexicon as l
+SELECT c.w3 FROM p1870algo as c, lexicon as l
 where l.lemma like 'take'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1870 as c, lexicon as l
+SELECT c.w4 FROM p1870algo as c, lexicon as l
 where l.lemma like 'take'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1870 as c, lexicon as l
+SELECT c.w5 FROM p1870algo as c, lexicon as l
 where l.lemma like 'take'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1870 as c, lexicon as l
+SELECT c.w6 FROM p1870algo as c, lexicon as l
 where l.lemma like 'take'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -4603,23 +4603,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1880 as c, lexicon as l
+SELECT c.w2 FROM p1880algo as c, lexicon as l
 where l.lemma like 'take'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1880 as c, lexicon as l
+SELECT c.w3 FROM p1880algo as c, lexicon as l
 where l.lemma like 'take'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1880 as c, lexicon as l
+SELECT c.w4 FROM p1880algo as c, lexicon as l
 where l.lemma like 'take'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1880 as c, lexicon as l
+SELECT c.w5 FROM p1880algo as c, lexicon as l
 where l.lemma like 'take'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1880 as c, lexicon as l
+SELECT c.w6 FROM p1880algo as c, lexicon as l
 where l.lemma like 'take'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -4629,23 +4629,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1890 as c, lexicon as l
+SELECT c.w2 FROM p1890algo as c, lexicon as l
 where l.lemma like 'take'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1890 as c, lexicon as l
+SELECT c.w3 FROM p1890algo as c, lexicon as l
 where l.lemma like 'take'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1890 as c, lexicon as l
+SELECT c.w4 FROM p1890algo as c, lexicon as l
 where l.lemma like 'take'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1890 as c, lexicon as l
+SELECT c.w5 FROM p1890algo as c, lexicon as l
 where l.lemma like 'take'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1890 as c, lexicon as l
+SELECT c.w6 FROM p1890algo as c, lexicon as l
 where l.lemma like 'take'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -4655,23 +4655,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1900 as c, lexicon as l
+SELECT c.w2 FROM p1900algo as c, lexicon as l
 where l.lemma like 'take'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1900 as c, lexicon as l
+SELECT c.w3 FROM p1900algo as c, lexicon as l
 where l.lemma like 'take'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1900 as c, lexicon as l
+SELECT c.w4 FROM p1900algo as c, lexicon as l
 where l.lemma like 'take'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1900 as c, lexicon as l
+SELECT c.w5 FROM p1900algo as c, lexicon as l
 where l.lemma like 'take'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1900 as c, lexicon as l
+SELECT c.w6 FROM p1900algo as c, lexicon as l
 where l.lemma like 'take'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -4681,23 +4681,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1910 as c, lexicon as l
+SELECT c.w2 FROM p1910algo as c, lexicon as l
 where l.lemma like 'take'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1910 as c, lexicon as l
+SELECT c.w3 FROM p1910algo as c, lexicon as l
 where l.lemma like 'take'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1910 as c, lexicon as l
+SELECT c.w4 FROM p1910algo as c, lexicon as l
 where l.lemma like 'take'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1910 as c, lexicon as l
+SELECT c.w5 FROM p1910algo as c, lexicon as l
 where l.lemma like 'take'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1910 as c, lexicon as l
+SELECT c.w6 FROM p1910algo as c, lexicon as l
 where l.lemma like 'take'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -4707,23 +4707,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1920 as c, lexicon as l
+SELECT c.w2 FROM p1920algo as c, lexicon as l
 where l.lemma like 'take'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1920 as c, lexicon as l
+SELECT c.w3 FROM p1920algo as c, lexicon as l
 where l.lemma like 'take'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1920 as c, lexicon as l
+SELECT c.w4 FROM p1920algo as c, lexicon as l
 where l.lemma like 'take'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1920 as c, lexicon as l
+SELECT c.w5 FROM p1920algo as c, lexicon as l
 where l.lemma like 'take'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1920 as c, lexicon as l
+SELECT c.w6 FROM p1920algo as c, lexicon as l
 where l.lemma like 'take'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -4733,23 +4733,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1930 as c, lexicon as l
+SELECT c.w2 FROM p1930algo as c, lexicon as l
 where l.lemma like 'take'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1930 as c, lexicon as l
+SELECT c.w3 FROM p1930algo as c, lexicon as l
 where l.lemma like 'take'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1930 as c, lexicon as l
+SELECT c.w4 FROM p1930algo as c, lexicon as l
 where l.lemma like 'take'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1930 as c, lexicon as l
+SELECT c.w5 FROM p1930algo as c, lexicon as l
 where l.lemma like 'take'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1930 as c, lexicon as l
+SELECT c.w6 FROM p1930algo as c, lexicon as l
 where l.lemma like 'take'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -4759,23 +4759,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1940 as c, lexicon as l
+SELECT c.w2 FROM p1940algo as c, lexicon as l
 where l.lemma like 'take'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1940 as c, lexicon as l
+SELECT c.w3 FROM p1940algo as c, lexicon as l
 where l.lemma like 'take'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1940 as c, lexicon as l
+SELECT c.w4 FROM p1940algo as c, lexicon as l
 where l.lemma like 'take'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1940 as c, lexicon as l
+SELECT c.w5 FROM p1940algo as c, lexicon as l
 where l.lemma like 'take'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1940 as c, lexicon as l
+SELECT c.w6 FROM p1940algo as c, lexicon as l
 where l.lemma like 'take'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -4785,23 +4785,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1950 as c, lexicon as l
+SELECT c.w2 FROM p1950algo as c, lexicon as l
 where l.lemma like 'take'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1950 as c, lexicon as l
+SELECT c.w3 FROM p1950algo as c, lexicon as l
 where l.lemma like 'take'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1950 as c, lexicon as l
+SELECT c.w4 FROM p1950algo as c, lexicon as l
 where l.lemma like 'take'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1950 as c, lexicon as l
+SELECT c.w5 FROM p1950algo as c, lexicon as l
 where l.lemma like 'take'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1950 as c, lexicon as l
+SELECT c.w6 FROM p1950algo as c, lexicon as l
 where l.lemma like 'take'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -4811,23 +4811,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1960 as c, lexicon as l
+SELECT c.w2 FROM p1960algo as c, lexicon as l
 where l.lemma like 'take'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1960 as c, lexicon as l
+SELECT c.w3 FROM p1960algo as c, lexicon as l
 where l.lemma like 'take'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1960 as c, lexicon as l
+SELECT c.w4 FROM p1960algo as c, lexicon as l
 where l.lemma like 'take'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1960 as c, lexicon as l
+SELECT c.w5 FROM p1960algo as c, lexicon as l
 where l.lemma like 'take'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1960 as c, lexicon as l
+SELECT c.w6 FROM p1960algo as c, lexicon as l
 where l.lemma like 'take'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -4837,23 +4837,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1970 as c, lexicon as l
+SELECT c.w2 FROM p1970algo as c, lexicon as l
 where l.lemma like 'take'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1970 as c, lexicon as l
+SELECT c.w3 FROM p1970algo as c, lexicon as l
 where l.lemma like 'take'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1970 as c, lexicon as l
+SELECT c.w4 FROM p1970algo as c, lexicon as l
 where l.lemma like 'take'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1970 as c, lexicon as l
+SELECT c.w5 FROM p1970algo as c, lexicon as l
 where l.lemma like 'take'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1970 as c, lexicon as l
+SELECT c.w6 FROM p1970algo as c, lexicon as l
 where l.lemma like 'take'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -4863,23 +4863,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1980 as c, lexicon as l
+SELECT c.w2 FROM p1980algo as c, lexicon as l
 where l.lemma like 'take'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1980 as c, lexicon as l
+SELECT c.w3 FROM p1980algo as c, lexicon as l
 where l.lemma like 'take'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1980 as c, lexicon as l
+SELECT c.w4 FROM p1980algo as c, lexicon as l
 where l.lemma like 'take'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1980 as c, lexicon as l
+SELECT c.w5 FROM p1980algo as c, lexicon as l
 where l.lemma like 'take'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1980 as c, lexicon as l
+SELECT c.w6 FROM p1980algo as c, lexicon as l
 where l.lemma like 'take'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -4889,23 +4889,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1990 as c, lexicon as l
+SELECT c.w2 FROM p1990algo as c, lexicon as l
 where l.lemma like 'take'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1990 as c, lexicon as l
+SELECT c.w3 FROM p1990algo as c, lexicon as l
 where l.lemma like 'take'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1990 as c, lexicon as l
+SELECT c.w4 FROM p1990algo as c, lexicon as l
 where l.lemma like 'take'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1990 as c, lexicon as l
+SELECT c.w5 FROM p1990algo as c, lexicon as l
 where l.lemma like 'take'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1990 as c, lexicon as l
+SELECT c.w6 FROM p1990algo as c, lexicon as l
 where l.lemma like 'take'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -4915,23 +4915,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p2000 as c, lexicon as l
+SELECT c.w2 FROM p2000algo as c, lexicon as l
 where l.lemma like 'take'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p2000 as c, lexicon as l
+SELECT c.w3 FROM p2000algo as c, lexicon as l
 where l.lemma like 'take'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p2000 as c, lexicon as l
+SELECT c.w4 FROM p2000algo as c, lexicon as l
 where l.lemma like 'take'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p2000 as c, lexicon as l
+SELECT c.w5 FROM p2000algo as c, lexicon as l
 where l.lemma like 'take'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p2000 as c, lexicon as l
+SELECT c.w6 FROM p2000algo as c, lexicon as l
 where l.lemma like 'take'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -4941,23 +4941,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1820 as c, lexicon as l
+SELECT c.w2 FROM p1820algo as c, lexicon as l
 where l.lemma like 'maintain'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1820 as c, lexicon as l
+SELECT c.w3 FROM p1820algo as c, lexicon as l
 where l.lemma like 'maintain'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1820 as c, lexicon as l
+SELECT c.w4 FROM p1820algo as c, lexicon as l
 where l.lemma like 'maintain'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1820 as c, lexicon as l
+SELECT c.w5 FROM p1820algo as c, lexicon as l
 where l.lemma like 'maintain'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1820 as c, lexicon as l
+SELECT c.w6 FROM p1820algo as c, lexicon as l
 where l.lemma like 'maintain'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -4967,23 +4967,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1830 as c, lexicon as l
+SELECT c.w2 FROM p1830algo as c, lexicon as l
 where l.lemma like 'maintain'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1830 as c, lexicon as l
+SELECT c.w3 FROM p1830algo as c, lexicon as l
 where l.lemma like 'maintain'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1830 as c, lexicon as l
+SELECT c.w4 FROM p1830algo as c, lexicon as l
 where l.lemma like 'maintain'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1830 as c, lexicon as l
+SELECT c.w5 FROM p1830algo as c, lexicon as l
 where l.lemma like 'maintain'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1830 as c, lexicon as l
+SELECT c.w6 FROM p1830algo as c, lexicon as l
 where l.lemma like 'maintain'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -4993,23 +4993,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1840 as c, lexicon as l
+SELECT c.w2 FROM p1840algo as c, lexicon as l
 where l.lemma like 'maintain'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1840 as c, lexicon as l
+SELECT c.w3 FROM p1840algo as c, lexicon as l
 where l.lemma like 'maintain'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1840 as c, lexicon as l
+SELECT c.w4 FROM p1840algo as c, lexicon as l
 where l.lemma like 'maintain'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1840 as c, lexicon as l
+SELECT c.w5 FROM p1840algo as c, lexicon as l
 where l.lemma like 'maintain'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1840 as c, lexicon as l
+SELECT c.w6 FROM p1840algo as c, lexicon as l
 where l.lemma like 'maintain'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -5019,23 +5019,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1850 as c, lexicon as l
+SELECT c.w2 FROM p1850algo as c, lexicon as l
 where l.lemma like 'maintain'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1850 as c, lexicon as l
+SELECT c.w3 FROM p1850algo as c, lexicon as l
 where l.lemma like 'maintain'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1850 as c, lexicon as l
+SELECT c.w4 FROM p1850algo as c, lexicon as l
 where l.lemma like 'maintain'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1850 as c, lexicon as l
+SELECT c.w5 FROM p1850algo as c, lexicon as l
 where l.lemma like 'maintain'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1850 as c, lexicon as l
+SELECT c.w6 FROM p1850algo as c, lexicon as l
 where l.lemma like 'maintain'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -5045,23 +5045,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1860 as c, lexicon as l
+SELECT c.w2 FROM p1860algo as c, lexicon as l
 where l.lemma like 'maintain'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1860 as c, lexicon as l
+SELECT c.w3 FROM p1860algo as c, lexicon as l
 where l.lemma like 'maintain'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1860 as c, lexicon as l
+SELECT c.w4 FROM p1860algo as c, lexicon as l
 where l.lemma like 'maintain'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1860 as c, lexicon as l
+SELECT c.w5 FROM p1860algo as c, lexicon as l
 where l.lemma like 'maintain'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1860 as c, lexicon as l
+SELECT c.w6 FROM p1860algo as c, lexicon as l
 where l.lemma like 'maintain'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -5071,23 +5071,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1870 as c, lexicon as l
+SELECT c.w2 FROM p1870algo as c, lexicon as l
 where l.lemma like 'maintain'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1870 as c, lexicon as l
+SELECT c.w3 FROM p1870algo as c, lexicon as l
 where l.lemma like 'maintain'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1870 as c, lexicon as l
+SELECT c.w4 FROM p1870algo as c, lexicon as l
 where l.lemma like 'maintain'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1870 as c, lexicon as l
+SELECT c.w5 FROM p1870algo as c, lexicon as l
 where l.lemma like 'maintain'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1870 as c, lexicon as l
+SELECT c.w6 FROM p1870algo as c, lexicon as l
 where l.lemma like 'maintain'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -5097,23 +5097,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1880 as c, lexicon as l
+SELECT c.w2 FROM p1880algo as c, lexicon as l
 where l.lemma like 'maintain'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1880 as c, lexicon as l
+SELECT c.w3 FROM p1880algo as c, lexicon as l
 where l.lemma like 'maintain'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1880 as c, lexicon as l
+SELECT c.w4 FROM p1880algo as c, lexicon as l
 where l.lemma like 'maintain'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1880 as c, lexicon as l
+SELECT c.w5 FROM p1880algo as c, lexicon as l
 where l.lemma like 'maintain'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1880 as c, lexicon as l
+SELECT c.w6 FROM p1880algo as c, lexicon as l
 where l.lemma like 'maintain'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -5123,23 +5123,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1890 as c, lexicon as l
+SELECT c.w2 FROM p1890algo as c, lexicon as l
 where l.lemma like 'maintain'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1890 as c, lexicon as l
+SELECT c.w3 FROM p1890algo as c, lexicon as l
 where l.lemma like 'maintain'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1890 as c, lexicon as l
+SELECT c.w4 FROM p1890algo as c, lexicon as l
 where l.lemma like 'maintain'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1890 as c, lexicon as l
+SELECT c.w5 FROM p1890algo as c, lexicon as l
 where l.lemma like 'maintain'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1890 as c, lexicon as l
+SELECT c.w6 FROM p1890algo as c, lexicon as l
 where l.lemma like 'maintain'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -5149,23 +5149,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1900 as c, lexicon as l
+SELECT c.w2 FROM p1900algo as c, lexicon as l
 where l.lemma like 'maintain'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1900 as c, lexicon as l
+SELECT c.w3 FROM p1900algo as c, lexicon as l
 where l.lemma like 'maintain'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1900 as c, lexicon as l
+SELECT c.w4 FROM p1900algo as c, lexicon as l
 where l.lemma like 'maintain'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1900 as c, lexicon as l
+SELECT c.w5 FROM p1900algo as c, lexicon as l
 where l.lemma like 'maintain'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1900 as c, lexicon as l
+SELECT c.w6 FROM p1900algo as c, lexicon as l
 where l.lemma like 'maintain'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -5175,23 +5175,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1910 as c, lexicon as l
+SELECT c.w2 FROM p1910algo as c, lexicon as l
 where l.lemma like 'maintain'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1910 as c, lexicon as l
+SELECT c.w3 FROM p1910algo as c, lexicon as l
 where l.lemma like 'maintain'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1910 as c, lexicon as l
+SELECT c.w4 FROM p1910algo as c, lexicon as l
 where l.lemma like 'maintain'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1910 as c, lexicon as l
+SELECT c.w5 FROM p1910algo as c, lexicon as l
 where l.lemma like 'maintain'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1910 as c, lexicon as l
+SELECT c.w6 FROM p1910algo as c, lexicon as l
 where l.lemma like 'maintain'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -5201,23 +5201,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1920 as c, lexicon as l
+SELECT c.w2 FROM p1920algo as c, lexicon as l
 where l.lemma like 'maintain'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1920 as c, lexicon as l
+SELECT c.w3 FROM p1920algo as c, lexicon as l
 where l.lemma like 'maintain'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1920 as c, lexicon as l
+SELECT c.w4 FROM p1920algo as c, lexicon as l
 where l.lemma like 'maintain'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1920 as c, lexicon as l
+SELECT c.w5 FROM p1920algo as c, lexicon as l
 where l.lemma like 'maintain'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1920 as c, lexicon as l
+SELECT c.w6 FROM p1920algo as c, lexicon as l
 where l.lemma like 'maintain'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -5227,23 +5227,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1930 as c, lexicon as l
+SELECT c.w2 FROM p1930algo as c, lexicon as l
 where l.lemma like 'maintain'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1930 as c, lexicon as l
+SELECT c.w3 FROM p1930algo as c, lexicon as l
 where l.lemma like 'maintain'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1930 as c, lexicon as l
+SELECT c.w4 FROM p1930algo as c, lexicon as l
 where l.lemma like 'maintain'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1930 as c, lexicon as l
+SELECT c.w5 FROM p1930algo as c, lexicon as l
 where l.lemma like 'maintain'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1930 as c, lexicon as l
+SELECT c.w6 FROM p1930algo as c, lexicon as l
 where l.lemma like 'maintain'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -5253,23 +5253,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1940 as c, lexicon as l
+SELECT c.w2 FROM p1940algo as c, lexicon as l
 where l.lemma like 'maintain'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1940 as c, lexicon as l
+SELECT c.w3 FROM p1940algo as c, lexicon as l
 where l.lemma like 'maintain'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1940 as c, lexicon as l
+SELECT c.w4 FROM p1940algo as c, lexicon as l
 where l.lemma like 'maintain'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1940 as c, lexicon as l
+SELECT c.w5 FROM p1940algo as c, lexicon as l
 where l.lemma like 'maintain'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1940 as c, lexicon as l
+SELECT c.w6 FROM p1940algo as c, lexicon as l
 where l.lemma like 'maintain'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -5279,23 +5279,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1950 as c, lexicon as l
+SELECT c.w2 FROM p1950algo as c, lexicon as l
 where l.lemma like 'maintain'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1950 as c, lexicon as l
+SELECT c.w3 FROM p1950algo as c, lexicon as l
 where l.lemma like 'maintain'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1950 as c, lexicon as l
+SELECT c.w4 FROM p1950algo as c, lexicon as l
 where l.lemma like 'maintain'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1950 as c, lexicon as l
+SELECT c.w5 FROM p1950algo as c, lexicon as l
 where l.lemma like 'maintain'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1950 as c, lexicon as l
+SELECT c.w6 FROM p1950algo as c, lexicon as l
 where l.lemma like 'maintain'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -5305,23 +5305,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1960 as c, lexicon as l
+SELECT c.w2 FROM p1960algo as c, lexicon as l
 where l.lemma like 'maintain'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1960 as c, lexicon as l
+SELECT c.w3 FROM p1960algo as c, lexicon as l
 where l.lemma like 'maintain'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1960 as c, lexicon as l
+SELECT c.w4 FROM p1960algo as c, lexicon as l
 where l.lemma like 'maintain'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1960 as c, lexicon as l
+SELECT c.w5 FROM p1960algo as c, lexicon as l
 where l.lemma like 'maintain'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1960 as c, lexicon as l
+SELECT c.w6 FROM p1960algo as c, lexicon as l
 where l.lemma like 'maintain'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -5331,23 +5331,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1970 as c, lexicon as l
+SELECT c.w2 FROM p1970algo as c, lexicon as l
 where l.lemma like 'maintain'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1970 as c, lexicon as l
+SELECT c.w3 FROM p1970algo as c, lexicon as l
 where l.lemma like 'maintain'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1970 as c, lexicon as l
+SELECT c.w4 FROM p1970algo as c, lexicon as l
 where l.lemma like 'maintain'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1970 as c, lexicon as l
+SELECT c.w5 FROM p1970algo as c, lexicon as l
 where l.lemma like 'maintain'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1970 as c, lexicon as l
+SELECT c.w6 FROM p1970algo as c, lexicon as l
 where l.lemma like 'maintain'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -5357,23 +5357,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1980 as c, lexicon as l
+SELECT c.w2 FROM p1980algo as c, lexicon as l
 where l.lemma like 'maintain'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1980 as c, lexicon as l
+SELECT c.w3 FROM p1980algo as c, lexicon as l
 where l.lemma like 'maintain'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1980 as c, lexicon as l
+SELECT c.w4 FROM p1980algo as c, lexicon as l
 where l.lemma like 'maintain'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1980 as c, lexicon as l
+SELECT c.w5 FROM p1980algo as c, lexicon as l
 where l.lemma like 'maintain'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1980 as c, lexicon as l
+SELECT c.w6 FROM p1980algo as c, lexicon as l
 where l.lemma like 'maintain'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -5383,23 +5383,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1990 as c, lexicon as l
+SELECT c.w2 FROM p1990algo as c, lexicon as l
 where l.lemma like 'maintain'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1990 as c, lexicon as l
+SELECT c.w3 FROM p1990algo as c, lexicon as l
 where l.lemma like 'maintain'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1990 as c, lexicon as l
+SELECT c.w4 FROM p1990algo as c, lexicon as l
 where l.lemma like 'maintain'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1990 as c, lexicon as l
+SELECT c.w5 FROM p1990algo as c, lexicon as l
 where l.lemma like 'maintain'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1990 as c, lexicon as l
+SELECT c.w6 FROM p1990algo as c, lexicon as l
 where l.lemma like 'maintain'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -5409,23 +5409,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p2000 as c, lexicon as l
+SELECT c.w2 FROM p2000algo as c, lexicon as l
 where l.lemma like 'maintain'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p2000 as c, lexicon as l
+SELECT c.w3 FROM p2000algo as c, lexicon as l
 where l.lemma like 'maintain'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p2000 as c, lexicon as l
+SELECT c.w4 FROM p2000algo as c, lexicon as l
 where l.lemma like 'maintain'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p2000 as c, lexicon as l
+SELECT c.w5 FROM p2000algo as c, lexicon as l
 where l.lemma like 'maintain'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p2000 as c, lexicon as l
+SELECT c.w6 FROM p2000algo as c, lexicon as l
 where l.lemma like 'maintain'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -5435,23 +5435,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1820 as c, lexicon as l
+SELECT c.w2 FROM p1820algo as c, lexicon as l
 where l.lemma like 'demand'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1820 as c, lexicon as l
+SELECT c.w3 FROM p1820algo as c, lexicon as l
 where l.lemma like 'demand'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1820 as c, lexicon as l
+SELECT c.w4 FROM p1820algo as c, lexicon as l
 where l.lemma like 'demand'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1820 as c, lexicon as l
+SELECT c.w5 FROM p1820algo as c, lexicon as l
 where l.lemma like 'demand'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1820 as c, lexicon as l
+SELECT c.w6 FROM p1820algo as c, lexicon as l
 where l.lemma like 'demand'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -5461,23 +5461,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1830 as c, lexicon as l
+SELECT c.w2 FROM p1830algo as c, lexicon as l
 where l.lemma like 'demand'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1830 as c, lexicon as l
+SELECT c.w3 FROM p1830algo as c, lexicon as l
 where l.lemma like 'demand'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1830 as c, lexicon as l
+SELECT c.w4 FROM p1830algo as c, lexicon as l
 where l.lemma like 'demand'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1830 as c, lexicon as l
+SELECT c.w5 FROM p1830algo as c, lexicon as l
 where l.lemma like 'demand'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1830 as c, lexicon as l
+SELECT c.w6 FROM p1830algo as c, lexicon as l
 where l.lemma like 'demand'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -5487,23 +5487,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1840 as c, lexicon as l
+SELECT c.w2 FROM p1840algo as c, lexicon as l
 where l.lemma like 'demand'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1840 as c, lexicon as l
+SELECT c.w3 FROM p1840algo as c, lexicon as l
 where l.lemma like 'demand'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1840 as c, lexicon as l
+SELECT c.w4 FROM p1840algo as c, lexicon as l
 where l.lemma like 'demand'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1840 as c, lexicon as l
+SELECT c.w5 FROM p1840algo as c, lexicon as l
 where l.lemma like 'demand'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1840 as c, lexicon as l
+SELECT c.w6 FROM p1840algo as c, lexicon as l
 where l.lemma like 'demand'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -5513,23 +5513,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1850 as c, lexicon as l
+SELECT c.w2 FROM p1850algo as c, lexicon as l
 where l.lemma like 'demand'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1850 as c, lexicon as l
+SELECT c.w3 FROM p1850algo as c, lexicon as l
 where l.lemma like 'demand'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1850 as c, lexicon as l
+SELECT c.w4 FROM p1850algo as c, lexicon as l
 where l.lemma like 'demand'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1850 as c, lexicon as l
+SELECT c.w5 FROM p1850algo as c, lexicon as l
 where l.lemma like 'demand'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1850 as c, lexicon as l
+SELECT c.w6 FROM p1850algo as c, lexicon as l
 where l.lemma like 'demand'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -5539,23 +5539,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1860 as c, lexicon as l
+SELECT c.w2 FROM p1860algo as c, lexicon as l
 where l.lemma like 'demand'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1860 as c, lexicon as l
+SELECT c.w3 FROM p1860algo as c, lexicon as l
 where l.lemma like 'demand'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1860 as c, lexicon as l
+SELECT c.w4 FROM p1860algo as c, lexicon as l
 where l.lemma like 'demand'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1860 as c, lexicon as l
+SELECT c.w5 FROM p1860algo as c, lexicon as l
 where l.lemma like 'demand'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1860 as c, lexicon as l
+SELECT c.w6 FROM p1860algo as c, lexicon as l
 where l.lemma like 'demand'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -5565,23 +5565,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1870 as c, lexicon as l
+SELECT c.w2 FROM p1870algo as c, lexicon as l
 where l.lemma like 'demand'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1870 as c, lexicon as l
+SELECT c.w3 FROM p1870algo as c, lexicon as l
 where l.lemma like 'demand'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1870 as c, lexicon as l
+SELECT c.w4 FROM p1870algo as c, lexicon as l
 where l.lemma like 'demand'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1870 as c, lexicon as l
+SELECT c.w5 FROM p1870algo as c, lexicon as l
 where l.lemma like 'demand'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1870 as c, lexicon as l
+SELECT c.w6 FROM p1870algo as c, lexicon as l
 where l.lemma like 'demand'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -5591,23 +5591,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1880 as c, lexicon as l
+SELECT c.w2 FROM p1880algo as c, lexicon as l
 where l.lemma like 'demand'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1880 as c, lexicon as l
+SELECT c.w3 FROM p1880algo as c, lexicon as l
 where l.lemma like 'demand'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1880 as c, lexicon as l
+SELECT c.w4 FROM p1880algo as c, lexicon as l
 where l.lemma like 'demand'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1880 as c, lexicon as l
+SELECT c.w5 FROM p1880algo as c, lexicon as l
 where l.lemma like 'demand'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1880 as c, lexicon as l
+SELECT c.w6 FROM p1880algo as c, lexicon as l
 where l.lemma like 'demand'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -5617,23 +5617,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1890 as c, lexicon as l
+SELECT c.w2 FROM p1890algo as c, lexicon as l
 where l.lemma like 'demand'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1890 as c, lexicon as l
+SELECT c.w3 FROM p1890algo as c, lexicon as l
 where l.lemma like 'demand'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1890 as c, lexicon as l
+SELECT c.w4 FROM p1890algo as c, lexicon as l
 where l.lemma like 'demand'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1890 as c, lexicon as l
+SELECT c.w5 FROM p1890algo as c, lexicon as l
 where l.lemma like 'demand'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1890 as c, lexicon as l
+SELECT c.w6 FROM p1890algo as c, lexicon as l
 where l.lemma like 'demand'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -5643,23 +5643,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1900 as c, lexicon as l
+SELECT c.w2 FROM p1900algo as c, lexicon as l
 where l.lemma like 'demand'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1900 as c, lexicon as l
+SELECT c.w3 FROM p1900algo as c, lexicon as l
 where l.lemma like 'demand'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1900 as c, lexicon as l
+SELECT c.w4 FROM p1900algo as c, lexicon as l
 where l.lemma like 'demand'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1900 as c, lexicon as l
+SELECT c.w5 FROM p1900algo as c, lexicon as l
 where l.lemma like 'demand'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1900 as c, lexicon as l
+SELECT c.w6 FROM p1900algo as c, lexicon as l
 where l.lemma like 'demand'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -5669,23 +5669,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1910 as c, lexicon as l
+SELECT c.w2 FROM p1910algo as c, lexicon as l
 where l.lemma like 'demand'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1910 as c, lexicon as l
+SELECT c.w3 FROM p1910algo as c, lexicon as l
 where l.lemma like 'demand'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1910 as c, lexicon as l
+SELECT c.w4 FROM p1910algo as c, lexicon as l
 where l.lemma like 'demand'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1910 as c, lexicon as l
+SELECT c.w5 FROM p1910algo as c, lexicon as l
 where l.lemma like 'demand'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1910 as c, lexicon as l
+SELECT c.w6 FROM p1910algo as c, lexicon as l
 where l.lemma like 'demand'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -5695,23 +5695,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1920 as c, lexicon as l
+SELECT c.w2 FROM p1920algo as c, lexicon as l
 where l.lemma like 'demand'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1920 as c, lexicon as l
+SELECT c.w3 FROM p1920algo as c, lexicon as l
 where l.lemma like 'demand'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1920 as c, lexicon as l
+SELECT c.w4 FROM p1920algo as c, lexicon as l
 where l.lemma like 'demand'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1920 as c, lexicon as l
+SELECT c.w5 FROM p1920algo as c, lexicon as l
 where l.lemma like 'demand'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1920 as c, lexicon as l
+SELECT c.w6 FROM p1920algo as c, lexicon as l
 where l.lemma like 'demand'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -5721,23 +5721,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1930 as c, lexicon as l
+SELECT c.w2 FROM p1930algo as c, lexicon as l
 where l.lemma like 'demand'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1930 as c, lexicon as l
+SELECT c.w3 FROM p1930algo as c, lexicon as l
 where l.lemma like 'demand'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1930 as c, lexicon as l
+SELECT c.w4 FROM p1930algo as c, lexicon as l
 where l.lemma like 'demand'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1930 as c, lexicon as l
+SELECT c.w5 FROM p1930algo as c, lexicon as l
 where l.lemma like 'demand'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1930 as c, lexicon as l
+SELECT c.w6 FROM p1930algo as c, lexicon as l
 where l.lemma like 'demand'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -5747,23 +5747,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1940 as c, lexicon as l
+SELECT c.w2 FROM p1940algo as c, lexicon as l
 where l.lemma like 'demand'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1940 as c, lexicon as l
+SELECT c.w3 FROM p1940algo as c, lexicon as l
 where l.lemma like 'demand'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1940 as c, lexicon as l
+SELECT c.w4 FROM p1940algo as c, lexicon as l
 where l.lemma like 'demand'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1940 as c, lexicon as l
+SELECT c.w5 FROM p1940algo as c, lexicon as l
 where l.lemma like 'demand'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1940 as c, lexicon as l
+SELECT c.w6 FROM p1940algo as c, lexicon as l
 where l.lemma like 'demand'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -5773,23 +5773,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1950 as c, lexicon as l
+SELECT c.w2 FROM p1950algo as c, lexicon as l
 where l.lemma like 'demand'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1950 as c, lexicon as l
+SELECT c.w3 FROM p1950algo as c, lexicon as l
 where l.lemma like 'demand'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1950 as c, lexicon as l
+SELECT c.w4 FROM p1950algo as c, lexicon as l
 where l.lemma like 'demand'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1950 as c, lexicon as l
+SELECT c.w5 FROM p1950algo as c, lexicon as l
 where l.lemma like 'demand'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1950 as c, lexicon as l
+SELECT c.w6 FROM p1950algo as c, lexicon as l
 where l.lemma like 'demand'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -5799,23 +5799,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1960 as c, lexicon as l
+SELECT c.w2 FROM p1960algo as c, lexicon as l
 where l.lemma like 'demand'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1960 as c, lexicon as l
+SELECT c.w3 FROM p1960algo as c, lexicon as l
 where l.lemma like 'demand'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1960 as c, lexicon as l
+SELECT c.w4 FROM p1960algo as c, lexicon as l
 where l.lemma like 'demand'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1960 as c, lexicon as l
+SELECT c.w5 FROM p1960algo as c, lexicon as l
 where l.lemma like 'demand'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1960 as c, lexicon as l
+SELECT c.w6 FROM p1960algo as c, lexicon as l
 where l.lemma like 'demand'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -5825,23 +5825,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1970 as c, lexicon as l
+SELECT c.w2 FROM p1970algo as c, lexicon as l
 where l.lemma like 'demand'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1970 as c, lexicon as l
+SELECT c.w3 FROM p1970algo as c, lexicon as l
 where l.lemma like 'demand'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1970 as c, lexicon as l
+SELECT c.w4 FROM p1970algo as c, lexicon as l
 where l.lemma like 'demand'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1970 as c, lexicon as l
+SELECT c.w5 FROM p1970algo as c, lexicon as l
 where l.lemma like 'demand'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1970 as c, lexicon as l
+SELECT c.w6 FROM p1970algo as c, lexicon as l
 where l.lemma like 'demand'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -5851,23 +5851,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1980 as c, lexicon as l
+SELECT c.w2 FROM p1980algo as c, lexicon as l
 where l.lemma like 'demand'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1980 as c, lexicon as l
+SELECT c.w3 FROM p1980algo as c, lexicon as l
 where l.lemma like 'demand'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1980 as c, lexicon as l
+SELECT c.w4 FROM p1980algo as c, lexicon as l
 where l.lemma like 'demand'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1980 as c, lexicon as l
+SELECT c.w5 FROM p1980algo as c, lexicon as l
 where l.lemma like 'demand'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1980 as c, lexicon as l
+SELECT c.w6 FROM p1980algo as c, lexicon as l
 where l.lemma like 'demand'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -5877,23 +5877,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p1990 as c, lexicon as l
+SELECT c.w2 FROM p1990algo as c, lexicon as l
 where l.lemma like 'demand'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p1990 as c, lexicon as l
+SELECT c.w3 FROM p1990algo as c, lexicon as l
 where l.lemma like 'demand'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p1990 as c, lexicon as l
+SELECT c.w4 FROM p1990algo as c, lexicon as l
 where l.lemma like 'demand'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p1990 as c, lexicon as l
+SELECT c.w5 FROM p1990algo as c, lexicon as l
 where l.lemma like 'demand'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p1990 as c, lexicon as l
+SELECT c.w6 FROM p1990algo as c, lexicon as l
 where l.lemma like 'demand'
 and c.w1 = l.wid
 ) a, lexicon b where 
@@ -5903,23 +5903,23 @@ and a.w2 = b.wid group by b.lemma order by count(*) desc
 
 COPY (
 SELECT lemma, count(*) from (
-SELECT c.w2 FROM p2000 as c, lexicon as l
+SELECT c.w2 FROM p2000algo as c, lexicon as l
 where l.lemma like 'demand'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w3 FROM p2000 as c, lexicon as l
+SELECT c.w3 FROM p2000algo as c, lexicon as l
 where l.lemma like 'demand'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w4 FROM p2000 as c, lexicon as l
+SELECT c.w4 FROM p2000algo as c, lexicon as l
 where l.lemma like 'demand'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w5 FROM p2000 as c, lexicon as l
+SELECT c.w5 FROM p2000algo as c, lexicon as l
 where l.lemma like 'demand'
 and c.w1 = l.wid
 UNION ALL
-SELECT c.w6 FROM p2000 as c, lexicon as l
+SELECT c.w6 FROM p2000algo as c, lexicon as l
 where l.lemma like 'demand'
 and c.w1 = l.wid
 ) a, lexicon b where 
