@@ -21,7 +21,7 @@ $
 
 # Command Line History (newest to oldest):
 :wq
-|2,0,1550698311,,"wq"
+|2,0,1550699494,,"wq"
 :w
 |2,0,1550035298,,"w"
 :set nowrap
@@ -204,40 +204,92 @@ $
 |3,0,36,0,1,0,0,"/"
 
 # File marks:
-'0  2  2  ~/.gitignore
-|4,48,2,2,1550698311,"~/.gitignore"
-'1  39  38  ~/example_partition-Algoselect.sql
-|4,49,39,38,1550686580,"~/example_partition-Algoselect.sql"
-'2  1  0  ~/example_partition-Algoselect.sql
-|4,50,1,0,1550034955,"~/example_partition-Algoselect.sql"
-'3  1  0  ~/example_partition-Algoselect.sql
-|4,51,1,0,1550034955,"~/example_partition-Algoselect.sql"
-'4  100  16  ~/example_partition-Algoselect.sql
-|4,52,100,16,1550034944,"~/example_partition-Algoselect.sql"
-'5  100  16  ~/example_partition-Algoselect.sql
-|4,53,100,16,1550034944,"~/example_partition-Algoselect.sql"
+'0  1  0  ~/algoQueryPartitions.sql
+|4,48,1,0,1550699494,"~/algoQueryPartitions.sql"
+'1  1  0  ~/algoQueryPartitions.sql
+|4,49,1,0,1550699101,"~/algoQueryPartitions.sql"
+'2  2  2  ~/.gitignore
+|4,50,2,2,1550698311,"~/.gitignore"
+'3  39  38  ~/example_partition-Algoselect.sql
+|4,51,39,38,1550686580,"~/example_partition-Algoselect.sql"
+'4  1  0  ~/example_partition-Algoselect.sql
+|4,52,1,0,1550034955,"~/example_partition-Algoselect.sql"
+'5  1  0  ~/example_partition-Algoselect.sql
+|4,53,1,0,1550034955,"~/example_partition-Algoselect.sql"
 '6  100  16  ~/example_partition-Algoselect.sql
 |4,54,100,16,1550034944,"~/example_partition-Algoselect.sql"
 '7  100  16  ~/example_partition-Algoselect.sql
 |4,55,100,16,1550034944,"~/example_partition-Algoselect.sql"
-'8  19  107  ~/mostcommonpartitionselect.sql
-|4,56,19,107,0,"~/mostcommonpartitionselect.sql"
-'9  1  0  ~/queryPartitions.sql
-|4,57,1,0,0,"~/queryPartitions.sql"
+'8  100  16  ~/example_partition-Algoselect.sql
+|4,56,100,16,1550034944,"~/example_partition-Algoselect.sql"
+'9  100  16  ~/example_partition-Algoselect.sql
+|4,57,100,16,1550034944,"~/example_partition-Algoselect.sql"
 
 # Jumplist (newest first):
+-'  1  0  ~/algoQueryPartitions.sql
+|4,39,1,0,1550699494,"~/algoQueryPartitions.sql"
+-'  1  0  ~/algoQueryPartitions.sql
+|4,39,1,0,1550699101,"~/algoQueryPartitions.sql"
 -'  2  2  ~/.gitignore
 |4,39,2,2,1550698311,"~/.gitignore"
+-'  2  2  ~/.gitignore
+|4,39,2,2,1550698311,"~/.gitignore"
+-'  2  2  ~/.gitignore
+|4,39,2,2,1550698311,"~/.gitignore"
+-'  2  2  ~/.gitignore
+|4,39,2,2,1550698311,"~/.gitignore"
+-'  1  3  ~/.gitignore
+|4,39,1,3,1550698304,"~/.gitignore"
+-'  1  3  ~/.gitignore
+|4,39,1,3,1550698304,"~/.gitignore"
+-'  1  3  ~/.gitignore
+|4,39,1,3,1550698304,"~/.gitignore"
 -'  1  3  ~/.gitignore
 |4,39,1,3,1550698304,"~/.gitignore"
 -'  39  38  ~/example_partition-Algoselect.sql
 |4,39,39,38,1550686580,"~/example_partition-Algoselect.sql"
 -'  39  38  ~/example_partition-Algoselect.sql
 |4,39,39,38,1550686580,"~/example_partition-Algoselect.sql"
+-'  39  38  ~/example_partition-Algoselect.sql
+|4,39,39,38,1550686580,"~/example_partition-Algoselect.sql"
+-'  39  38  ~/example_partition-Algoselect.sql
+|4,39,39,38,1550686580,"~/example_partition-Algoselect.sql"
+-'  39  38  ~/example_partition-Algoselect.sql
+|4,39,39,38,1550686580,"~/example_partition-Algoselect.sql"
+-'  39  38  ~/example_partition-Algoselect.sql
+|4,39,39,38,1550686580,"~/example_partition-Algoselect.sql"
+-'  39  38  ~/example_partition-Algoselect.sql
+|4,39,39,38,1550686580,"~/example_partition-Algoselect.sql"
+-'  39  38  ~/example_partition-Algoselect.sql
+|4,39,39,38,1550686580,"~/example_partition-Algoselect.sql"
 -'  1  0  ~/example_partition-Algoselect.sql
 |4,39,1,0,1550035185,"~/example_partition-Algoselect.sql"
 -'  1  0  ~/example_partition-Algoselect.sql
 |4,39,1,0,1550035185,"~/example_partition-Algoselect.sql"
+-'  1  0  ~/example_partition-Algoselect.sql
+|4,39,1,0,1550035185,"~/example_partition-Algoselect.sql"
+-'  1  0  ~/example_partition-Algoselect.sql
+|4,39,1,0,1550035185,"~/example_partition-Algoselect.sql"
+-'  1  0  ~/example_partition-Algoselect.sql
+|4,39,1,0,1550035185,"~/example_partition-Algoselect.sql"
+-'  1  0  ~/example_partition-Algoselect.sql
+|4,39,1,0,1550035185,"~/example_partition-Algoselect.sql"
+-'  1  0  ~/example_partition-Algoselect.sql
+|4,39,1,0,1550035185,"~/example_partition-Algoselect.sql"
+-'  1  0  ~/example_partition-Algoselect.sql
+|4,39,1,0,1550035185,"~/example_partition-Algoselect.sql"
+-'  1  0  ~/example_partition-Algoselect.sql
+|4,39,1,0,1550034955,"~/example_partition-Algoselect.sql"
+-'  1  0  ~/example_partition-Algoselect.sql
+|4,39,1,0,1550034955,"~/example_partition-Algoselect.sql"
+-'  1  0  ~/example_partition-Algoselect.sql
+|4,39,1,0,1550034955,"~/example_partition-Algoselect.sql"
+-'  1  0  ~/example_partition-Algoselect.sql
+|4,39,1,0,1550034955,"~/example_partition-Algoselect.sql"
+-'  1  0  ~/example_partition-Algoselect.sql
+|4,39,1,0,1550034955,"~/example_partition-Algoselect.sql"
+-'  1  0  ~/example_partition-Algoselect.sql
+|4,39,1,0,1550034955,"~/example_partition-Algoselect.sql"
 -'  1  0  ~/example_partition-Algoselect.sql
 |4,39,1,0,1550034955,"~/example_partition-Algoselect.sql"
 -'  1  0  ~/example_partition-Algoselect.sql
@@ -251,9 +303,57 @@ $
 -'  100  16  ~/example_partition-Algoselect.sql
 |4,39,100,16,1550034946,"~/example_partition-Algoselect.sql"
 -'  100  16  ~/example_partition-Algoselect.sql
+|4,39,100,16,1550034946,"~/example_partition-Algoselect.sql"
+-'  100  16  ~/example_partition-Algoselect.sql
+|4,39,100,16,1550034946,"~/example_partition-Algoselect.sql"
+-'  100  16  ~/example_partition-Algoselect.sql
+|4,39,100,16,1550034946,"~/example_partition-Algoselect.sql"
+-'  100  16  ~/example_partition-Algoselect.sql
+|4,39,100,16,1550034946,"~/example_partition-Algoselect.sql"
+-'  100  16  ~/example_partition-Algoselect.sql
+|4,39,100,16,1550034946,"~/example_partition-Algoselect.sql"
+-'  100  16  ~/example_partition-Algoselect.sql
+|4,39,100,16,1550034946,"~/example_partition-Algoselect.sql"
+-'  100  16  ~/example_partition-Algoselect.sql
+|4,39,100,16,1550034946,"~/example_partition-Algoselect.sql"
+-'  100  16  ~/example_partition-Algoselect.sql
+|4,39,100,16,1550034946,"~/example_partition-Algoselect.sql"
+-'  100  16  ~/example_partition-Algoselect.sql
+|4,39,100,16,1550034946,"~/example_partition-Algoselect.sql"
+-'  100  16  ~/example_partition-Algoselect.sql
+|4,39,100,16,1550034946,"~/example_partition-Algoselect.sql"
+-'  100  16  ~/example_partition-Algoselect.sql
+|4,39,100,16,1550034946,"~/example_partition-Algoselect.sql"
+-'  100  16  ~/example_partition-Algoselect.sql
+|4,39,100,16,1550034946,"~/example_partition-Algoselect.sql"
+-'  100  16  ~/example_partition-Algoselect.sql
 |4,39,100,16,1550034944,"~/example_partition-Algoselect.sql"
 -'  100  16  ~/example_partition-Algoselect.sql
 |4,39,100,16,1550034944,"~/example_partition-Algoselect.sql"
+-'  100  16  ~/example_partition-Algoselect.sql
+|4,39,100,16,1550034944,"~/example_partition-Algoselect.sql"
+-'  100  16  ~/example_partition-Algoselect.sql
+|4,39,100,16,1550034944,"~/example_partition-Algoselect.sql"
+-'  100  16  ~/example_partition-Algoselect.sql
+|4,39,100,16,1550034944,"~/example_partition-Algoselect.sql"
+-'  100  16  ~/example_partition-Algoselect.sql
+|4,39,100,16,1550034944,"~/example_partition-Algoselect.sql"
+-'  100  16  ~/example_partition-Algoselect.sql
+|4,39,100,16,1550034944,"~/example_partition-Algoselect.sql"
+-'  100  16  ~/example_partition-Algoselect.sql
+|4,39,100,16,1550034944,"~/example_partition-Algoselect.sql"
+-'  1  0  ~/example_partition-Algoselect.sql
+|4,39,1,0,1550034882,"~/example_partition-Algoselect.sql"
+-'  1  0  ~/example_partition-Algoselect.sql
+|4,39,1,0,1550034882,"~/example_partition-Algoselect.sql"
+-'  1  0  ~/example_partition-Algoselect.sql
+|4,39,1,0,1550034882,"~/example_partition-Algoselect.sql"
+-'  1  0  ~/example_partition-Algoselect.sql
+|4,39,1,0,1550034882,"~/example_partition-Algoselect.sql"
+-'  1  0  ~/example_partition-Algoselect.sql
+|4,39,1,0,1550034882,"~/example_partition-Algoselect.sql"
+-'  1  0  ~/example_partition-Algoselect.sql
+|4,39,1,0,1550034882,"~/example_partition-Algoselect.sql"
 -'  1  0  ~/example_partition-Algoselect.sql
 |4,39,1,0,1550034882,"~/example_partition-Algoselect.sql"
 -'  1  0  ~/example_partition-Algoselect.sql
@@ -326,108 +426,12 @@ $
 |4,39,2,96,0,"~/mostcommonverb.sql"
 -'  49  0  ~/fullSelect2.sql
 |4,39,49,0,0,"~/fullSelect2.sql"
--'  3  24  ~/mostcommonverb.sql
-|4,39,3,24,0,"~/mostcommonverb.sql"
--'  1  0  ~/pos.csv
-|4,39,1,0,0,"~/pos.csv"
--'  64  0  ~/fullSelect2.sql
-|4,39,64,0,0,"~/fullSelect2.sql"
--'  1  0  ~/pos.sql
-|4,39,1,0,0,"~/pos.sql"
--'  33  50  ~/createBig.sql
-|4,39,33,50,0,"~/createBig.sql"
--'  17  22  ~/createBig.sql
-|4,39,17,22,0,"~/createBig.sql"
--'  25  22  ~/createBig.sql
-|4,39,25,22,0,"~/createBig.sql"
--'  12  0  ~/select.sql
-|4,39,12,0,0,"~/select.sql"
--'  1  0  ~/select.sql
-|4,39,1,0,0,"~/select.sql"
--'  13  53  ~/select.sql
-|4,39,13,53,0,"~/select.sql"
--'  3  0  ~/select.sql
-|4,39,3,0,0,"~/select.sql"
--'  6  29  ~/select.sql
-|4,39,6,29,0,"~/select.sql"
--'  1  0  ~/sources_coha_cleaned_3.txt
-|4,39,1,0,0,"~/sources_coha_cleaned_3.txt"
--'  1  0  ~/sources_coha_cleaned_2.txt
-|4,39,1,0,0,"~/sources_coha_cleaned_2.txt"
--'  1  0  ~/sources_coha_cleaned_1.csv
-|4,39,1,0,0,"~/sources_coha_cleaned_1.csv"
--'  26356210  19  ~/1910.txt
-|4,39,26356210,19,0,"~/1910.txt"
--'  1  0  ~/1910.txt
-|4,39,1,0,0,"~/1910.txt"
--'  1  0  ~/Et7yb9G92iBNoh54QMhhMwEBBRiVVWKhAFmRKNgztDcfUg?e=DQnF6C
-|4,39,1,0,0,"~/Et7yb9G92iBNoh54QMhhMwEBBRiVVWKhAFmRKNgztDcfUg?e=DQnF6C"
--'  3954318  25  ~/COHAlexiconClean.txt
-|4,39,3954318,25,0,"~/COHAlexiconClean.txt"
--'  1  0  ~/COHAlexiconClean.txt
-|4,39,1,0,0,"~/COHAlexiconClean.txt"
--'  1861470  42  ~/COHAlexiconClean.txt
-|4,39,1861470,42,0,"~/COHAlexiconClean.txt"
--'  1861466  18  ~/COHAlexicon.txt
-|4,39,1861466,18,0,"~/COHAlexicon.txt"
--'  1  0  ~/COHAlexicon.txt
-|4,39,1,0,0,"~/COHAlexicon.txt"
--'  1  0  ~/coha-samples-lexicon-UTF8.txt
-|4,39,1,0,0,"~/coha-samples-lexicon-UTF8.txt"
--'  1  0  ~/coha-samples-lexicon.txt
-|4,39,1,0,0,"~/coha-samples-lexicon.txt"
--'  101281  0  ~/coha-samples-lexicon.txt
-|4,39,101281,0,0,"~/coha-samples-lexicon.txt"
--'  1  0  ~/lexiconUTF8.txt
-|4,39,1,0,0,"~/lexiconUTF8.txt"
--'  3000000  0  ~/lexiconUTF8.txt
-|4,39,3000000,0,0,"~/lexiconUTF8.txt"
--'  1  7  ~/lexiconUnicode.txt
-|4,39,1,7,0,"~/lexiconUnicode.txt"
--'  1335298  15  ~/lexicon.txt
-|4,39,1335298,15,0,"~/lexicon.txt"
--'  1229843  14  ~/lexicon.txt
-|4,39,1229843,14,0,"~/lexicon.txt"
--'  185437  7  ~/lexicon.txt
-|4,39,185437,7,0,"~/lexicon.txt"
--'  821647  19  ~/lexicon.txt
-|4,39,821647,19,0,"~/lexicon.txt"
--'  819918  19  ~/lexicon.txt
-|4,39,819918,19,0,"~/lexicon.txt"
--'  806698  21  ~/lexicon.txt
-|4,39,806698,21,0,"~/lexicon.txt"
--'  800886  15  ~/lexicon.txt
-|4,39,800886,15,0,"~/lexicon.txt"
--'  791193  16  ~/lexicon.txt
-|4,39,791193,16,0,"~/lexicon.txt"
--'  789770  26  ~/lexicon.txt
-|4,39,789770,26,0,"~/lexicon.txt"
--'  787172  20  ~/lexicon.txt
-|4,39,787172,20,0,"~/lexicon.txt"
--'  787170  15  ~/lexicon.txt
-|4,39,787170,15,0,"~/lexicon.txt"
--'  775020  26  ~/lexicon.txt
-|4,39,775020,26,0,"~/lexicon.txt"
--'  772517  33  ~/lexicon.txt
-|4,39,772517,33,0,"~/lexicon.txt"
--'  770391  12  ~/lexicon.txt
-|4,39,770391,12,0,"~/lexicon.txt"
--'  766684  22  ~/lexicon.txt
-|4,39,766684,22,0,"~/lexicon.txt"
--'  743015  23  ~/lexicon.txt
-|4,39,743015,23,0,"~/lexicon.txt"
--'  736344  21  ~/lexicon.txt
-|4,39,736344,21,0,"~/lexicon.txt"
--'  732254  14  ~/lexicon.txt
-|4,39,732254,14,0,"~/lexicon.txt"
--'  709311  14  ~/lexicon.txt
-|4,39,709311,14,0,"~/lexicon.txt"
--'  703505  15  ~/lexicon.txt
-|4,39,703505,15,0,"~/lexicon.txt"
--'  703504  20  ~/lexicon.txt
-|4,39,703504,20,0,"~/lexicon.txt"
 
 # History of marks within files (newest to oldest):
+
+> ~/algoQueryPartitions.sql
+	*	1550699493	0
+	"	1	0
 
 > ~/.gitignore
 	*	1550698310	0

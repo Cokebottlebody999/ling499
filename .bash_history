@@ -1,56 +1,3 @@
-cat createBig.sql > selectNN.sql
-ls
-vim selectNN.sql 
-vim selectNN.sql 
-cat selectNN.sql > selectNN2.sql
-ls
-vim selectNN2.sql 
-ls
-git init
-echo "# ling499" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git remote add origin https://github.com/a-rothwell/ling499.git
-git push -u origin master
-git add .
-ls -la
-vim .gitignore
-git add .
-git blame
-git commit
-git commit -m "Commit"
-git push
-git pull
-ls
-git add .
-git pull
-git commit -m "Commit"
-git push
-git pull
-ls
-vim selectNN.sql 
-vim selectNN.sql 
-git pull
-git fetch origin master
-git reset --hard origin/master
-git pull
-git pull
-rm fullSelect.sql 
-git pull
-vim selectTEST.sql
-;a
-ls
-vim selectTEST.sql
-git pull
-git add .
-git commit -m "all make"
-git push
-git add .
-git add .
-git commit -m "all take"
-git push
-git add .
 git commit -m "all give"
 git push
 git pull
@@ -498,3 +445,56 @@ exit
 ls
 vim example_partition-Algoselect.sql 
 exit
+ls
+coha
+psql
+exit
+pwd
+git pull
+cat algoQueryPartitions.sql 
+mkdir algoResult
+ls
+ls
+cd algoResult/
+ls
+cat bear1820.csv 
+head bear1820.csv 
+cd ..
+ls
+ls
+cd algoResult/
+ls
+ls
+cd ..
+ls
+git add .
+git commit -m "algo results"
+git push
+ls
+vim .gitignore 
+git add .
+git commit -m "ignore postgres"
+git push
+vim algoQueryPartitions.sql 
+git pull
+vim algoQueryPartitions.sql 
+ls
+cd algoResult/
+ls
+git add .
+git commit -m "algo results"
+git push
+exit
+exit
+ls
+mkdir 1940Reselect
+ls
+cd 1940Reselect/
+pwd
+cd ..
+ls
+git pull
+tmux
+tmux attach
+tmux attach
+tmux attach
