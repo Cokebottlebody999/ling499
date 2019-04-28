@@ -23,7 +23,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/bear1820.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/bear1820NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -49,7 +49,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/bear1820.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/bear1820FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -75,7 +75,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/bear1820.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/bear1820MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -101,7 +101,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/bear1830.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/bear1830NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -127,7 +127,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/bear1830.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/bear1830FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -153,7 +153,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/bear1830.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/bear1830MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -179,7 +179,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/bear1840.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/bear1840NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -205,7 +205,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/bear1840.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/bear1840FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -231,7 +231,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/bear1840.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/bear1840MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -257,7 +257,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/bear1850.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/bear1850NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -283,7 +283,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/bear1850.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/bear1850FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -309,7 +309,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/bear1850.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/bear1850MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -335,7 +335,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/bear1860.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/bear1860NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -361,7 +361,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/bear1860.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/bear1860FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -387,7 +387,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/bear1860.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/bear1860MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -413,7 +413,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/bear1870.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/bear1870NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -439,7 +439,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/bear1870.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/bear1870FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -465,7 +465,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/bear1870.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/bear1870MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -491,7 +491,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/bear1880.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/bear1880NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -517,7 +517,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/bear1880.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/bear1880FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -543,7 +543,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/bear1880.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/bear1880MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -569,7 +569,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/bear1890.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/bear1890NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -595,7 +595,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/bear1890.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/bear1890FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -621,7 +621,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/bear1890.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/bear1890MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -647,7 +647,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/bear1900.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/bear1900NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -673,7 +673,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/bear1900.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/bear1900FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -699,7 +699,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/bear1900.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/bear1900MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -725,7 +725,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/bear1910.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/bear1910NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -751,7 +751,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/bear1910.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/bear1910FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -777,7 +777,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/bear1910.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/bear1910MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -803,7 +803,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/bear1920.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/bear1920NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -829,7 +829,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/bear1920.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/bear1920FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -855,7 +855,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/bear1920.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/bear1920MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -881,7 +881,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/bear1930.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/bear1930NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -907,7 +907,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/bear1930.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/bear1930FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -933,7 +933,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/bear1930.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/bear1930MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -959,7 +959,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/bear1940.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/bear1940NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -985,7 +985,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/bear1940.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/bear1940FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -1011,7 +1011,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/bear1940.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/bear1940MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -1037,7 +1037,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/bear1950.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/bear1950NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -1063,7 +1063,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/bear1950.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/bear1950FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -1089,7 +1089,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/bear1950.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/bear1950MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -1115,7 +1115,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/bear1960.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/bear1960NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -1141,7 +1141,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/bear1960.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/bear1960FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -1167,7 +1167,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/bear1960.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/bear1960MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -1193,7 +1193,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/bear1970.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/bear1970NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -1219,7 +1219,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/bear1970.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/bear1970FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -1245,7 +1245,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/bear1970.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/bear1970MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -1271,7 +1271,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/bear1980.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/bear1980NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -1297,7 +1297,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/bear1980.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/bear1980FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -1323,7 +1323,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/bear1980.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/bear1980MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -1349,7 +1349,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/bear1990.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/bear1990NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -1375,7 +1375,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/bear1990.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/bear1990FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -1401,7 +1401,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/bear1990.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/bear1990MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -1427,7 +1427,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/bear2000.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/bear2000NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -1453,7 +1453,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/bear2000.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/bear2000FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -1479,7 +1479,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/bear2000.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/bear2000MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -1505,7 +1505,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/bring1820.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/bring1820NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -1531,7 +1531,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/bring1820.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/bring1820FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -1557,7 +1557,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/bring1820.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/bring1820MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -1583,7 +1583,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/bring1830.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/bring1830NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -1609,7 +1609,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/bring1830.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/bring1830FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -1635,7 +1635,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/bring1830.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/bring1830MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -1661,7 +1661,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/bring1840.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/bring1840NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -1687,7 +1687,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/bring1840.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/bring1840FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -1713,7 +1713,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/bring1840.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/bring1840MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -1739,7 +1739,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/bring1850.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/bring1850NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -1765,7 +1765,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/bring1850.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/bring1850FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -1791,7 +1791,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/bring1850.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/bring1850MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -1817,7 +1817,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/bring1860.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/bring1860NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -1843,7 +1843,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/bring1860.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/bring1860FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -1869,7 +1869,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/bring1860.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/bring1860MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -1895,7 +1895,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/bring1870.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/bring1870NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -1921,7 +1921,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/bring1870.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/bring1870FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -1947,7 +1947,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/bring1870.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/bring1870MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -1973,7 +1973,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/bring1880.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/bring1880NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -1999,7 +1999,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/bring1880.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/bring1880FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -2025,7 +2025,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/bring1880.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/bring1880MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -2051,7 +2051,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/bring1890.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/bring1890NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -2077,7 +2077,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/bring1890.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/bring1890FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -2103,7 +2103,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/bring1890.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/bring1890MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -2129,7 +2129,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/bring1900.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/bring1900NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -2155,7 +2155,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/bring1900.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/bring1900FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -2181,7 +2181,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/bring1900.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/bring1900MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -2207,7 +2207,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/bring1910.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/bring1910NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -2233,7 +2233,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/bring1910.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/bring1910FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -2259,7 +2259,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/bring1910.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/bring1910MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -2285,7 +2285,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/bring1920.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/bring1920NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -2311,7 +2311,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/bring1920.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/bring1920FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -2337,7 +2337,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/bring1920.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/bring1920MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -2363,7 +2363,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/bring1930.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/bring1930NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -2389,7 +2389,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/bring1930.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/bring1930FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -2415,7 +2415,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/bring1930.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/bring1930MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -2441,7 +2441,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/bring1940.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/bring1940NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -2467,7 +2467,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/bring1940.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/bring1940FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -2493,7 +2493,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/bring1940.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/bring1940MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -2519,7 +2519,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/bring1950.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/bring1950NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -2545,7 +2545,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/bring1950.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/bring1950FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -2571,7 +2571,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/bring1950.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/bring1950MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -2597,7 +2597,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/bring1960.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/bring1960NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -2623,7 +2623,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/bring1960.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/bring1960FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -2649,7 +2649,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/bring1960.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/bring1960MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -2675,7 +2675,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/bring1970.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/bring1970NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -2701,7 +2701,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/bring1970.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/bring1970FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -2727,7 +2727,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/bring1970.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/bring1970MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -2753,7 +2753,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/bring1980.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/bring1980NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -2779,7 +2779,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/bring1980.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/bring1980FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -2805,7 +2805,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/bring1980.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/bring1980MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -2831,7 +2831,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/bring1990.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/bring1990NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -2857,7 +2857,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/bring1990.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/bring1990FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -2883,7 +2883,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/bring1990.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/bring1990MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -2909,7 +2909,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/bring2000.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/bring2000NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -2935,7 +2935,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/bring2000.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/bring2000FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -2961,7 +2961,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/bring2000.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/bring2000MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -2987,7 +2987,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/create1820.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/create1820NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -3013,7 +3013,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/create1820.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/create1820FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -3039,7 +3039,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/create1820.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/create1820MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -3065,7 +3065,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/create1830.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/create1830NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -3091,7 +3091,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/create1830.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/create1830FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -3117,7 +3117,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/create1830.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/create1830MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -3143,7 +3143,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/create1840.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/create1840NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -3169,7 +3169,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/create1840.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/create1840FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -3195,7 +3195,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/create1840.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/create1840MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -3221,7 +3221,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/create1850.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/create1850NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -3247,7 +3247,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/create1850.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/create1850FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -3273,7 +3273,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/create1850.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/create1850MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -3299,7 +3299,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/create1860.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/create1860NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -3325,7 +3325,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/create1860.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/create1860FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -3351,7 +3351,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/create1860.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/create1860MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -3377,7 +3377,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/create1870.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/create1870NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -3403,7 +3403,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/create1870.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/create1870FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -3429,7 +3429,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/create1870.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/create1870MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -3455,7 +3455,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/create1880.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/create1880NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -3481,7 +3481,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/create1880.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/create1880FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -3507,7 +3507,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/create1880.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/create1880MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -3533,7 +3533,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/create1890.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/create1890NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -3559,7 +3559,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/create1890.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/create1890FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -3585,7 +3585,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/create1890.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/create1890MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -3611,7 +3611,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/create1900.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/create1900NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -3637,7 +3637,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/create1900.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/create1900FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -3663,7 +3663,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/create1900.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/create1900MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -3689,7 +3689,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/create1910.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/create1910NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -3715,7 +3715,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/create1910.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/create1910FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -3741,7 +3741,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/create1910.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/create1910MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -3767,7 +3767,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/create1920.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/create1920NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -3793,7 +3793,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/create1920.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/create1920FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -3819,7 +3819,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/create1920.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/create1920MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -3845,7 +3845,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/create1930.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/create1930NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -3871,7 +3871,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/create1930.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/create1930FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -3897,7 +3897,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/create1930.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/create1930MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -3923,7 +3923,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/create1940.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/create1940NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -3949,7 +3949,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/create1940.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/create1940FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -3975,7 +3975,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/create1940.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/create1940MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -4001,7 +4001,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/create1950.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/create1950NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -4027,7 +4027,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/create1950.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/create1950FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -4053,7 +4053,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/create1950.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/create1950MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -4079,7 +4079,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/create1960.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/create1960NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -4105,7 +4105,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/create1960.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/create1960FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -4131,7 +4131,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/create1960.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/create1960MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -4157,7 +4157,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/create1970.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/create1970NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -4183,7 +4183,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/create1970.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/create1970FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -4209,7 +4209,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/create1970.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/create1970MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -4235,7 +4235,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/create1980.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/create1980NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -4261,7 +4261,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/create1980.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/create1980FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -4287,7 +4287,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/create1980.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/create1980MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -4313,7 +4313,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/create1990.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/create1990NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -4339,7 +4339,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/create1990.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/create1990FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -4365,7 +4365,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/create1990.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/create1990MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -4391,7 +4391,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/create2000.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/create2000NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -4417,7 +4417,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/create2000.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/create2000FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -4443,7 +4443,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/create2000.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/create2000MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -4469,7 +4469,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/give1820.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/give1820NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -4495,7 +4495,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/give1820.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/give1820FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -4521,7 +4521,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/give1820.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/give1820MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -4547,7 +4547,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/give1830.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/give1830NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -4573,7 +4573,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/give1830.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/give1830FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -4599,7 +4599,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/give1830.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/give1830MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -4625,7 +4625,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/give1840.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/give1840NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -4651,7 +4651,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/give1840.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/give1840FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -4677,7 +4677,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/give1840.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/give1840MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -4703,7 +4703,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/give1850.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/give1850NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -4729,7 +4729,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/give1850.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/give1850FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -4755,7 +4755,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/give1850.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/give1850MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -4781,7 +4781,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/give1860.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/give1860NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -4807,7 +4807,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/give1860.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/give1860FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -4833,7 +4833,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/give1860.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/give1860MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -4859,7 +4859,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/give1870.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/give1870NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -4885,7 +4885,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/give1870.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/give1870FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -4911,7 +4911,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/give1870.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/give1870MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -4937,7 +4937,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/give1880.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/give1880NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -4963,7 +4963,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/give1880.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/give1880FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -4989,7 +4989,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/give1880.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/give1880MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -5015,7 +5015,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/give1890.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/give1890NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -5041,7 +5041,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/give1890.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/give1890FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -5067,7 +5067,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/give1890.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/give1890MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -5093,7 +5093,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/give1900.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/give1900NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -5119,7 +5119,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/give1900.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/give1900FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -5145,7 +5145,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/give1900.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/give1900MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -5171,7 +5171,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/give1910.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/give1910NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -5197,7 +5197,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/give1910.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/give1910FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -5223,7 +5223,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/give1910.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/give1910MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -5249,7 +5249,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/give1920.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/give1920NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -5275,7 +5275,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/give1920.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/give1920FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -5301,7 +5301,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/give1920.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/give1920MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -5327,7 +5327,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/give1930.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/give1930NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -5353,7 +5353,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/give1930.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/give1930FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -5379,7 +5379,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/give1930.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/give1930MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -5405,7 +5405,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/give1940.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/give1940NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -5431,7 +5431,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/give1940.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/give1940FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -5457,7 +5457,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/give1940.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/give1940MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -5483,7 +5483,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/give1950.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/give1950NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -5509,7 +5509,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/give1950.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/give1950FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -5535,7 +5535,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/give1950.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/give1950MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -5561,7 +5561,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/give1960.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/give1960NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -5587,7 +5587,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/give1960.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/give1960FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -5613,7 +5613,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/give1960.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/give1960MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -5639,7 +5639,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/give1970.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/give1970NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -5665,7 +5665,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/give1970.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/give1970FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -5691,7 +5691,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/give1970.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/give1970MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -5717,7 +5717,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/give1980.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/give1980NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -5743,7 +5743,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/give1980.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/give1980FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -5769,7 +5769,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/give1980.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/give1980MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -5795,7 +5795,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/give1990.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/give1990NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -5821,7 +5821,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/give1990.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/give1990FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -5847,7 +5847,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/give1990.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/give1990MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -5873,7 +5873,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/give2000.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/give2000NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -5899,7 +5899,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/give2000.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/give2000FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -5925,7 +5925,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/give2000.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/give2000MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -5951,7 +5951,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/grant1820.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/grant1820NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -5977,7 +5977,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/grant1820.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/grant1820FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -6003,7 +6003,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/grant1820.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/grant1820MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -6029,7 +6029,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/grant1830.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/grant1830NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -6055,7 +6055,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/grant1830.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/grant1830FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -6081,7 +6081,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/grant1830.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/grant1830MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -6107,7 +6107,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/grant1840.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/grant1840NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -6133,7 +6133,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/grant1840.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/grant1840FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -6159,7 +6159,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/grant1840.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/grant1840MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -6185,7 +6185,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/grant1850.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/grant1850NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -6211,7 +6211,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/grant1850.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/grant1850FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -6237,7 +6237,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/grant1850.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/grant1850MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -6263,7 +6263,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/grant1860.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/grant1860NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -6289,7 +6289,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/grant1860.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/grant1860FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -6315,7 +6315,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/grant1860.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/grant1860MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -6341,7 +6341,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/grant1870.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/grant1870NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -6367,7 +6367,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/grant1870.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/grant1870FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -6393,7 +6393,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/grant1870.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/grant1870MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -6419,7 +6419,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/grant1880.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/grant1880NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -6445,7 +6445,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/grant1880.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/grant1880FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -6471,7 +6471,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/grant1880.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/grant1880MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -6497,7 +6497,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/grant1890.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/grant1890NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -6523,7 +6523,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/grant1890.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/grant1890FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -6549,7 +6549,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/grant1890.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/grant1890MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -6575,7 +6575,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/grant1900.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/grant1900NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -6601,7 +6601,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/grant1900.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/grant1900FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -6627,7 +6627,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/grant1900.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/grant1900MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -6653,7 +6653,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/grant1910.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/grant1910NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -6679,7 +6679,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/grant1910.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/grant1910FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -6705,7 +6705,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/grant1910.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/grant1910MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -6731,7 +6731,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/grant1920.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/grant1920NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -6757,7 +6757,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/grant1920.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/grant1920FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -6783,7 +6783,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/grant1920.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/grant1920MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -6809,7 +6809,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/grant1930.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/grant1930NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -6835,7 +6835,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/grant1930.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/grant1930FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -6861,7 +6861,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/grant1930.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/grant1930MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -6887,7 +6887,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/grant1940.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/grant1940NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -6913,7 +6913,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/grant1940.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/grant1940FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -6939,7 +6939,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/grant1940.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/grant1940MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -6965,7 +6965,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/grant1950.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/grant1950NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -6991,7 +6991,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/grant1950.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/grant1950FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -7017,7 +7017,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/grant1950.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/grant1950MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -7043,7 +7043,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/grant1960.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/grant1960NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -7069,7 +7069,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/grant1960.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/grant1960FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -7095,7 +7095,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/grant1960.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/grant1960MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -7121,7 +7121,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/grant1970.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/grant1970NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -7147,7 +7147,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/grant1970.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/grant1970FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -7173,7 +7173,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/grant1970.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/grant1970MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -7199,7 +7199,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/grant1980.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/grant1980NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -7225,7 +7225,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/grant1980.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/grant1980FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -7251,7 +7251,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/grant1980.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/grant1980MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -7277,7 +7277,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/grant1990.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/grant1990NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -7303,7 +7303,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/grant1990.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/grant1990FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -7329,7 +7329,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/grant1990.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/grant1990MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -7355,7 +7355,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/grant2000.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/grant2000NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -7381,7 +7381,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/grant2000.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/grant2000FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -7407,7 +7407,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/grant2000.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/grant2000MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -7433,7 +7433,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/hold1820.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/hold1820NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -7459,7 +7459,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/hold1820.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/hold1820FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -7485,7 +7485,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/hold1820.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/hold1820MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -7511,7 +7511,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/hold1830.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/hold1830NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -7537,7 +7537,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/hold1830.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/hold1830FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -7563,7 +7563,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/hold1830.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/hold1830MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -7589,7 +7589,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/hold1840.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/hold1840NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -7615,7 +7615,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/hold1840.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/hold1840FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -7641,7 +7641,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/hold1840.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/hold1840MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -7667,7 +7667,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/hold1850.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/hold1850NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -7693,7 +7693,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/hold1850.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/hold1850FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -7719,7 +7719,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/hold1850.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/hold1850MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -7745,7 +7745,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/hold1860.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/hold1860NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -7771,7 +7771,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/hold1860.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/hold1860FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -7797,7 +7797,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/hold1860.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/hold1860MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -7823,7 +7823,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/hold1870.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/hold1870NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -7849,7 +7849,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/hold1870.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/hold1870FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -7875,7 +7875,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/hold1870.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/hold1870MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -7901,7 +7901,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/hold1880.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/hold1880NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -7927,7 +7927,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/hold1880.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/hold1880FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -7953,7 +7953,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/hold1880.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/hold1880MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -7979,7 +7979,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/hold1890.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/hold1890NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -8005,7 +8005,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/hold1890.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/hold1890FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -8031,7 +8031,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/hold1890.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/hold1890MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -8057,7 +8057,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/hold1900.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/hold1900NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -8083,7 +8083,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/hold1900.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/hold1900FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -8109,7 +8109,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/hold1900.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/hold1900MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -8135,7 +8135,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/hold1910.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/hold1910NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -8161,7 +8161,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/hold1910.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/hold1910FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -8187,7 +8187,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/hold1910.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/hold1910MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -8213,7 +8213,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/hold1920.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/hold1920NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -8239,7 +8239,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/hold1920.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/hold1920FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -8265,7 +8265,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/hold1920.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/hold1920MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -8291,7 +8291,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/hold1930.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/hold1930NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -8317,7 +8317,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/hold1930.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/hold1930FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -8343,7 +8343,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/hold1930.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/hold1930MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -8369,7 +8369,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/hold1940.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/hold1940NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -8395,7 +8395,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/hold1940.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/hold1940FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -8421,7 +8421,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/hold1940.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/hold1940MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -8447,7 +8447,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/hold1950.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/hold1950NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -8473,7 +8473,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/hold1950.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/hold1950FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -8499,7 +8499,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/hold1950.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/hold1950MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -8525,7 +8525,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/hold1960.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/hold1960NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -8551,7 +8551,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/hold1960.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/hold1960FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -8577,7 +8577,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/hold1960.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/hold1960MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -8603,7 +8603,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/hold1970.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/hold1970NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -8629,7 +8629,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/hold1970.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/hold1970FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -8655,7 +8655,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/hold1970.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/hold1970MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -8681,7 +8681,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/hold1980.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/hold1980NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -8707,7 +8707,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/hold1980.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/hold1980FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -8733,7 +8733,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/hold1980.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/hold1980MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -8759,7 +8759,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/hold1990.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/hold1990NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -8785,7 +8785,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/hold1990.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/hold1990FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -8811,7 +8811,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/hold1990.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/hold1990MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -8837,7 +8837,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/hold2000.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/hold2000NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -8863,7 +8863,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/hold2000.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/hold2000FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -8889,7 +8889,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/hold2000.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/hold2000MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -8915,7 +8915,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/keep1820.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/keep1820NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -8941,7 +8941,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/keep1820.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/keep1820FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -8967,7 +8967,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/keep1820.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/keep1820MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -8993,7 +8993,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/keep1830.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/keep1830NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -9019,7 +9019,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/keep1830.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/keep1830FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -9045,7 +9045,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/keep1830.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/keep1830MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -9071,7 +9071,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/keep1840.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/keep1840NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -9097,7 +9097,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/keep1840.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/keep1840FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -9123,7 +9123,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/keep1840.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/keep1840MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -9149,7 +9149,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/keep1850.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/keep1850NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -9175,7 +9175,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/keep1850.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/keep1850FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -9201,7 +9201,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/keep1850.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/keep1850MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -9227,7 +9227,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/keep1860.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/keep1860NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -9253,7 +9253,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/keep1860.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/keep1860FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -9279,7 +9279,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/keep1860.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/keep1860MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -9305,7 +9305,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/keep1870.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/keep1870NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -9331,7 +9331,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/keep1870.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/keep1870FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -9357,7 +9357,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/keep1870.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/keep1870MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -9383,7 +9383,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/keep1880.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/keep1880NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -9409,7 +9409,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/keep1880.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/keep1880FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -9435,7 +9435,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/keep1880.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/keep1880MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -9461,7 +9461,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/keep1890.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/keep1890NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -9487,7 +9487,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/keep1890.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/keep1890FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -9513,7 +9513,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/keep1890.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/keep1890MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -9539,7 +9539,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/keep1900.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/keep1900NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -9565,7 +9565,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/keep1900.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/keep1900FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -9591,7 +9591,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/keep1900.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/keep1900MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -9617,7 +9617,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/keep1910.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/keep1910NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -9643,7 +9643,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/keep1910.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/keep1910FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -9669,7 +9669,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/keep1910.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/keep1910MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -9695,7 +9695,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/keep1920.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/keep1920NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -9721,7 +9721,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/keep1920.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/keep1920FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -9747,7 +9747,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/keep1920.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/keep1920MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -9773,7 +9773,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/keep1930.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/keep1930NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -9799,7 +9799,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/keep1930.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/keep1930FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -9825,7 +9825,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/keep1930.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/keep1930MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -9851,7 +9851,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/keep1940.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/keep1940NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -9877,7 +9877,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/keep1940.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/keep1940FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -9903,7 +9903,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/keep1940.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/keep1940MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -9929,7 +9929,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/keep1950.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/keep1950NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -9955,7 +9955,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/keep1950.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/keep1950FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -9981,7 +9981,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/keep1950.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/keep1950MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -10007,7 +10007,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/keep1960.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/keep1960NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -10033,7 +10033,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/keep1960.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/keep1960FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -10059,7 +10059,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/keep1960.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/keep1960MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -10085,7 +10085,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/keep1970.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/keep1970NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -10111,7 +10111,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/keep1970.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/keep1970FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -10137,7 +10137,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/keep1970.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/keep1970MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -10163,7 +10163,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/keep1980.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/keep1980NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -10189,7 +10189,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/keep1980.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/keep1980FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -10215,7 +10215,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/keep1980.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/keep1980MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -10241,7 +10241,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/keep1990.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/keep1990NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -10267,7 +10267,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/keep1990.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/keep1990FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -10293,7 +10293,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/keep1990.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/keep1990MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -10319,7 +10319,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/keep2000.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/keep2000NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -10345,7 +10345,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/keep2000.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/keep2000FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -10371,7 +10371,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/keep2000.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/keep2000MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -10397,7 +10397,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/lose1820.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/lose1820NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -10423,7 +10423,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/lose1820.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/lose1820FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -10449,7 +10449,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/lose1820.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/lose1820MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -10475,7 +10475,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/lose1830.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/lose1830NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -10501,7 +10501,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/lose1830.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/lose1830FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -10527,7 +10527,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/lose1830.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/lose1830MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -10553,7 +10553,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/lose1840.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/lose1840NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -10579,7 +10579,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/lose1840.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/lose1840FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -10605,7 +10605,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/lose1840.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/lose1840MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -10631,7 +10631,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/lose1850.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/lose1850NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -10657,7 +10657,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/lose1850.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/lose1850FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -10683,7 +10683,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/lose1850.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/lose1850MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -10709,7 +10709,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/lose1860.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/lose1860NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -10735,7 +10735,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/lose1860.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/lose1860FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -10761,7 +10761,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/lose1860.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/lose1860MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -10787,7 +10787,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/lose1870.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/lose1870NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -10813,7 +10813,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/lose1870.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/lose1870FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -10839,7 +10839,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/lose1870.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/lose1870MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -10865,7 +10865,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/lose1880.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/lose1880NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -10891,7 +10891,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/lose1880.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/lose1880FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -10917,7 +10917,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/lose1880.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/lose1880MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -10943,7 +10943,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/lose1890.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/lose1890NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -10969,7 +10969,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/lose1890.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/lose1890FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -10995,7 +10995,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/lose1890.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/lose1890MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -11021,7 +11021,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/lose1900.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/lose1900NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -11047,7 +11047,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/lose1900.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/lose1900FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -11073,7 +11073,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/lose1900.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/lose1900MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -11099,7 +11099,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/lose1910.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/lose1910NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -11125,7 +11125,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/lose1910.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/lose1910FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -11151,7 +11151,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/lose1910.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/lose1910MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -11177,7 +11177,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/lose1920.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/lose1920NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -11203,7 +11203,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/lose1920.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/lose1920FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -11229,7 +11229,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/lose1920.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/lose1920MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -11255,7 +11255,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/lose1930.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/lose1930NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -11281,7 +11281,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/lose1930.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/lose1930FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -11307,7 +11307,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/lose1930.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/lose1930MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -11333,7 +11333,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/lose1940.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/lose1940NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -11359,7 +11359,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/lose1940.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/lose1940FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -11385,7 +11385,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/lose1940.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/lose1940MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -11411,7 +11411,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/lose1950.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/lose1950NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -11437,7 +11437,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/lose1950.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/lose1950FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -11463,7 +11463,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/lose1950.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/lose1950MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -11489,7 +11489,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/lose1960.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/lose1960NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -11515,7 +11515,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/lose1960.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/lose1960FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -11541,7 +11541,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/lose1960.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/lose1960MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -11567,7 +11567,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/lose1970.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/lose1970NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -11593,7 +11593,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/lose1970.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/lose1970FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -11619,7 +11619,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/lose1970.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/lose1970MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -11645,7 +11645,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/lose1980.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/lose1980NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -11671,7 +11671,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/lose1980.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/lose1980FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -11697,7 +11697,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/lose1980.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/lose1980MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -11723,7 +11723,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/lose1990.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/lose1990NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -11749,7 +11749,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/lose1990.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/lose1990FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -11775,7 +11775,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/lose1990.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/lose1990MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -11801,7 +11801,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/lose2000.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/lose2000NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -11827,7 +11827,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/lose2000.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/lose2000FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -11853,7 +11853,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/lose2000.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/lose2000MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -11879,7 +11879,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/make1820.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/make1820NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -11905,7 +11905,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/make1820.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/make1820FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -11931,7 +11931,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/make1820.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/make1820MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -11957,7 +11957,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/make1830.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/make1830NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -11983,7 +11983,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/make1830.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/make1830FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -12009,7 +12009,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/make1830.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/make1830MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -12035,7 +12035,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/make1840.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/make1840NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -12061,7 +12061,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/make1840.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/make1840FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -12087,7 +12087,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/make1840.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/make1840MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -12113,7 +12113,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/make1850.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/make1850NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -12139,7 +12139,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/make1850.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/make1850FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -12165,7 +12165,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/make1850.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/make1850MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -12191,7 +12191,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/make1860.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/make1860NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -12217,7 +12217,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/make1860.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/make1860FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -12243,7 +12243,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/make1860.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/make1860MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -12269,7 +12269,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/make1870.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/make1870NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -12295,7 +12295,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/make1870.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/make1870FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -12321,7 +12321,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/make1870.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/make1870MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -12347,7 +12347,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/make1880.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/make1880NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -12373,7 +12373,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/make1880.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/make1880FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -12399,7 +12399,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/make1880.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/make1880MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -12425,7 +12425,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/make1890.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/make1890NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -12451,7 +12451,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/make1890.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/make1890FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -12477,7 +12477,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/make1890.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/make1890MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -12503,7 +12503,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/make1900.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/make1900NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -12529,7 +12529,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/make1900.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/make1900FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -12555,7 +12555,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/make1900.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/make1900MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -12581,7 +12581,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/make1910.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/make1910NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -12607,7 +12607,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/make1910.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/make1910FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -12633,7 +12633,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/make1910.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/make1910MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -12659,7 +12659,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/make1920.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/make1920NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -12685,7 +12685,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/make1920.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/make1920FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -12711,7 +12711,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/make1920.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/make1920MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -12737,7 +12737,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/make1930.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/make1930NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -12763,7 +12763,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/make1930.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/make1930FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -12789,7 +12789,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/make1930.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/make1930MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -12815,7 +12815,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/make1940.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/make1940NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -12841,7 +12841,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/make1940.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/make1940FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -12867,7 +12867,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/make1940.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/make1940MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -12893,7 +12893,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/make1950.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/make1950NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -12919,7 +12919,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/make1950.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/make1950FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -12945,7 +12945,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/make1950.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/make1950MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -12971,7 +12971,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/make1960.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/make1960NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -12997,7 +12997,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/make1960.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/make1960FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -13023,7 +13023,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/make1960.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/make1960MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -13049,7 +13049,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/make1970.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/make1970NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -13075,7 +13075,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/make1970.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/make1970FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -13101,7 +13101,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/make1970.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/make1970MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -13127,7 +13127,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/make1980.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/make1980NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -13153,7 +13153,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/make1980.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/make1980FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -13179,7 +13179,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/make1980.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/make1980MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -13205,7 +13205,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/make1990.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/make1990NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -13231,7 +13231,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/make1990.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/make1990FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -13257,7 +13257,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/make1990.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/make1990MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -13283,7 +13283,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/make2000.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/make2000NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -13309,7 +13309,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/make2000.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/make2000FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -13335,7 +13335,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/make2000.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/make2000MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -13361,7 +13361,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/take1820.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/take1820NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -13387,7 +13387,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/take1820.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/take1820FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -13413,7 +13413,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/take1820.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/take1820MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -13439,7 +13439,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/take1830.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/take1830NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -13465,7 +13465,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/take1830.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/take1830FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -13491,7 +13491,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/take1830.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/take1830MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -13517,7 +13517,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/take1840.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/take1840NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -13543,7 +13543,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/take1840.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/take1840FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -13569,7 +13569,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/take1840.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/take1840MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -13595,7 +13595,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/take1850.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/take1850NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -13621,7 +13621,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/take1850.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/take1850FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -13647,7 +13647,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/take1850.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/take1850MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -13673,7 +13673,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/take1860.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/take1860NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -13699,7 +13699,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/take1860.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/take1860FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -13725,7 +13725,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/take1860.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/take1860MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -13751,7 +13751,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/take1870.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/take1870NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -13777,7 +13777,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/take1870.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/take1870FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -13803,7 +13803,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/take1870.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/take1870MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -13829,7 +13829,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/take1880.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/take1880NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -13855,7 +13855,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/take1880.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/take1880FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -13881,7 +13881,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/take1880.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/take1880MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -13907,7 +13907,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/take1890.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/take1890NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -13933,7 +13933,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/take1890.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/take1890FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -13959,7 +13959,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/take1890.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/take1890MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -13985,7 +13985,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/take1900.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/take1900NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -14011,7 +14011,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/take1900.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/take1900FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -14037,7 +14037,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/take1900.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/take1900MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -14063,7 +14063,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/take1910.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/take1910NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -14089,7 +14089,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/take1910.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/take1910FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -14115,7 +14115,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/take1910.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/take1910MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -14141,7 +14141,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/take1920.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/take1920NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -14167,7 +14167,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/take1920.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/take1920FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -14193,7 +14193,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/take1920.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/take1920MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -14219,7 +14219,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/take1930.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/take1930NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -14245,7 +14245,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/take1930.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/take1930FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -14271,7 +14271,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/take1930.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/take1930MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -14297,7 +14297,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/take1940.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/take1940NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -14323,7 +14323,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/take1940.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/take1940FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -14349,7 +14349,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/take1940.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/take1940MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -14375,7 +14375,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/take1950.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/take1950NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -14401,7 +14401,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/take1950.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/take1950FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -14427,7 +14427,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/take1950.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/take1950MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -14453,7 +14453,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/take1960.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/take1960NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -14479,7 +14479,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/take1960.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/take1960FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -14505,7 +14505,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/take1960.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/take1960MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -14531,7 +14531,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/take1970.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/take1970NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -14557,7 +14557,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/take1970.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/take1970FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -14583,7 +14583,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/take1970.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/take1970MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -14609,7 +14609,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/take1980.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/take1980NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -14635,7 +14635,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/take1980.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/take1980FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -14661,7 +14661,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/take1980.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/take1980MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -14687,7 +14687,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/take1990.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/take1990NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -14713,7 +14713,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/take1990.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/take1990FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -14739,7 +14739,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/take1990.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/take1990MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -14765,7 +14765,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/take2000.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/take2000NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -14791,7 +14791,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/take2000.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/take2000FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -14817,7 +14817,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/take2000.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/take2000MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -14843,7 +14843,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/maintain1820.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/maintain1820NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -14869,7 +14869,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/maintain1820.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/maintain1820FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -14895,7 +14895,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/maintain1820.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/maintain1820MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -14921,7 +14921,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/maintain1830.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/maintain1830NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -14947,7 +14947,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/maintain1830.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/maintain1830FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -14973,7 +14973,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/maintain1830.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/maintain1830MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -14999,7 +14999,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/maintain1840.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/maintain1840NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -15025,7 +15025,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/maintain1840.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/maintain1840FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -15051,7 +15051,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/maintain1840.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/maintain1840MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -15077,7 +15077,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/maintain1850.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/maintain1850NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -15103,7 +15103,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/maintain1850.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/maintain1850FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -15129,7 +15129,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/maintain1850.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/maintain1850MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -15155,7 +15155,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/maintain1860.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/maintain1860NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -15181,7 +15181,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/maintain1860.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/maintain1860FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -15207,7 +15207,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/maintain1860.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/maintain1860MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -15233,7 +15233,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/maintain1870.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/maintain1870NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -15259,7 +15259,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/maintain1870.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/maintain1870FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -15285,7 +15285,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/maintain1870.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/maintain1870MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -15311,7 +15311,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/maintain1880.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/maintain1880NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -15337,7 +15337,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/maintain1880.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/maintain1880FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -15363,7 +15363,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/maintain1880.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/maintain1880MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -15389,7 +15389,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/maintain1890.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/maintain1890NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -15415,7 +15415,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/maintain1890.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/maintain1890FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -15441,7 +15441,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/maintain1890.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/maintain1890MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -15467,7 +15467,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/maintain1900.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/maintain1900NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -15493,7 +15493,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/maintain1900.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/maintain1900FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -15519,7 +15519,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/maintain1900.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/maintain1900MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -15545,7 +15545,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/maintain1910.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/maintain1910NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -15571,7 +15571,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/maintain1910.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/maintain1910FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -15597,7 +15597,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/maintain1910.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/maintain1910MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -15623,7 +15623,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/maintain1920.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/maintain1920NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -15649,7 +15649,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/maintain1920.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/maintain1920FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -15675,7 +15675,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/maintain1920.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/maintain1920MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -15701,7 +15701,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/maintain1930.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/maintain1930NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -15727,7 +15727,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/maintain1930.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/maintain1930FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -15753,7 +15753,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/maintain1930.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/maintain1930MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -15779,7 +15779,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/maintain1940.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/maintain1940NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -15805,7 +15805,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/maintain1940.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/maintain1940FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -15831,7 +15831,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/maintain1940.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/maintain1940MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -15857,7 +15857,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/maintain1950.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/maintain1950NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -15883,7 +15883,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/maintain1950.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/maintain1950FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -15909,7 +15909,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/maintain1950.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/maintain1950MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -15935,7 +15935,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/maintain1960.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/maintain1960NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -15961,7 +15961,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/maintain1960.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/maintain1960FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -15987,7 +15987,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/maintain1960.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/maintain1960MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -16013,7 +16013,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/maintain1970.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/maintain1970NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -16039,7 +16039,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/maintain1970.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/maintain1970FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -16065,7 +16065,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/maintain1970.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/maintain1970MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -16091,7 +16091,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/maintain1980.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/maintain1980NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -16117,7 +16117,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/maintain1980.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/maintain1980FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -16143,7 +16143,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/maintain1980.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/maintain1980MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -16169,7 +16169,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/maintain1990.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/maintain1990NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -16195,7 +16195,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/maintain1990.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/maintain1990FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -16221,7 +16221,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/maintain1990.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/maintain1990MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -16247,7 +16247,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/maintain2000.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/maintain2000NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -16273,7 +16273,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/maintain2000.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/maintain2000FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -16299,7 +16299,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/maintain2000.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/maintain2000MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -16325,7 +16325,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/demand1820.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/demand1820NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -16351,7 +16351,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/demand1820.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/demand1820FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -16377,7 +16377,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/demand1820.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/demand1820MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -16403,7 +16403,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/demand1830.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/demand1830NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -16429,7 +16429,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/demand1830.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/demand1830FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -16455,7 +16455,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/demand1830.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/demand1830MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -16481,7 +16481,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/demand1840.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/demand1840NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -16507,7 +16507,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/demand1840.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/demand1840FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -16533,7 +16533,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/demand1840.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/demand1840MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -16559,7 +16559,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/demand1850.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/demand1850NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -16585,7 +16585,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/demand1850.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/demand1850FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -16611,7 +16611,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/demand1850.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/demand1850MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -16637,7 +16637,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/demand1860.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/demand1860NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -16663,7 +16663,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/demand1860.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/demand1860FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -16689,7 +16689,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/demand1860.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/demand1860MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -16715,7 +16715,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/demand1870.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/demand1870NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -16741,7 +16741,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/demand1870.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/demand1870FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -16767,7 +16767,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/demand1870.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/demand1870MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -16793,7 +16793,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/demand1880.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/demand1880NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -16819,7 +16819,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/demand1880.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/demand1880FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -16845,7 +16845,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/demand1880.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/demand1880MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -16871,7 +16871,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/demand1890.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/demand1890NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -16897,7 +16897,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/demand1890.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/demand1890FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -16923,7 +16923,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/demand1890.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/demand1890MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -16949,7 +16949,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/demand1900.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/demand1900NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -16975,7 +16975,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/demand1900.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/demand1900FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -17001,7 +17001,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/demand1900.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/demand1900MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -17027,7 +17027,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/demand1910.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/demand1910NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -17053,7 +17053,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/demand1910.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/demand1910FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -17079,7 +17079,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/demand1910.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/demand1910MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -17105,7 +17105,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/demand1920.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/demand1920NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -17131,7 +17131,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/demand1920.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/demand1920FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -17157,7 +17157,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/demand1920.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/demand1920MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -17183,7 +17183,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/demand1930.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/demand1930NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -17209,7 +17209,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/demand1930.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/demand1930FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -17235,7 +17235,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/demand1930.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/demand1930MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -17261,7 +17261,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/demand1940.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/demand1940NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -17287,7 +17287,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/demand1940.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/demand1940FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -17313,7 +17313,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/demand1940.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/demand1940MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -17339,7 +17339,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/demand1950.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/demand1950NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -17365,7 +17365,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/demand1950.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/demand1950FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -17391,7 +17391,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/demand1950.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/demand1950MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -17417,7 +17417,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/demand1960.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/demand1960NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -17443,7 +17443,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/demand1960.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/demand1960FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -17469,7 +17469,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/demand1960.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/demand1960MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -17495,7 +17495,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/demand1970.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/demand1970NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -17521,7 +17521,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/demand1970.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/demand1970FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -17547,7 +17547,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/demand1970.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/demand1970MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -17573,7 +17573,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/demand1980.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/demand1980NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -17599,7 +17599,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/demand1980.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/demand1980FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -17625,7 +17625,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/demand1980.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/demand1980MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -17651,7 +17651,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/demand1990.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/demand1990NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -17677,7 +17677,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/demand1990.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/demand1990FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -17703,7 +17703,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/demand1990.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/demand1990MAG.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -17729,7 +17729,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'NF'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/demand2000.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/demand2000NF.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -17755,7 +17755,7 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'FIC'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/demand2000.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/demand2000FIC.csv' CSV HEADER;
 
 COPY (
 SELECT lemma, count(*) from (
@@ -17781,4 +17781,4 @@ and c.w1 = l.wid and s.textid = c.source and s.genre = 'MAG'
 ) a, lexicon b where 
 ( b.pos like '%nn@%' or b.pos like '%nn\%%' or b.pos like 'nn' or b.pos like '%nn1%' or b.pos like '%nn2%')
 and a.w2 = b.wid group by b.lemma order by count(*) desc
-) TO '/var/lib/postgresql/algoResult/demand2000.csv' CSV HEADER;
+) TO '/var/lib/postgresql/algoResult/demand2000MAG.csv' CSV HEADER;
