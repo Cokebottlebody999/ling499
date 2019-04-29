@@ -1,37 +1,3 @@
-git commit -m "all give"
-git push
-git pull
-cat fullSelect2.sql 
-head fullSelect2.sql 
-wget https://s3.us-east-2.amazonaws.com/coha499project/wn3.1.dict.tar.gz
-ls -la
-unzip wn3.1.dict.tar.gz
-unzip
-ls
-unzip wn3.1.dict.tar.gz
-ls
-mkdir wordnet
-ls
-cd wordnet/
-ls
-ls
-wget https://s3.us-east-2.amazonaws.com/coha499project/WNdb-3.0.tar.gz
-ls
-tar -zxvf WNdb-3.0.tar.gz 
-ls
-cd dict/
-ls
-vim data.noun 
-vim index.noun 
-vim index.verb
-cd ..
-ls
-wget https://s3.us-east-2.amazonaws.com/coha499project/wn3.1.dict.tar.gz
-tar -zxvf wn3.1.dict.tar.gz 
-ls
-cd dict/
-ls
-cd dbfiles/
 ls
 vim noun.act 
 vim verb.communication 
@@ -497,4 +463,38 @@ git pull
 tmux
 tmux attach
 tmux attach
+tmux attach
+ls
+ls
+ls
+cd 1940Reselect/
+ls
+ls
+cd ..
+ls
+git add .
+git commit -m "1940 data"
+git push
+exit
+ls
+psql
+exit
+tmux attach
+exit
+tmux attach
+ls
+vim 1940reselect.sql 
+exit
+
+psql
+exit
+exit
+ls
+psql
+ls
+git pull
+ls
+psql
+eixt
+tmux
 tmux attach
