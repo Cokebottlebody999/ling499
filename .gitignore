@@ -1,2 +1,7 @@
 /9.5
 /10
+.bash_history
+.psql_history
+.viminfo
+.wget-hsts
+.ipynb_checkpoints
