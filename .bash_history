@@ -1,14 +1,3 @@
-ls
-vim noun.act 
-vim verb.communication 
-cd ..
-ls
-cd ..
-ls
-cd ..
-ls
- git add .
-git commit -m "Wordnet"
 git push
  git add .
 ls
@@ -497,4 +486,15 @@ ls
 psql
 eixt
 tmux
+tmux attach
+tmux attach
+tmux attach
+psql
+tmux attach
+tmux attach
+tmux attach
+tmux attach
+tmux attach
+tmux attach
+tmux attach
 tmux attach
