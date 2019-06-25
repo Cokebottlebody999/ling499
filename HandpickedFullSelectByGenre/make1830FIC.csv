@@ -352,10 +352,10 @@ count,lemma
 3,journey
 3,sight
 3,mention
-3,show
-3,clothes
-3,better
 3,pass
+3,show
+3,better
+3,clothes
 2,citizen
 2,occurrence
 2,complaint
@@ -473,8 +473,8 @@ count,lemma
 2,bride
 2,force
 2,companion
-2,god
 2,place
+2,god
 2,e'en
 2,valet
 2,feeling
@@ -493,8 +493,8 @@ count,lemma
 2,pretext
 2,boast
 2,friendship
-2,speculation
 2,being
+2,speculation
 2,servant
 2,jest
 2,topic
@@ -734,8 +734,8 @@ count,lemma
 1,skin
 1,galeazzo
 1,self
-1,press
 1,posset
+1,press
 1,feast
 1,major
 1,aggregate
@@ -765,8 +765,8 @@ count,lemma
 1,term
 1,fireplace
 1,doublet
-1,reference
 1,determination
+1,reference
 1,ferocity
 1,belle
 1,discussion

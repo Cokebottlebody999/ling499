@@ -1,8 +1,3 @@
-git push
- git add .
-ls
-git commit -m "Queries"
-git push
 ls
 cd ..
 ls -la
@@ -490,6 +485,11 @@ tmux attach
 tmux attach
 tmux attach
 psql
+tmux attach
+tmux attach
+tmux attach
+tmux attach
+tmux attach
 tmux attach
 tmux attach
 tmux attach

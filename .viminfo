@@ -20,10 +20,10 @@
 $ 
 
 # Command Line History (newest to oldest):
+:wq
+|2,0,1560913145,,"wq"
 :q
 |2,0,1556547133,,"q"
-:wq
-|2,0,1556547093,,"wq"
 :w
 |2,0,1550035298,,"w"
 :set nowrap
@@ -204,36 +204,50 @@ $
 |3,0,36,0,1,0,0,"/"
 
 # File marks:
-'0  50  0  ~/HandpickedSelectionByGenre.sql
-|4,48,50,0,1556547133,"~/HandpickedSelectionByGenre.sql"
+'0  140  0  ~/HandpickedSelectionByGenreLast2.sql
+|4,48,140,0,1560913145,"~/HandpickedSelectionByGenreLast2.sql"
 '1  50  0  ~/HandpickedSelectionByGenre.sql
-|4,49,50,0,1556547093,"~/HandpickedSelectionByGenre.sql"
-'2  46  0  ~/HandpickedSelectionByGenre.sql
-|4,50,46,0,1556547068,"~/HandpickedSelectionByGenre.sql"
+|4,49,50,0,1556547133,"~/HandpickedSelectionByGenre.sql"
+'2  50  0  ~/HandpickedSelectionByGenre.sql
+|4,50,50,0,1556547093,"~/HandpickedSelectionByGenre.sql"
 '3  46  0  ~/HandpickedSelectionByGenre.sql
 |4,51,46,0,1556547068,"~/HandpickedSelectionByGenre.sql"
 '4  46  0  ~/HandpickedSelectionByGenre.sql
 |4,52,46,0,1556547068,"~/HandpickedSelectionByGenre.sql"
 '5  46  0  ~/HandpickedSelectionByGenre.sql
 |4,53,46,0,1556547068,"~/HandpickedSelectionByGenre.sql"
-'6  7  17  ~/.gitignore
-|4,54,7,17,1556546919,"~/.gitignore"
-'7  1  0  ~/algoQueryPartitionsByGenre.sql
-|4,55,1,0,1556481991,"~/algoQueryPartitionsByGenre.sql"
-'8  1  0  ~/1940reselect.sql
-|4,56,1,0,1553559573,"~/1940reselect.sql"
-'9  1  0  ~/algoQueryPartitions.sql
-|4,57,1,0,1550699494,"~/algoQueryPartitions.sql"
+'6  46  0  ~/HandpickedSelectionByGenre.sql
+|4,54,46,0,1556547068,"~/HandpickedSelectionByGenre.sql"
+'7  7  17  ~/.gitignore
+|4,55,7,17,1556546919,"~/.gitignore"
+'8  1  0  ~/algoQueryPartitionsByGenre.sql
+|4,56,1,0,1556481991,"~/algoQueryPartitionsByGenre.sql"
+'9  1  0  ~/1940reselect.sql
+|4,57,1,0,1553559573,"~/1940reselect.sql"
 
 # Jumplist (newest first):
+-'  140  0  ~/HandpickedSelectionByGenreLast2.sql
+|4,39,140,0,1560913145,"~/HandpickedSelectionByGenreLast2.sql"
+-'  1  0  ~/HandpickedSelectionByGenreLast2.sql
+|4,39,1,0,1560913115,"~/HandpickedSelectionByGenreLast2.sql"
 -'  50  0  ~/HandpickedSelectionByGenre.sql
 |4,39,50,0,1556547133,"~/HandpickedSelectionByGenre.sql"
+-'  50  0  ~/HandpickedSelectionByGenre.sql
+|4,39,50,0,1556547133,"~/HandpickedSelectionByGenre.sql"
+-'  50  0  ~/HandpickedSelectionByGenre.sql
+|4,39,50,0,1556547093,"~/HandpickedSelectionByGenre.sql"
 -'  50  0  ~/HandpickedSelectionByGenre.sql
 |4,39,50,0,1556547093,"~/HandpickedSelectionByGenre.sql"
 -'  46  0  ~/HandpickedSelectionByGenre.sql
 |4,39,46,0,1556547086,"~/HandpickedSelectionByGenre.sql"
 -'  46  0  ~/HandpickedSelectionByGenre.sql
 |4,39,46,0,1556547086,"~/HandpickedSelectionByGenre.sql"
+-'  46  0  ~/HandpickedSelectionByGenre.sql
+|4,39,46,0,1556547086,"~/HandpickedSelectionByGenre.sql"
+-'  46  0  ~/HandpickedSelectionByGenre.sql
+|4,39,46,0,1556547086,"~/HandpickedSelectionByGenre.sql"
+-'  46  0  ~/HandpickedSelectionByGenre.sql
+|4,39,46,0,1556547068,"~/HandpickedSelectionByGenre.sql"
 -'  46  0  ~/HandpickedSelectionByGenre.sql
 |4,39,46,0,1556547068,"~/HandpickedSelectionByGenre.sql"
 -'  1  0  ~/HandpickedSelectionByGenre.sql
@@ -242,6 +256,12 @@ $
 |4,39,1,0,1556547061,"~/HandpickedSelectionByGenre.sql"
 -'  1  0  ~/HandpickedSelectionByGenre.sql
 |4,39,1,0,1556547061,"~/HandpickedSelectionByGenre.sql"
+-'  1  0  ~/HandpickedSelectionByGenre.sql
+|4,39,1,0,1556547061,"~/HandpickedSelectionByGenre.sql"
+-'  1  0  ~/HandpickedSelectionByGenre.sql
+|4,39,1,0,1556547061,"~/HandpickedSelectionByGenre.sql"
+-'  1  0  ~/HandpickedSelectionByGenre.sql
+|4,39,1,0,1556547061,"~/HandpickedSelectionByGenre.sql"
 -'  7  17  ~/.gitignore
 |4,39,7,17,1556546919,"~/.gitignore"
 -'  7  17  ~/.gitignore
@@ -258,6 +278,38 @@ $
 |4,39,7,17,1556546919,"~/.gitignore"
 -'  7  17  ~/.gitignore
 |4,39,7,17,1556546919,"~/.gitignore"
+-'  7  17  ~/.gitignore
+|4,39,7,17,1556546919,"~/.gitignore"
+-'  7  17  ~/.gitignore
+|4,39,7,17,1556546919,"~/.gitignore"
+-'  7  17  ~/.gitignore
+|4,39,7,17,1556546919,"~/.gitignore"
+-'  7  17  ~/.gitignore
+|4,39,7,17,1556546919,"~/.gitignore"
+-'  7  17  ~/.gitignore
+|4,39,7,17,1556546919,"~/.gitignore"
+-'  7  17  ~/.gitignore
+|4,39,7,17,1556546919,"~/.gitignore"
+-'  7  17  ~/.gitignore
+|4,39,7,17,1556546919,"~/.gitignore"
+-'  7  17  ~/.gitignore
+|4,39,7,17,1556546919,"~/.gitignore"
+-'  2  2  ~/.gitignore
+|4,39,2,2,1556546855,"~/.gitignore"
+-'  2  2  ~/.gitignore
+|4,39,2,2,1556546855,"~/.gitignore"
+-'  2  2  ~/.gitignore
+|4,39,2,2,1556546855,"~/.gitignore"
+-'  2  2  ~/.gitignore
+|4,39,2,2,1556546855,"~/.gitignore"
+-'  2  2  ~/.gitignore
+|4,39,2,2,1556546855,"~/.gitignore"
+-'  2  2  ~/.gitignore
+|4,39,2,2,1556546855,"~/.gitignore"
+-'  2  2  ~/.gitignore
+|4,39,2,2,1556546855,"~/.gitignore"
+-'  2  2  ~/.gitignore
+|4,39,2,2,1556546855,"~/.gitignore"
 -'  2  2  ~/.gitignore
 |4,39,2,2,1556546855,"~/.gitignore"
 -'  2  2  ~/.gitignore
@@ -306,6 +358,38 @@ $
 |4,39,1,0,1556481991,"~/algoQueryPartitionsByGenre.sql"
 -'  1  0  ~/algoQueryPartitionsByGenre.sql
 |4,39,1,0,1556481991,"~/algoQueryPartitionsByGenre.sql"
+-'  1  0  ~/algoQueryPartitionsByGenre.sql
+|4,39,1,0,1556481991,"~/algoQueryPartitionsByGenre.sql"
+-'  1  0  ~/algoQueryPartitionsByGenre.sql
+|4,39,1,0,1556481991,"~/algoQueryPartitionsByGenre.sql"
+-'  1  0  ~/algoQueryPartitionsByGenre.sql
+|4,39,1,0,1556481991,"~/algoQueryPartitionsByGenre.sql"
+-'  1  0  ~/algoQueryPartitionsByGenre.sql
+|4,39,1,0,1556481991,"~/algoQueryPartitionsByGenre.sql"
+-'  1  0  ~/algoQueryPartitionsByGenre.sql
+|4,39,1,0,1556481991,"~/algoQueryPartitionsByGenre.sql"
+-'  1  0  ~/algoQueryPartitionsByGenre.sql
+|4,39,1,0,1556481991,"~/algoQueryPartitionsByGenre.sql"
+-'  1  0  ~/algoQueryPartitionsByGenre.sql
+|4,39,1,0,1556481991,"~/algoQueryPartitionsByGenre.sql"
+-'  1  0  ~/algoQueryPartitionsByGenre.sql
+|4,39,1,0,1556481991,"~/algoQueryPartitionsByGenre.sql"
+-'  1  0  ~/algoQueryPartitionsByGenre.sql
+|4,39,1,0,1556481991,"~/algoQueryPartitionsByGenre.sql"
+-'  1  0  ~/algoQueryPartitionsByGenre.sql
+|4,39,1,0,1556481991,"~/algoQueryPartitionsByGenre.sql"
+-'  1  0  ~/algoQueryPartitionsByGenre.sql
+|4,39,1,0,1556481991,"~/algoQueryPartitionsByGenre.sql"
+-'  1  0  ~/algoQueryPartitionsByGenre.sql
+|4,39,1,0,1556481991,"~/algoQueryPartitionsByGenre.sql"
+-'  1  0  ~/algoQueryPartitionsByGenre.sql
+|4,39,1,0,1556481991,"~/algoQueryPartitionsByGenre.sql"
+-'  1  0  ~/algoQueryPartitionsByGenre.sql
+|4,39,1,0,1556481991,"~/algoQueryPartitionsByGenre.sql"
+-'  1  0  ~/algoQueryPartitionsByGenre.sql
+|4,39,1,0,1556481991,"~/algoQueryPartitionsByGenre.sql"
+-'  1  0  ~/algoQueryPartitionsByGenre.sql
+|4,39,1,0,1556481991,"~/algoQueryPartitionsByGenre.sql"
 -'  1  0  ~/1940reselect.sql
 |4,39,1,0,1553559573,"~/1940reselect.sql"
 -'  1  0  ~/1940reselect.sql
@@ -342,92 +426,12 @@ $
 |4,39,1,0,1553559573,"~/1940reselect.sql"
 -'  1  0  ~/1940reselect.sql
 |4,39,1,0,1553559573,"~/1940reselect.sql"
--'  1  0  ~/1940reselect.sql
-|4,39,1,0,1553559573,"~/1940reselect.sql"
--'  1  0  ~/1940reselect.sql
-|4,39,1,0,1553559573,"~/1940reselect.sql"
--'  1  0  ~/1940reselect.sql
-|4,39,1,0,1553559573,"~/1940reselect.sql"
--'  1  0  ~/1940reselect.sql
-|4,39,1,0,1553559573,"~/1940reselect.sql"
--'  1  0  ~/1940reselect.sql
-|4,39,1,0,1553559573,"~/1940reselect.sql"
--'  1  0  ~/1940reselect.sql
-|4,39,1,0,1553559573,"~/1940reselect.sql"
--'  1  0  ~/1940reselect.sql
-|4,39,1,0,1553559573,"~/1940reselect.sql"
--'  1  0  ~/1940reselect.sql
-|4,39,1,0,1553559573,"~/1940reselect.sql"
--'  1  0  ~/1940reselect.sql
-|4,39,1,0,1553559573,"~/1940reselect.sql"
--'  1  0  ~/1940reselect.sql
-|4,39,1,0,1553559573,"~/1940reselect.sql"
--'  1  0  ~/1940reselect.sql
-|4,39,1,0,1553559573,"~/1940reselect.sql"
--'  1  0  ~/1940reselect.sql
-|4,39,1,0,1553559573,"~/1940reselect.sql"
--'  1  0  ~/1940reselect.sql
-|4,39,1,0,1553559573,"~/1940reselect.sql"
--'  1  0  ~/1940reselect.sql
-|4,39,1,0,1553559573,"~/1940reselect.sql"
--'  1  0  ~/algoQueryPartitions.sql
-|4,39,1,0,1550699494,"~/algoQueryPartitions.sql"
--'  1  0  ~/algoQueryPartitions.sql
-|4,39,1,0,1550699494,"~/algoQueryPartitions.sql"
--'  1  0  ~/algoQueryPartitions.sql
-|4,39,1,0,1550699494,"~/algoQueryPartitions.sql"
--'  1  0  ~/algoQueryPartitions.sql
-|4,39,1,0,1550699494,"~/algoQueryPartitions.sql"
--'  1  0  ~/algoQueryPartitions.sql
-|4,39,1,0,1550699494,"~/algoQueryPartitions.sql"
--'  1  0  ~/algoQueryPartitions.sql
-|4,39,1,0,1550699494,"~/algoQueryPartitions.sql"
--'  1  0  ~/algoQueryPartitions.sql
-|4,39,1,0,1550699494,"~/algoQueryPartitions.sql"
--'  1  0  ~/algoQueryPartitions.sql
-|4,39,1,0,1550699494,"~/algoQueryPartitions.sql"
--'  1  0  ~/algoQueryPartitions.sql
-|4,39,1,0,1550699494,"~/algoQueryPartitions.sql"
--'  1  0  ~/algoQueryPartitions.sql
-|4,39,1,0,1550699494,"~/algoQueryPartitions.sql"
--'  1  0  ~/algoQueryPartitions.sql
-|4,39,1,0,1550699494,"~/algoQueryPartitions.sql"
--'  1  0  ~/algoQueryPartitions.sql
-|4,39,1,0,1550699494,"~/algoQueryPartitions.sql"
--'  1  0  ~/algoQueryPartitions.sql
-|4,39,1,0,1550699494,"~/algoQueryPartitions.sql"
--'  1  0  ~/algoQueryPartitions.sql
-|4,39,1,0,1550699494,"~/algoQueryPartitions.sql"
--'  1  0  ~/algoQueryPartitions.sql
-|4,39,1,0,1550699494,"~/algoQueryPartitions.sql"
--'  1  0  ~/algoQueryPartitions.sql
-|4,39,1,0,1550699494,"~/algoQueryPartitions.sql"
--'  1  0  ~/algoQueryPartitions.sql
-|4,39,1,0,1550699494,"~/algoQueryPartitions.sql"
--'  1  0  ~/algoQueryPartitions.sql
-|4,39,1,0,1550699494,"~/algoQueryPartitions.sql"
--'  1  0  ~/algoQueryPartitions.sql
-|4,39,1,0,1550699494,"~/algoQueryPartitions.sql"
--'  1  0  ~/algoQueryPartitions.sql
-|4,39,1,0,1550699494,"~/algoQueryPartitions.sql"
--'  1  0  ~/algoQueryPartitions.sql
-|4,39,1,0,1550699494,"~/algoQueryPartitions.sql"
--'  1  0  ~/algoQueryPartitions.sql
-|4,39,1,0,1550699494,"~/algoQueryPartitions.sql"
--'  1  0  ~/algoQueryPartitions.sql
-|4,39,1,0,1550699494,"~/algoQueryPartitions.sql"
--'  1  0  ~/algoQueryPartitions.sql
-|4,39,1,0,1550699494,"~/algoQueryPartitions.sql"
--'  1  0  ~/algoQueryPartitions.sql
-|4,39,1,0,1550699494,"~/algoQueryPartitions.sql"
--'  1  0  ~/algoQueryPartitions.sql
-|4,39,1,0,1550699494,"~/algoQueryPartitions.sql"
--'  1  0  ~/algoQueryPartitions.sql
-|4,39,1,0,1550699494,"~/algoQueryPartitions.sql"
--'  1  0  ~/algoQueryPartitions.sql
-|4,39,1,0,1550699494,"~/algoQueryPartitions.sql"
 
 # History of marks within files (newest to oldest):
+
+> ~/HandpickedSelectionByGenreLast2.sql
+	*	1560913143	0
+	"	140	0
 
 > ~/HandpickedSelectionByGenre.sql
 	*	1556547131	0

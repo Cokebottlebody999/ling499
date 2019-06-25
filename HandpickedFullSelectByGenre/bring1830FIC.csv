@@ -107,14 +107,14 @@ count,lemma
 2,duty
 2,tiding
 2,company
-2,punishment
+2,bed
 2,death
 2,ship
 2,basket
 2,word
 2,part
 2,brandy
-2,bed
+2,punishment
 2,poll
 2,pitcher
 2,charge
@@ -350,8 +350,8 @@ count,lemma
 1,lassitude
 1,people
 1,burial
-1,passage
 1,noble
+1,passage
 1,firearm
 1,executive
 1,silver
@@ -394,8 +394,8 @@ count,lemma
 1,spar
 1,grapple
 1,lu
-1,daughter
 1,spirit
+1,daughter
 1,weapon
 1,silk
 1,helm
@@ -415,8 +415,8 @@ count,lemma
 1,state
 1,foul
 1,sable
-1,vortex
 1,judgement
+1,vortex
 1,infamy
 1,gallows
 1,woman
@@ -462,8 +462,8 @@ count,lemma
 1,welcome
 1,offering
 1,pony
-1,ring
 1,jail
+1,ring
 1,tardy
 1,friar
 1,troop
@@ -570,8 +570,8 @@ count,lemma
 1,chapter
 1,parliament
 1,complexity
-1,public
 1,repose
+1,public
 1,roll
 1,char
 1,tint
